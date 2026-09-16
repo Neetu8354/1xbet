@@ -309,6 +309,36 @@ function Sportsbook() {
           <CasinoSection />
           <LiveCasinoSection />
           <TvGamesSection />
+
+          {/* SEO content section */}
+          <section className="bg-card px-4 py-6 text-sm leading-6 text-muted-foreground lg:px-8">
+            <h2 className="mb-3 text-lg font-bold text-foreground">
+              1xBET India — Your Trusted Online Betting Platform
+            </h2>
+            <p>
+              1xBET India is the leading destination for online sports betting and casino gaming in
+              India. We offer a comprehensive range of betting markets covering cricket, football,
+              tennis, basketball, esports and more. Our platform features live in-play betting,
+              competitive odds, and instant payouts in Indian Rupees (₹).
+            </p>
+            <p className="mt-3">
+              Whether you want to bet on the IPL, Premier League, or international tournaments,
+              1xBET India provides a secure and user-friendly experience with 24/7 customer support.
+              Our casino section includes hundreds of slots, table games, and live dealer options,
+              while our 1xGames offer instant entertainment.
+            </p>
+            <p className="mt-3">
+              <a href="/responsible-gaming/" className="text-brand underline">
+                Play responsibly
+              </a>
+              . You must be 18 or older to use this platform. If you have concerns about gambling,
+              please visit our{" "}
+              <a href="/responsible-gaming/" className="text-brand underline">
+                Responsible Gaming
+              </a>{" "}
+              page.
+            </p>
+          </section>
           <AppDownload />
         </section>
 
@@ -432,14 +462,14 @@ const promoSlides = [
   },
   {
     eyebrow: "Hot slot",
-    title: "Burning Hot — feel the dragon’s flame",
+    title: "Burning Hot — feel the dragon's flame",
     sub: "Fiery reels, hot bonuses and epic payouts.",
     image: "/assets/games/burning-hot.jpg",
   },
   {
-    eyebrow: "Football · Champions League",
-    title: "Libertadores — accumulator boost",
-    sub: "Combine matches from the tournament for an extra payout.",
+    eyebrow: "Cricket",
+    title: "IPL betting — bet on every match",
+    sub: "Live odds on all IPL and international cricket matches.",
     image: "/assets/partners/esports-banner.webp",
   },
 ];
@@ -465,6 +495,7 @@ function Promo() {
         src={active.image}
         alt={active.title}
         className="absolute inset-0 h-full w-full object-cover"
+        loading="lazy"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-deep/90 via-brand/50 to-transparent" />
       <div className="relative flex h-full flex-col justify-center px-6 py-7 lg:px-12 lg:py-10">
@@ -516,7 +547,14 @@ function GameStrip() {
           className="w-36 shrink-0 overflow-hidden rounded-sm bg-brand-deep text-center text-xs text-primary-foreground"
           data-guard
         >
-          <img src={image} alt={name} className="h-20 w-full object-cover" loading="lazy" />
+          <img
+            src={image}
+            alt={name}
+            className="h-20 w-full object-cover"
+            loading="lazy"
+            width="144"
+            height="80"
+          />
           <div className="truncate bg-brand-deep px-1 py-1.5 font-semibold">{name}</div>
         </div>
       ))}
@@ -890,7 +928,14 @@ function GameTile({ name, image }: { name: string; image: string }) {
       className="w-44 shrink-0 overflow-hidden rounded-md bg-market text-center text-brand sportsbook-shadow"
       data-guard
     >
-      <img src={image} alt={name} className="h-28 w-full object-cover" loading="lazy" />
+      <img
+        src={image}
+        alt={name}
+        className="h-28 w-full object-cover"
+        loading="lazy"
+        width="176"
+        height="112"
+      />
       <div className="truncate bg-brand-deep px-2 py-1 text-sm font-semibold text-primary-foreground">
         {name}
       </div>

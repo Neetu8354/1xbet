@@ -10,33 +10,427 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as R1xgamesRouteImport } from './routes/1xgames'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AffiliateRouteImport } from './routes/affiliate'
+import { Route as AndroidRouteImport } from './routes/android'
+import { Route as BecomeAgentRouteImport } from './routes/become-agent'
+import { Route as CasinoRouteImport } from './routes/casino'
+import { Route as ContactsRouteImport } from './routes/contacts'
+import { Route as CookiesRouteImport } from './routes/cookies'
+import { Route as CricketRouteImport } from './routes/cricket'
+import { Route as EsportsRouteImport } from './routes/esports'
+import { Route as FootballRouteImport } from './routes/football'
+import { Route as FullVersionRouteImport } from './routes/full-version'
+import { Route as IosRouteImport } from './routes/ios'
+import { Route as LiveRouteImport } from './routes/live'
+import { Route as LiveCasinoRouteImport } from './routes/live-casino'
+import { Route as MobileRouteImport } from './routes/mobile'
+import { Route as MoreRouteImport } from './routes/more'
+import { Route as MultiLiveRouteImport } from './routes/multi-live'
+import { Route as OtherAppsRouteImport } from './routes/other-apps'
+import { Route as PaymentMethodsRouteImport } from './routes/payment-methods'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as PromoRouteImport } from './routes/promo'
+import { Route as RegistrationRouteImport } from './routes/registration'
+import { Route as ResponsibleGamingRouteImport } from './routes/responsible-gaming'
+import { Route as ResultsRouteImport } from './routes/results'
+import { Route as SportsRouteImport } from './routes/sports'
+import { Route as StatisticsRouteImport } from './routes/statistics'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as TopEventsRouteImport } from './routes/top-events'
+import { Route as TotoRouteImport } from './routes/toto'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R1xgamesRoute = R1xgamesRouteImport.update({
+  id: '/1xgames',
+  path: '/1xgames',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AffiliateRoute = AffiliateRouteImport.update({
+  id: '/affiliate',
+  path: '/affiliate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AndroidRoute = AndroidRouteImport.update({
+  id: '/android',
+  path: '/android',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BecomeAgentRoute = BecomeAgentRouteImport.update({
+  id: '/become-agent',
+  path: '/become-agent',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CasinoRoute = CasinoRouteImport.update({
+  id: '/casino',
+  path: '/casino',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactsRoute = ContactsRouteImport.update({
+  id: '/contacts',
+  path: '/contacts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiesRoute = CookiesRouteImport.update({
+  id: '/cookies',
+  path: '/cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CricketRoute = CricketRouteImport.update({
+  id: '/cricket',
+  path: '/cricket',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EsportsRoute = EsportsRouteImport.update({
+  id: '/esports',
+  path: '/esports',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FootballRoute = FootballRouteImport.update({
+  id: '/football',
+  path: '/football',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FullVersionRoute = FullVersionRouteImport.update({
+  id: '/full-version',
+  path: '/full-version',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IosRoute = IosRouteImport.update({
+  id: '/ios',
+  path: '/ios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LiveRoute = LiveRouteImport.update({
+  id: '/live',
+  path: '/live',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LiveCasinoRoute = LiveCasinoRouteImport.update({
+  id: '/live-casino',
+  path: '/live-casino',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MobileRoute = MobileRouteImport.update({
+  id: '/mobile',
+  path: '/mobile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MoreRoute = MoreRouteImport.update({
+  id: '/more',
+  path: '/more',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MultiLiveRoute = MultiLiveRouteImport.update({
+  id: '/multi-live',
+  path: '/multi-live',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OtherAppsRoute = OtherAppsRouteImport.update({
+  id: '/other-apps',
+  path: '/other-apps',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentMethodsRoute = PaymentMethodsRouteImport.update({
+  id: '/payment-methods',
+  path: '/payment-methods',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PromoRoute = PromoRouteImport.update({
+  id: '/promo',
+  path: '/promo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegistrationRoute = RegistrationRouteImport.update({
+  id: '/registration',
+  path: '/registration',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResponsibleGamingRoute = ResponsibleGamingRouteImport.update({
+  id: '/responsible-gaming',
+  path: '/responsible-gaming',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResultsRoute = ResultsRouteImport.update({
+  id: '/results',
+  path: '/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SportsRoute = SportsRouteImport.update({
+  id: '/sports',
+  path: '/sports',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StatisticsRoute = StatisticsRouteImport.update({
+  id: '/statistics',
+  path: '/statistics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TopEventsRoute = TopEventsRouteImport.update({
+  id: '/top-events',
+  path: '/top-events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TotoRoute = TotoRouteImport.update({
+  id: '/toto',
+  path: '/toto',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/1xgames': typeof R1xgamesRoute
+  '/about': typeof AboutRoute
+  '/affiliate': typeof AffiliateRoute
+  '/android': typeof AndroidRoute
+  '/become-agent': typeof BecomeAgentRoute
+  '/casino': typeof CasinoRoute
+  '/contacts': typeof ContactsRoute
+  '/cookies': typeof CookiesRoute
+  '/cricket': typeof CricketRoute
+  '/esports': typeof EsportsRoute
+  '/football': typeof FootballRoute
+  '/full-version': typeof FullVersionRoute
+  '/ios': typeof IosRoute
+  '/live': typeof LiveRoute
+  '/live-casino': typeof LiveCasinoRoute
+  '/mobile': typeof MobileRoute
+  '/more': typeof MoreRoute
+  '/multi-live': typeof MultiLiveRoute
+  '/other-apps': typeof OtherAppsRoute
+  '/payment-methods': typeof PaymentMethodsRoute
+  '/privacy': typeof PrivacyRoute
+  '/promo': typeof PromoRoute
+  '/registration': typeof RegistrationRoute
+  '/responsible-gaming': typeof ResponsibleGamingRoute
+  '/results': typeof ResultsRoute
+  '/sports': typeof SportsRoute
+  '/statistics': typeof StatisticsRoute
+  '/terms': typeof TermsRoute
+  '/top-events': typeof TopEventsRoute
+  '/toto': typeof TotoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/1xgames': typeof R1xgamesRoute
+  '/about': typeof AboutRoute
+  '/affiliate': typeof AffiliateRoute
+  '/android': typeof AndroidRoute
+  '/become-agent': typeof BecomeAgentRoute
+  '/casino': typeof CasinoRoute
+  '/contacts': typeof ContactsRoute
+  '/cookies': typeof CookiesRoute
+  '/cricket': typeof CricketRoute
+  '/esports': typeof EsportsRoute
+  '/football': typeof FootballRoute
+  '/full-version': typeof FullVersionRoute
+  '/ios': typeof IosRoute
+  '/live': typeof LiveRoute
+  '/live-casino': typeof LiveCasinoRoute
+  '/mobile': typeof MobileRoute
+  '/more': typeof MoreRoute
+  '/multi-live': typeof MultiLiveRoute
+  '/other-apps': typeof OtherAppsRoute
+  '/payment-methods': typeof PaymentMethodsRoute
+  '/privacy': typeof PrivacyRoute
+  '/promo': typeof PromoRoute
+  '/registration': typeof RegistrationRoute
+  '/responsible-gaming': typeof ResponsibleGamingRoute
+  '/results': typeof ResultsRoute
+  '/sports': typeof SportsRoute
+  '/statistics': typeof StatisticsRoute
+  '/terms': typeof TermsRoute
+  '/top-events': typeof TopEventsRoute
+  '/toto': typeof TotoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/1xgames': typeof R1xgamesRoute
+  '/about': typeof AboutRoute
+  '/affiliate': typeof AffiliateRoute
+  '/android': typeof AndroidRoute
+  '/become-agent': typeof BecomeAgentRoute
+  '/casino': typeof CasinoRoute
+  '/contacts': typeof ContactsRoute
+  '/cookies': typeof CookiesRoute
+  '/cricket': typeof CricketRoute
+  '/esports': typeof EsportsRoute
+  '/football': typeof FootballRoute
+  '/full-version': typeof FullVersionRoute
+  '/ios': typeof IosRoute
+  '/live': typeof LiveRoute
+  '/live-casino': typeof LiveCasinoRoute
+  '/mobile': typeof MobileRoute
+  '/more': typeof MoreRoute
+  '/multi-live': typeof MultiLiveRoute
+  '/other-apps': typeof OtherAppsRoute
+  '/payment-methods': typeof PaymentMethodsRoute
+  '/privacy': typeof PrivacyRoute
+  '/promo': typeof PromoRoute
+  '/registration': typeof RegistrationRoute
+  '/responsible-gaming': typeof ResponsibleGamingRoute
+  '/results': typeof ResultsRoute
+  '/sports': typeof SportsRoute
+  '/statistics': typeof StatisticsRoute
+  '/terms': typeof TermsRoute
+  '/top-events': typeof TopEventsRoute
+  '/toto': typeof TotoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/1xgames'
+    | '/about'
+    | '/affiliate'
+    | '/android'
+    | '/become-agent'
+    | '/casino'
+    | '/contacts'
+    | '/cookies'
+    | '/cricket'
+    | '/esports'
+    | '/football'
+    | '/full-version'
+    | '/ios'
+    | '/live'
+    | '/live-casino'
+    | '/mobile'
+    | '/more'
+    | '/multi-live'
+    | '/other-apps'
+    | '/payment-methods'
+    | '/privacy'
+    | '/promo'
+    | '/registration'
+    | '/responsible-gaming'
+    | '/results'
+    | '/sports'
+    | '/statistics'
+    | '/terms'
+    | '/top-events'
+    | '/toto'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/1xgames'
+    | '/about'
+    | '/affiliate'
+    | '/android'
+    | '/become-agent'
+    | '/casino'
+    | '/contacts'
+    | '/cookies'
+    | '/cricket'
+    | '/esports'
+    | '/football'
+    | '/full-version'
+    | '/ios'
+    | '/live'
+    | '/live-casino'
+    | '/mobile'
+    | '/more'
+    | '/multi-live'
+    | '/other-apps'
+    | '/payment-methods'
+    | '/privacy'
+    | '/promo'
+    | '/registration'
+    | '/responsible-gaming'
+    | '/results'
+    | '/sports'
+    | '/statistics'
+    | '/terms'
+    | '/top-events'
+    | '/toto'
+  id:
+    | '__root__'
+    | '/'
+    | '/1xgames'
+    | '/about'
+    | '/affiliate'
+    | '/android'
+    | '/become-agent'
+    | '/casino'
+    | '/contacts'
+    | '/cookies'
+    | '/cricket'
+    | '/esports'
+    | '/football'
+    | '/full-version'
+    | '/ios'
+    | '/live'
+    | '/live-casino'
+    | '/mobile'
+    | '/more'
+    | '/multi-live'
+    | '/other-apps'
+    | '/payment-methods'
+    | '/privacy'
+    | '/promo'
+    | '/registration'
+    | '/responsible-gaming'
+    | '/results'
+    | '/sports'
+    | '/statistics'
+    | '/terms'
+    | '/top-events'
+    | '/toto'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  R1xgamesRoute: typeof R1xgamesRoute
+  AboutRoute: typeof AboutRoute
+  AffiliateRoute: typeof AffiliateRoute
+  AndroidRoute: typeof AndroidRoute
+  BecomeAgentRoute: typeof BecomeAgentRoute
+  CasinoRoute: typeof CasinoRoute
+  ContactsRoute: typeof ContactsRoute
+  CookiesRoute: typeof CookiesRoute
+  CricketRoute: typeof CricketRoute
+  EsportsRoute: typeof EsportsRoute
+  FootballRoute: typeof FootballRoute
+  FullVersionRoute: typeof FullVersionRoute
+  IosRoute: typeof IosRoute
+  LiveRoute: typeof LiveRoute
+  LiveCasinoRoute: typeof LiveCasinoRoute
+  MobileRoute: typeof MobileRoute
+  MoreRoute: typeof MoreRoute
+  MultiLiveRoute: typeof MultiLiveRoute
+  OtherAppsRoute: typeof OtherAppsRoute
+  PaymentMethodsRoute: typeof PaymentMethodsRoute
+  PrivacyRoute: typeof PrivacyRoute
+  PromoRoute: typeof PromoRoute
+  RegistrationRoute: typeof RegistrationRoute
+  ResponsibleGamingRoute: typeof ResponsibleGamingRoute
+  ResultsRoute: typeof ResultsRoute
+  SportsRoute: typeof SportsRoute
+  StatisticsRoute: typeof StatisticsRoute
+  TermsRoute: typeof TermsRoute
+  TopEventsRoute: typeof TopEventsRoute
+  TotoRoute: typeof TotoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +442,251 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/1xgames': {
+      id: '/1xgames'
+      path: '/1xgames'
+      fullPath: '/1xgames'
+      preLoaderRoute: typeof R1xgamesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/affiliate': {
+      id: '/affiliate'
+      path: '/affiliate'
+      fullPath: '/affiliate'
+      preLoaderRoute: typeof AffiliateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/android': {
+      id: '/android'
+      path: '/android'
+      fullPath: '/android'
+      preLoaderRoute: typeof AndroidRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/become-agent': {
+      id: '/become-agent'
+      path: '/become-agent'
+      fullPath: '/become-agent'
+      preLoaderRoute: typeof BecomeAgentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/casino': {
+      id: '/casino'
+      path: '/casino'
+      fullPath: '/casino'
+      preLoaderRoute: typeof CasinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacts': {
+      id: '/contacts'
+      path: '/contacts'
+      fullPath: '/contacts'
+      preLoaderRoute: typeof ContactsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookies': {
+      id: '/cookies'
+      path: '/cookies'
+      fullPath: '/cookies'
+      preLoaderRoute: typeof CookiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cricket': {
+      id: '/cricket'
+      path: '/cricket'
+      fullPath: '/cricket'
+      preLoaderRoute: typeof CricketRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/esports': {
+      id: '/esports'
+      path: '/esports'
+      fullPath: '/esports'
+      preLoaderRoute: typeof EsportsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/football': {
+      id: '/football'
+      path: '/football'
+      fullPath: '/football'
+      preLoaderRoute: typeof FootballRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/full-version': {
+      id: '/full-version'
+      path: '/full-version'
+      fullPath: '/full-version'
+      preLoaderRoute: typeof FullVersionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ios': {
+      id: '/ios'
+      path: '/ios'
+      fullPath: '/ios'
+      preLoaderRoute: typeof IosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/live': {
+      id: '/live'
+      path: '/live'
+      fullPath: '/live'
+      preLoaderRoute: typeof LiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/live-casino': {
+      id: '/live-casino'
+      path: '/live-casino'
+      fullPath: '/live-casino'
+      preLoaderRoute: typeof LiveCasinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mobile': {
+      id: '/mobile'
+      path: '/mobile'
+      fullPath: '/mobile'
+      preLoaderRoute: typeof MobileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/more': {
+      id: '/more'
+      path: '/more'
+      fullPath: '/more'
+      preLoaderRoute: typeof MoreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/multi-live': {
+      id: '/multi-live'
+      path: '/multi-live'
+      fullPath: '/multi-live'
+      preLoaderRoute: typeof MultiLiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/other-apps': {
+      id: '/other-apps'
+      path: '/other-apps'
+      fullPath: '/other-apps'
+      preLoaderRoute: typeof OtherAppsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment-methods': {
+      id: '/payment-methods'
+      path: '/payment-methods'
+      fullPath: '/payment-methods'
+      preLoaderRoute: typeof PaymentMethodsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/promo': {
+      id: '/promo'
+      path: '/promo'
+      fullPath: '/promo'
+      preLoaderRoute: typeof PromoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/registration': {
+      id: '/registration'
+      path: '/registration'
+      fullPath: '/registration'
+      preLoaderRoute: typeof RegistrationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/responsible-gaming': {
+      id: '/responsible-gaming'
+      path: '/responsible-gaming'
+      fullPath: '/responsible-gaming'
+      preLoaderRoute: typeof ResponsibleGamingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/results': {
+      id: '/results'
+      path: '/results'
+      fullPath: '/results'
+      preLoaderRoute: typeof ResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sports': {
+      id: '/sports'
+      path: '/sports'
+      fullPath: '/sports'
+      preLoaderRoute: typeof SportsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/statistics': {
+      id: '/statistics'
+      path: '/statistics'
+      fullPath: '/statistics'
+      preLoaderRoute: typeof StatisticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/top-events': {
+      id: '/top-events'
+      path: '/top-events'
+      fullPath: '/top-events'
+      preLoaderRoute: typeof TopEventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/toto': {
+      id: '/toto'
+      path: '/toto'
+      fullPath: '/toto'
+      preLoaderRoute: typeof TotoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  R1xgamesRoute: R1xgamesRoute,
+  AboutRoute: AboutRoute,
+  AffiliateRoute: AffiliateRoute,
+  AndroidRoute: AndroidRoute,
+  BecomeAgentRoute: BecomeAgentRoute,
+  CasinoRoute: CasinoRoute,
+  ContactsRoute: ContactsRoute,
+  CookiesRoute: CookiesRoute,
+  CricketRoute: CricketRoute,
+  EsportsRoute: EsportsRoute,
+  FootballRoute: FootballRoute,
+  FullVersionRoute: FullVersionRoute,
+  IosRoute: IosRoute,
+  LiveRoute: LiveRoute,
+  LiveCasinoRoute: LiveCasinoRoute,
+  MobileRoute: MobileRoute,
+  MoreRoute: MoreRoute,
+  MultiLiveRoute: MultiLiveRoute,
+  OtherAppsRoute: OtherAppsRoute,
+  PaymentMethodsRoute: PaymentMethodsRoute,
+  PrivacyRoute: PrivacyRoute,
+  PromoRoute: PromoRoute,
+  RegistrationRoute: RegistrationRoute,
+  ResponsibleGamingRoute: ResponsibleGamingRoute,
+  ResultsRoute: ResultsRoute,
+  SportsRoute: SportsRoute,
+  StatisticsRoute: StatisticsRoute,
+  TermsRoute: TermsRoute,
+  TopEventsRoute: TopEventsRoute,
+  TotoRoute: TotoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

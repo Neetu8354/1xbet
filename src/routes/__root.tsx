@@ -82,7 +82,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "1xBET" },
       { name: "google-site-verification", content: "ubhMdETu1c-wjXvHxR9f1ur3Or0GaaoXqa5tJSVDQ_I" },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.1xbetindia.live/" },
+      { property: "og:site_name", content: "1xBET India" },
+      { property: "og:image", content: "https://www.1xbetindia.live/assets/brand/logo-dark.svg" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@1xbetindia" },
+      { name: "twitter:title", content: "1xBET India — Online Sports Betting" },
+      {
+        name: "twitter:description",
+        content:
+          "1xBET India — your premier destination for online sports betting, live casino games, cricket betting, esports and more.",
+      },
+      { name: "twitter:image", content: "https://www.1xbetindia.live/assets/brand/logo-dark.svg" },
     ],
     links: [
       {
