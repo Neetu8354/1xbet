@@ -319,24 +319,136 @@ function Sportsbook() {
               1xBET India is the leading destination for online sports betting and casino gaming in
               India. We offer a comprehensive range of betting markets covering cricket, football,
               tennis, basketball, esports and more. Our platform features live in-play betting,
-              competitive odds, and instant payouts in Indian Rupees (₹).
-            </p>
-            <p className="mt-3">
-              Whether you want to bet on the IPL, Premier League, or international tournaments,
-              1xBET India provides a secure and user-friendly experience with 24/7 customer support.
-              Our casino section includes hundreds of slots, table games, and live dealer options,
-              while our 1xGames offer instant entertainment.
-            </p>
-            <p className="mt-3">
-              <a href="/responsible-gaming" className="text-brand underline">
-                Play responsibly
+              competitive odds, and instant payouts in Indian Rupees (₹). Learn more{" "}
+              <a href="/about" className="text-brand underline">
+                about 1xBET India
               </a>
-              . You must be 18 or older to use this platform. If you have concerns about gambling,
-              please visit our{" "}
+              .
+            </p>
+
+            <h3 className="mt-5 font-bold text-foreground">Sports betting categories</h3>
+            <p className="mt-2">
+              Our{" "}
+              <a href="/sports" className="text-brand underline">
+                sportsbook
+              </a>{" "}
+              covers more than 30 sports with thousands of daily markets. Bet pre-match or in-play
+              on{" "}
+              <a href="/football" className="text-brand underline">
+                football
+              </a>
+              , tennis, basketball, volleyball, table tennis, ice hockey and{" "}
+              <a href="/esports" className="text-brand underline">
+                esports
+              </a>{" "}
+              titles such as CS2, Dota 2 and League of Legends. The{" "}
+              <a href="/live" className="text-brand underline">
+                live betting
+              </a>{" "}
+              section offers real-time odds, cash out and match statistics, while{" "}
+              <a href="/multi-live" className="text-brand underline">
+                Multi-Live
+              </a>{" "}
+              lets you follow several events at once.
+            </p>
+
+            <h3 className="mt-5 font-bold text-foreground">Cricket betting</h3>
+            <p className="mt-2">
+              Cricket is at the heart of 1xBET India. Our{" "}
+              <a href="/cricket" className="text-brand underline">
+                cricket betting
+              </a>{" "}
+              markets cover the IPL, T20 World Cup, Test series, ODIs and domestic competitions. Bet
+              on match winner, top batsman, total runs, wickets, innings scores and hundreds of
+              ball-by-ball live markets with competitive odds updated in real time.
+            </p>
+
+            <h3 className="mt-5 font-bold text-foreground">Casino and live dealer games</h3>
+            <p className="mt-2">
+              The{" "}
+              <a href="/casino" className="text-brand underline">
+                casino
+              </a>{" "}
+              section includes hundreds of slots, table games and instant-win titles. Our{" "}
+              <a href="/live-casino" className="text-brand underline">
+                live casino
+              </a>{" "}
+              streams real dealers in HD for blackjack, roulette, baccarat and poker. Exclusive{" "}
+              <a href="/games" className="text-brand underline">
+                1xGames
+              </a>{" "}
+              such as Crash and Apple of Fortune offer fast-paced instant entertainment.
+            </p>
+
+            <h3 className="mt-5 font-bold text-foreground">Payments in Indian Rupees</h3>
+            <p className="mt-2">
+              Deposits and withdrawals are processed in INR with no fees. Supported{" "}
+              <a href="/payments" className="text-brand underline">
+                payment methods
+              </a>{" "}
+              include UPI, Paytm, PhonePe, Google Pay, NetBanking, Visa, Mastercard and
+              cryptocurrency. Minimum deposit is ₹100 and most withdrawals are completed within 24
+              hours.
+            </p>
+
+            <h3 className="mt-5 font-bold text-foreground">Mobile app</h3>
+            <p className="mt-2">
+              Download the{" "}
+              <a href="/app" className="text-brand underline">
+                1xBET app
+              </a>{" "}
+              for{" "}
+              <a href="/android" className="text-brand underline">
+                Android (APK)
+              </a>{" "}
+              or{" "}
+              <a href="/ios" className="text-brand underline">
+                iOS
+              </a>{" "}
+              to bet on the go with push notifications, biometric login and the full sportsbook and
+              casino library.
+            </p>
+
+            <h3 className="mt-5 font-bold text-foreground">Bonuses and promotions</h3>
+            <p className="mt-2">
+              New players receive a 100% welcome bonus up to ₹10,000 on their first deposit. Regular{" "}
+              <a href="/promotions" className="text-brand underline">
+                promotions
+              </a>{" "}
+              include weekly cashback, free bets, accumulator boosts and loyalty rewards. All offers
+              are subject to the promotion terms in our{" "}
+              <a href="/terms" className="text-brand underline">
+                Terms and Conditions
+              </a>
+              .
+            </p>
+
+            <h3 className="mt-5 font-bold text-foreground">Responsible gaming — 18+</h3>
+            <p className="mt-2">
+              1xBET India is strictly for players aged 18 and over. Gambling should be
+              entertainment, not a way to make money. We provide deposit limits, loss limits,
+              session reminders and self-exclusion tools. If gambling stops being fun, visit our{" "}
               <a href="/responsible-gaming" className="text-brand underline">
                 Responsible Gaming
               </a>{" "}
-              page.
+              page or contact support via the{" "}
+              <a href="/help" className="text-brand underline">
+                Help Centre
+              </a>{" "}
+              or{" "}
+              <a href="/contact" className="text-brand underline">
+                Contact
+              </a>{" "}
+              page. Answers to common questions are in our{" "}
+              <a href="/faq" className="text-brand underline">
+                FAQ
+              </a>
+              .
+            </p>
+
+            <p className="mt-5 text-xs italic text-muted-foreground/80">
+              Note: the matches, scores and odds displayed in the event listings above are sample
+              data shown for illustration and may not reflect current real-world fixtures.
             </p>
           </section>
           <AppDownload />
@@ -563,12 +675,20 @@ function GameStrip() {
 }
 
 function Marquee() {
-  const text = "Libertadores";
-  const items = Array.from({ length: 16 }, (_, i) => i);
+  const items = [
+    "CRICKET",
+    "LIVE BETTING",
+    "FOOTBALL",
+    "CASINO",
+    "ESPORTS",
+    "TENNIS",
+    "1XGAMES",
+    "LIVE CASINO",
+  ];
   return (
     <div className="my-2 overflow-hidden rounded-md bg-gradient-to-r from-primary to-brand-light py-3">
       <div className="flex animate-marquee whitespace-nowrap">
-        {items.map((i) => (
+        {[...items, ...items].map((text, i) => (
           <span key={i} className="mx-4 text-xl font-bold text-primary-foreground">
             • {text}
           </span>
@@ -902,7 +1022,9 @@ function BetSlip({
             <span>Potential return</span>
             <b>{returnValue.toFixed(2)}</b>
           </div>
-          <Button className="w-full">PLACE DEMO BET</Button>
+          <Button className="w-full" data-guard>
+            PLACE BET
+          </Button>
         </>
       )}
     </div>
