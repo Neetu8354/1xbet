@@ -11,7 +11,7 @@ export const Route = createFileRoute("/terms")({
           "Terms and conditions for using 1xBET India online betting platform. Read our rules, regulations and user agreement.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/terms/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/terms" }],
   }),
   component: () => (
     <SEOPage

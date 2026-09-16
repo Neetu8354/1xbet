@@ -11,7 +11,7 @@ export const Route = createFileRoute("/affiliate")({
           "Join the 1xBET India affiliate program. Earn commissions by promoting our sports betting and casino platform.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/affiliate/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/affiliate" }],
   }),
   component: () => (
     <SEOPage

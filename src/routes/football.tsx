@@ -11,7 +11,7 @@ export const Route = createFileRoute("/football")({
           "Football betting at 1xBET India. Bet on Premier League, Champions League, ISL and international football. Best odds and live betting.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/football/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/football" }],
   }),
   component: () => (
     <SEOPage

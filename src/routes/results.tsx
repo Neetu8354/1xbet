@@ -11,7 +11,7 @@ export const Route = createFileRoute("/results")({
           "Check match results and scores at 1xBET India. Latest results from all major sporting events.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/results/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/results" }],
   }),
   component: () => (
     <SEOPage

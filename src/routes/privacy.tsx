@@ -11,7 +11,7 @@ export const Route = createFileRoute("/privacy")({
           "Privacy policy for 1xBET India. Learn how we collect, use and protect your personal information.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/privacy/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/privacy" }],
   }),
   component: () => (
     <SEOPage

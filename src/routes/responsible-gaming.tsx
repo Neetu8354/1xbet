@@ -11,7 +11,7 @@ export const Route = createFileRoute("/responsible-gaming")({
           "Responsible gaming at 1xBET India. Tools and resources to help you gamble safely and responsibly.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/responsible-gaming/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/responsible-gaming" }],
   }),
   component: () => (
     <SEOPage

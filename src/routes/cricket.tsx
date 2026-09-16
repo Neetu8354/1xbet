@@ -11,7 +11,7 @@ export const Route = createFileRoute("/cricket")({
           "Cricket betting at 1xBET India. Bet on IPL, international cricket, T20, ODI and Test matches. Best odds, live betting and instant payouts.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/cricket/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/cricket" }],
   }),
   component: () => (
     <SEOPage

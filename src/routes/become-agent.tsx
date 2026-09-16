@@ -11,7 +11,7 @@ export const Route = createFileRoute("/become-agent")({
           "Become a 1xBET India agent and earn commissions by referring players to our platform.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/become-agent/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/become-agent" }],
   }),
   component: () => (
     <SEOPage

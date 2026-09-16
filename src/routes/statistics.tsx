@@ -11,7 +11,7 @@ export const Route = createFileRoute("/statistics")({
           "Sports statistics and analytics at 1xBET India. Team stats, player performance and match data.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/statistics/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/statistics" }],
   }),
   component: () => (
     <SEOPage

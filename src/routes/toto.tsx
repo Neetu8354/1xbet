@@ -11,7 +11,7 @@ export const Route = createFileRoute("/toto")({
           "Play Toto pools at 1xBET India. Predict match outcomes and win big with our lottery-style betting games.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/toto/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/toto" }],
   }),
   component: () => (
     <SEOPage

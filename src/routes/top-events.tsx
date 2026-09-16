@@ -11,7 +11,7 @@ export const Route = createFileRoute("/top-events")({
           "Bet on top sporting events at 1xBET India. Featured matches, tournaments and championships from around the world.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/top-events/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/top-events" }],
   }),
   component: () => (
     <SEOPage

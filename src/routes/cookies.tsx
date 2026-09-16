@@ -7,11 +7,10 @@ export const Route = createFileRoute("/cookies")({
       { title: "Cookie Policy — 1xBET India" },
       {
         name: "description",
-        content:
-          "Cookie policy for 1xBET India. Learn about how we use cookies on our website.",
+        content: "Cookie policy for 1xBET India. Learn about how we use cookies on our website.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/cookies/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/cookies" }],
   }),
   component: () => (
     <SEOPage

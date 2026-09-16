@@ -11,7 +11,7 @@ export const Route = createFileRoute("/live-casino")({
           "Play live casino games at 1xBET India. Real dealers, live blackjack, roulette, baccarat and poker. HD streaming and interactive tables.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/live-casino/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/live-casino" }],
   }),
   component: () => (
     <SEOPage

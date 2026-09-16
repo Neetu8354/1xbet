@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
           "Learn about 1xBET India — a leading online sports betting and casino platform serving Indian players with competitive odds and fast payouts.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/about/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/about" }],
   }),
   component: () => (
     <SEOPage

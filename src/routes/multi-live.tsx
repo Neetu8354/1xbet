@@ -11,7 +11,7 @@ export const Route = createFileRoute("/multi-live")({
           "Multi-live betting at 1xBET India. Bet on multiple live matches simultaneously with our multi-view feature.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/multi-live/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/multi-live" }],
   }),
   component: () => (
     <SEOPage

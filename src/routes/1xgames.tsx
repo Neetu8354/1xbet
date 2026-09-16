@@ -11,7 +11,7 @@ export const Route = createFileRoute("/1xgames")({
           "Play 1xGames at 1xBET India. Exclusive instant games, crash games, dice and more. Fast-paced entertainment with big wins.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/1xgames/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/1xgames" }],
   }),
   component: () => (
     <SEOPage

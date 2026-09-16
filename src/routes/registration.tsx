@@ -11,7 +11,7 @@ export const Route = createFileRoute("/registration")({
           "Create your 1xBET India account. Quick and easy registration to start betting on sports and casino games.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/registration/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/registration" }],
   }),
   component: () => (
     <SEOPage

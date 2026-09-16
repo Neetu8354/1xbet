@@ -11,7 +11,7 @@ export const Route = createFileRoute("/casino")({
           "Play casino games online at 1xBET India. Slots, roulette, blackjack, poker and live dealer games. Enjoy exclusive bonuses and jackpots.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/casino/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/casino" }],
   }),
   component: () => (
     <SEOPage

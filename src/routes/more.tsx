@@ -11,7 +11,7 @@ export const Route = createFileRoute("/more")({
           "Explore more betting options at 1xBET India. Virtual sports, Toto, TV games, politics and special markets.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/more/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/more" }],
   }),
   component: () => (
     <SEOPage

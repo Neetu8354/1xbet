@@ -11,7 +11,7 @@ export const Route = createFileRoute("/other-apps")({
           "Download other 1xBET India apps. Desktop app, Windows app, and alternative platforms.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/other-apps/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/other-apps" }],
   }),
   component: () => (
     <SEOPage

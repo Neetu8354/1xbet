@@ -11,7 +11,7 @@ export const Route = createFileRoute("/full-version")({
           "Access the full version of 1xBET India website. Complete sportsbook, casino and all features.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/full-version/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/full-version" }],
   }),
   component: () => (
     <SEOPage

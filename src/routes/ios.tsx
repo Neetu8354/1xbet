@@ -11,7 +11,7 @@ export const Route = createFileRoute("/ios")({
           "Download the 1xBET India iOS app for iPhone and iPad. Bet on sports and play casino games on your Apple device.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/ios/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/ios" }],
   }),
   component: () => (
     <SEOPage

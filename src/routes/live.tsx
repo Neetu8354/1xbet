@@ -11,7 +11,7 @@ export const Route = createFileRoute("/live")({
           "Live in-play betting at 1xBET India. Bet on live cricket, football, tennis and more with real-time odds and live streaming.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/live/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/live" }],
   }),
   component: () => (
     <SEOPage

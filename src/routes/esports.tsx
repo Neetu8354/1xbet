@@ -11,7 +11,7 @@ export const Route = createFileRoute("/esports")({
           "Bet on esports at 1xBET India. CS2, Dota 2, League of Legends, Valorant and more. Live odds on all major esports tournaments.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/esports/" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/esports" }],
   }),
   component: () => (
     <SEOPage

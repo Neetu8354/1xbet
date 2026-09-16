@@ -255,17 +255,17 @@ function Sportsbook() {
           </div>
         </div>
         <nav className="hidden h-9 items-center gap-7 bg-brand px-3 text-xs font-bold uppercase lg:flex">
-          <a href="/top-events/">
+          <a href="/top-events">
             <Trophy className="mr-1 inline size-4" /> Top-events
           </a>
-          <a href="/sports/">Sports⌄</a>
-          <a href="/live/">Live⌄</a>
-          <a href="/1xgames/">1xGames⌄</a>
-          <a href="/casino/">Casino⌄</a>
-          <a href="/live-casino/">Live Casino⌄</a>
-          <a href="/esports/">Esports⌄</a>
-          <a href="/promo/">Promo⌄</a>
-          <a href="/more/">More⌄</a>
+          <a href="/sports">Sports⌄</a>
+          <a href="/live">Live⌄</a>
+          <a href="/1xgames">1xGames⌄</a>
+          <a href="/casino">Casino⌄</a>
+          <a href="/live-casino">Live Casino⌄</a>
+          <a href="/esports">Esports⌄</a>
+          <a href="/promo">Promo⌄</a>
+          <a href="/more">More⌄</a>
         </nav>
       </header>
 
@@ -328,12 +328,12 @@ function Sportsbook() {
               while our 1xGames offer instant entertainment.
             </p>
             <p className="mt-3">
-              <a href="/responsible-gaming/" className="text-brand underline">
+              <a href="/responsible-gaming" className="text-brand underline">
                 Play responsibly
               </a>
               . You must be 18 or older to use this platform. If you have concerns about gambling,
               please visit our{" "}
-              <a href="/responsible-gaming/" className="text-brand underline">
+              <a href="/responsible-gaming" className="text-brand underline">
                 Responsible Gaming
               </a>{" "}
               page.
@@ -1114,45 +1114,45 @@ function Footer() {
     {
       title: "1XBET",
       links: [
-        { label: "About us", href: "/about/" },
-        { label: "Terms and Conditions", href: "/terms/" },
-        { label: "Affiliate Program", href: "/affiliate/" },
-        { label: "Become an agent", href: "/become-agent/" },
-        { label: "Privacy Policy", href: "/privacy/" },
-        { label: "Cookie Policy", href: "/cookies/" },
-        { label: "Contacts", href: "/contacts/" },
+        { label: "About us", href: "/about" },
+        { label: "Terms and Conditions", href: "/terms" },
+        { label: "Affiliate Program", href: "/affiliate" },
+        { label: "Become an agent", href: "/become-agent" },
+        { label: "Privacy Policy", href: "/privacy" },
+        { label: "Cookie Policy", href: "/cookies" },
+        { label: "Contacts", href: "/contacts" },
       ],
     },
     {
       title: "BETTING",
       links: [
-        { label: "Sports", href: "/sports/" },
-        { label: "MultiLIVE", href: "/multi-live/" },
-        { label: "Live", href: "/live/" },
-        { label: "Toto", href: "/toto/" },
+        { label: "Sports", href: "/sports" },
+        { label: "MultiLIVE", href: "/multi-live" },
+        { label: "Live", href: "/live" },
+        { label: "Toto", href: "/toto" },
       ],
     },
     {
       title: "GAMES",
       links: [
-        { label: "Casino", href: "/casino/" },
-        { label: "1xGames", href: "/1xgames/" },
-        { label: "Live Casino", href: "/live-casino/" },
+        { label: "Casino", href: "/casino" },
+        { label: "1xGames", href: "/1xgames" },
+        { label: "Live Casino", href: "/live-casino" },
       ],
     },
     {
       title: "STATISTICS",
       links: [
-        { label: "Statistics", href: "/statistics/" },
-        { label: "Results", href: "/results/" },
+        { label: "Statistics", href: "/statistics" },
+        { label: "Results", href: "/results" },
       ],
     },
     {
       title: "USEFUL LINKS",
       links: [
-        { label: "Payment methods", href: "/payment-methods/" },
-        { label: "Mobile version", href: "/mobile/" },
-        { label: "Registration", href: "/registration/" },
+        { label: "Payment methods", href: "/payment-methods" },
+        { label: "Mobile version", href: "/mobile" },
+        { label: "Registration", href: "/registration" },
       ],
     },
   ];
@@ -1198,13 +1198,13 @@ function Footer() {
         <p className="text-center text-xs text-primary-foreground/80">
           1xBet uses cookies to ensure the best user experience. By remaining on the website, you
           consent to the use of your cookie files on 1xBet.{" "}
-          <a href="/cookies/" className="underline">
+          <a href="/cookies" className="underline">
             Find out more
           </a>
         </p>
         <div className="flex items-center justify-between gap-2 text-xs text-primary-foreground">
           <span className="rounded-md bg-brand px-3 py-2 font-bold">18+</span>
-          <a href="/full-version/" className="underline">
+          <a href="/full-version" className="underline">
             Go to the full version of the website
           </a>
           <span className="rounded-md bg-brand px-3 py-2 font-bold">EN ⌄</span>
@@ -1228,17 +1228,14 @@ function Footer() {
         <div>
           <b className="text-sm">APPS</b>
           <div className="mt-2 space-y-1 text-xs leading-6 opacity-80">
-            <a href="/ios/" className="flex cursor-pointer items-center gap-1 hover:opacity-100">
+            <a href="/ios" className="flex cursor-pointer items-center gap-1 hover:opacity-100">
               <Apple className="size-3.5" /> iOS
             </a>
-            <a
-              href="/android/"
-              className="flex cursor-pointer items-center gap-1 hover:opacity-100"
-            >
+            <a href="/android" className="flex cursor-pointer items-center gap-1 hover:opacity-100">
               <Smartphone className="size-3.5" /> Android
             </a>
             <a
-              href="/other-apps/"
+              href="/other-apps"
               className="flex cursor-pointer items-center gap-1 hover:opacity-100"
             >
               <Download className="size-3.5" /> Other apps
@@ -1251,7 +1248,7 @@ function Footer() {
         <p className="max-w-sm text-xs opacity-80">
           Copyright © 2026 «1xBet». 1xBet uses cookies to ensure the best user experience. By
           remaining on the website, you consent to the use of your cookie files on 1xBet.{" "}
-          <a href="/cookies/" className="underline">
+          <a href="/cookies" className="underline">
             Find out more
           </a>
         </p>
