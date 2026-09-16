@@ -42,6 +42,12 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.1xbetindia.live/",
+      },
+    ],
   }),
   component: Sportsbook,
 });
@@ -245,17 +251,17 @@ function Sportsbook() {
           </div>
         </div>
         <nav className="hidden h-9 items-center gap-7 bg-brand px-3 text-xs font-bold uppercase lg:flex">
-          <span>
+          <a href="/top-events/">
             <Trophy className="mr-1 inline size-4" /> Top-events
-          </span>
-          <span>Sports⌄</span>
-          <span>Live⌄</span>
-          <span>1xGames⌄</span>
-          <span>Casino⌄</span>
-          <span>Live Casino⌄</span>
-          <span>Esports⌄</span>
-          <span>Promo⌄</span>
-          <span>More⌄</span>
+          </a>
+          <a href="/sports/">Sports⌄</a>
+          <a href="/live/">Live⌄</a>
+          <a href="/1xgames/">1xGames⌄</a>
+          <a href="/casino/">Casino⌄</a>
+          <a href="/live-casino/">Live Casino⌄</a>
+          <a href="/esports/">Esports⌄</a>
+          <a href="/promo/">Promo⌄</a>
+          <a href="/more/">More⌄</a>
         </nav>
       </header>
 
@@ -1056,19 +1062,47 @@ function Footer() {
     {
       title: "1XBET",
       links: [
-        "About us",
-        "Terms and Conditions",
-        "Affiliate Program",
-        "Become an agent",
-        "Privacy Policy",
-        "Cookie Policy",
-        "Contacts",
+        { label: "About us", href: "/about/" },
+        { label: "Terms and Conditions", href: "/terms/" },
+        { label: "Affiliate Program", href: "/affiliate/" },
+        { label: "Become an agent", href: "/become-agent/" },
+        { label: "Privacy Policy", href: "/privacy/" },
+        { label: "Cookie Policy", href: "/cookies/" },
+        { label: "Contacts", href: "/contacts/" },
       ],
     },
-    { title: "BETTING", links: ["Sports", "MultiLIVE", "Live", "Toto"] },
-    { title: "GAMES", links: ["Casino", "1xGames", "Live Casino"] },
-    { title: "STATISTICS", links: ["Statistics", "Results"] },
-    { title: "USEFUL LINKS", links: ["Payment methods", "Mobile version", "Registration"] },
+    {
+      title: "BETTING",
+      links: [
+        { label: "Sports", href: "/sports/" },
+        { label: "MultiLIVE", href: "/multi-live/" },
+        { label: "Live", href: "/live/" },
+        { label: "Toto", href: "/toto/" },
+      ],
+    },
+    {
+      title: "GAMES",
+      links: [
+        { label: "Casino", href: "/casino/" },
+        { label: "1xGames", href: "/1xgames/" },
+        { label: "Live Casino", href: "/live-casino/" },
+      ],
+    },
+    {
+      title: "STATISTICS",
+      links: [
+        { label: "Statistics", href: "/statistics/" },
+        { label: "Results", href: "/results/" },
+      ],
+    },
+    {
+      title: "USEFUL LINKS",
+      links: [
+        { label: "Payment methods", href: "/payment-methods/" },
+        { label: "Mobile version", href: "/mobile/" },
+        { label: "Registration", href: "/registration/" },
+      ],
+    },
   ];
   return (
     <footer className="mt-2 bg-brand-deep p-3 pb-20 text-primary-foreground lg:pb-3">
@@ -1112,13 +1146,13 @@ function Footer() {
         <p className="text-center text-xs text-primary-foreground/80">
           1xBet uses cookies to ensure the best user experience. By remaining on the website, you
           consent to the use of your cookie files on 1xBet.{" "}
-          <a href="#" className="underline">
+          <a href="/cookies/" className="underline">
             Find out more
           </a>
         </p>
         <div className="flex items-center justify-between gap-2 text-xs text-primary-foreground">
           <span className="rounded-md bg-brand px-3 py-2 font-bold">18+</span>
-          <a href="#" className="underline">
+          <a href="/full-version/" className="underline">
             Go to the full version of the website
           </a>
           <span className="rounded-md bg-brand px-3 py-2 font-bold">EN ⌄</span>
@@ -1132,9 +1166,9 @@ function Footer() {
             <b className="text-sm">{group.title}</b>
             <p className="mt-2 space-y-1 text-xs leading-6 opacity-80">
               {group.links.map((l) => (
-                <span key={l} className="block cursor-pointer hover:opacity-100">
-                  {l}
-                </span>
+                <a key={l.label} href={l.href} className="block cursor-pointer hover:opacity-100">
+                  {l.label}
+                </a>
               ))}
             </p>
           </div>
@@ -1142,15 +1176,21 @@ function Footer() {
         <div>
           <b className="text-sm">APPS</b>
           <div className="mt-2 space-y-1 text-xs leading-6 opacity-80">
-            <span className="flex cursor-pointer items-center gap-1 hover:opacity-100">
+            <a href="/ios/" className="flex cursor-pointer items-center gap-1 hover:opacity-100">
               <Apple className="size-3.5" /> iOS
-            </span>
-            <span className="flex cursor-pointer items-center gap-1 hover:opacity-100">
+            </a>
+            <a
+              href="/android/"
+              className="flex cursor-pointer items-center gap-1 hover:opacity-100"
+            >
               <Smartphone className="size-3.5" /> Android
-            </span>
-            <span className="flex cursor-pointer items-center gap-1 hover:opacity-100">
+            </a>
+            <a
+              href="/other-apps/"
+              className="flex cursor-pointer items-center gap-1 hover:opacity-100"
+            >
               <Download className="size-3.5" /> Other apps
-            </span>
+            </a>
           </div>
         </div>
       </div>
@@ -1159,7 +1199,7 @@ function Footer() {
         <p className="max-w-sm text-xs opacity-80">
           Copyright © 2026 «1xBet». 1xBet uses cookies to ensure the best user experience. By
           remaining on the website, you consent to the use of your cookie files on 1xBet.{" "}
-          <a href="#" className="underline">
+          <a href="/cookies/" className="underline">
             Find out more
           </a>
         </p>

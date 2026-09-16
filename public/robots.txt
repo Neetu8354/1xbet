@@ -12,3 +12,12 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /search/
+Disallow: /checkout/
+Disallow: /account/
+
+Sitemap: https://www.1xbetindia.live/sitemap.xml
