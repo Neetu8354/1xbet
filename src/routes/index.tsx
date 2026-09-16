@@ -28,16 +28,20 @@ import { Input } from "@/components/ui/input";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "1xBET — Online Sports Betting" },
+      { title: "1xBET India — Online Sports Betting, Live Casino & Cricket Betting" },
       {
         name: "description",
         content:
-          "Explore live and upcoming football markets in a responsive sportsbook interface demo.",
+          "1xBET India — your premier destination for online sports betting, live casino games, cricket betting, esports and more. Place bets on live matches, enjoy 1xGames, and get exclusive bonuses.",
       },
-      { property: "og:title", content: "1xBET — Online Sports Betting" },
+      {
+        property: "og:title",
+        content: "1xBET India — Online Sports Betting, Live Casino & Cricket Betting",
+      },
       {
         property: "og:description",
-        content: "Live scores, match markets, promotions, and an interactive demo bet slip.",
+        content:
+          "1xBET India — your premier destination for online sports betting, live casino games, cricket betting, esports and more. Place bets on live matches, enjoy 1xGames, and get exclusive bonuses.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -269,6 +273,9 @@ function Sportsbook() {
         <LeftSidebar activeSport={activeSport} setActiveSport={setActiveSport} />
 
         <section className="min-w-0">
+          <h1 className="sr-only">
+            1xBET India — Online Sports Betting, Live Casino &amp; Cricket Betting
+          </h1>
           <Promo />
           <GameStrip />
           <Marquee />
@@ -402,7 +409,7 @@ const promoSlides = [
   {
     eyebrow: "Welcome bonus",
     title: "100% first deposit bonus",
-    sub: "Sign up and get up to $130 on your first deposit.",
+    sub: "Sign up and get up to ₹10,000 on your first deposit.",
     image: "/assets/games/1xgames.jpg",
   },
   {
@@ -462,9 +469,9 @@ function Promo() {
       <div className="absolute inset-0 bg-gradient-to-r from-brand-deep/90 via-brand/50 to-transparent" />
       <div className="relative flex h-full flex-col justify-center px-6 py-7 lg:px-12 lg:py-10">
         <p className="text-xs font-bold uppercase text-primary">{active.eyebrow}</p>
-        <h1 className="mt-2 max-w-md text-2xl font-extrabold uppercase leading-tight lg:text-4xl">
+        <h2 className="mt-2 max-w-md text-2xl font-extrabold uppercase leading-tight lg:text-4xl">
           {active.title}
-        </h1>
+        </h2>
         <p className="mt-2 hidden max-w-sm text-sm sm:block">{active.sub}</p>
         <div className="mt-4">
           <Button className="h-8 uppercase" data-guard>
@@ -757,14 +764,14 @@ function RightSidebar({
             By phone
           </Button>
         </div>
-        <Input value="Demo region" readOnly className="mb-2 bg-card" />
-        <Input value="USD" readOnly className="mb-2 bg-card" />
+        <Input value="India" readOnly className="mb-2 bg-card" />
+        <Input value="INR ₹" readOnly className="mb-2 bg-card" />
         <Input placeholder="Promo code" className="mb-2 bg-card" />
         <Button className="w-full" data-guard>
           REGISTER
         </Button>
         <p className="mt-2 text-center text-[9px] text-muted-foreground">
-          Demo only — no real account or payment is created.
+          Create your account and start betting online.
         </p>
       </div>
       <div className="mt-2 bg-brand p-2 text-center font-bold text-primary-foreground">
@@ -782,7 +789,7 @@ function RightSidebar({
         <Zap className="mb-2 size-8 text-brand-light" />
         <b>BET SLIP GENERATOR</b>
         <p className="my-2 text-xs">
-          Enter your parameters and we will generate a demo slip for you.
+          Enter your parameters and we will generate a betting slip for you.
         </p>
         <Button className="w-full" data-guard>
           GENERATE
@@ -1107,7 +1114,7 @@ function Footer() {
   return (
     <footer className="mt-2 bg-brand-deep p-3 pb-20 text-primary-foreground lg:pb-3">
       <div className="space-y-2 lg:space-y-1">
-        {["1xBET Login – Online Bookmaker in Armenia", "Popular events and sports news", "FAQ"].map(
+        {["1xBET Login – Online Bookmaker in India", "Popular events and sports news", "FAQ"].map(
           (x) => (
             <div
               key={x}

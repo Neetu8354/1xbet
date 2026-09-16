@@ -73,10 +73,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "1xBET — Online Sports Betting" },
+      { title: "1xBET India — Online Sports Betting, Live Casino & Cricket Betting" },
       {
         name: "description",
-        content: "A responsive sportsbook interface demo with live events and interactive odds.",
+        content:
+          "1xBET India — your premier destination for online sports betting, live casino games, cricket betting, esports and more. Place bets on live matches, enjoy 1xGames, and get exclusive bonuses.",
       },
       { name: "author", content: "1xBET" },
       { name: "google-site-verification", content: "ubhMdETu1c-wjXvHxR9f1ur3Or0GaaoXqa5tJSVDQ_I" },
@@ -94,6 +95,49 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700;800&display=swap",
+      },
+      { rel: "canonical", href: "https://www.1xbetindia.live/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "1xBET India",
+          url: "https://www.1xbetindia.live",
+          logo: "https://www.1xbetindia.live/assets/brand/logo-dark.svg",
+          sameAs: [],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "1xBET India",
+          url: "https://www.1xbetindia.live",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://www.1xbetindia.live/search?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.1xbetindia.live/",
+            },
+          ],
+        }),
       },
     ],
   }),
