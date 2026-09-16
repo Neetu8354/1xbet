@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
+import { SiteFooter, SiteHeader, SiteMobileNav } from "../components/SiteChrome";
 
 const SITE_URL = "https://www.1xbetindia.live";
 
@@ -88,49 +89,56 @@ export const Route = createFileRoute("/faq")({
 
 function FaqPage() {
   return (
-    <main className="mx-auto max-w-3xl px-4 py-6 lg:px-6 lg:py-8">
-      <nav aria-label="Breadcrumb" className="mb-4 text-sm text-muted-foreground">
-        <Link to="/" className="hover:underline">
-          Home
-        </Link>
-        <span className="mx-1">/</span>
-        <span>FAQ</span>
-      </nav>
+    <div className="min-h-screen bg-background pb-16 lg:pb-0">
+      <SiteHeader />
+      <main className="mx-auto max-w-3xl px-4 py-6 lg:px-6 lg:py-8">
+        <nav aria-label="Breadcrumb" className="mb-4 text-sm text-muted-foreground">
+          <Link to="/" className="hover:underline">
+            Home
+          </Link>
+          <span className="mx-1">/</span>
+          <span>FAQ</span>
+        </nav>
 
-      <h1 className="text-2xl font-bold tracking-tight lg:text-3xl">Frequently Asked Questions</h1>
-      <p className="mt-2 text-base text-muted-foreground lg:text-lg">
-        Answers to common questions about betting, payments, bonuses and your 1xBET India account.
-      </p>
-
-      <div className="mt-6 space-y-3">
-        {faqs.map((f) => (
-          <details key={f.q} className="rounded-md border bg-card p-4 open:pb-4">
-            <summary className="cursor-pointer font-semibold text-foreground">{f.q}</summary>
-            <p className="mt-2 text-sm leading-6 text-muted-foreground">{f.a}</p>
-          </details>
-        ))}
-      </div>
-
-      <div className="mt-8 rounded-md border bg-muted/50 p-4">
-        <h2 className="mb-2 font-semibold">Still need help?</h2>
-        <p className="text-sm text-muted-foreground">
-          Our support team is available 24/7. Visit the{" "}
-          <Link to="/help" className="text-brand underline hover:no-underline">
-            Help Centre
-          </Link>{" "}
-          or{" "}
-          <Link to="/contact" className="text-brand underline hover:no-underline">
-            contact us
-          </Link>{" "}
-          directly.
+        <h1 className="text-2xl font-bold tracking-tight lg:text-3xl">
+          Frequently Asked Questions
+        </h1>
+        <p className="mt-2 text-base text-muted-foreground lg:text-lg">
+          Answers to common questions about betting, payments, bonuses and your 1xBET India account.
         </p>
-      </div>
 
-      <div className="mt-8 border-t pt-6">
-        <Link to="/" className="text-brand underline">
-          Back to home
-        </Link>
-      </div>
-    </main>
+        <div className="mt-6 space-y-3">
+          {faqs.map((f) => (
+            <details key={f.q} className="rounded-md border bg-card p-4 open:pb-4">
+              <summary className="cursor-pointer font-semibold text-foreground">{f.q}</summary>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">{f.a}</p>
+            </details>
+          ))}
+        </div>
+
+        <div className="mt-8 rounded-md border bg-muted/50 p-4">
+          <h2 className="mb-2 font-semibold">Still need help?</h2>
+          <p className="text-sm text-muted-foreground">
+            Our support team is available 24/7. Visit the{" "}
+            <Link to="/help" className="text-brand underline hover:no-underline">
+              Help Centre
+            </Link>{" "}
+            or{" "}
+            <Link to="/contact" className="text-brand underline hover:no-underline">
+              contact us
+            </Link>{" "}
+            directly.
+          </p>
+        </div>
+
+        <div className="mt-8 border-t pt-6">
+          <Link to="/" className="text-brand underline">
+            Back to home
+          </Link>
+        </div>
+      </main>
+      <SiteFooter />
+      <SiteMobileNav />
+    </div>
   );
 }
