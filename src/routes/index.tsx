@@ -264,7 +264,7 @@ function Sportsbook() {
           <a href="/casino">Casino⌄</a>
           <a href="/live-casino">Live Casino⌄</a>
           <a href="/esports">Esports⌄</a>
-          <a href="/promo">Promo⌄</a>
+          <a href="/promotions">Promo⌄</a>
           <a href="/more">More⌄</a>
         </nav>
       </header>
@@ -367,12 +367,12 @@ function Sportsbook() {
             </Button>
           </div>
           <div className="grid grid-cols-2 gap-2 text-sm">
-            <div>Sports</div>
-            <div>Live</div>
-            <div>Casino</div>
-            <div>Promotions</div>
-            <div>Results</div>
-            <div>Support</div>
+            <a href="/sports">Sports</a>
+            <a href="/live">Live</a>
+            <a href="/casino">Casino</a>
+            <a href="/promotions">Promotions</a>
+            <a href="/results">Results</a>
+            <a href="/help">Support</a>
           </div>
         </div>
       )}
@@ -1120,13 +1120,15 @@ function Footer() {
         { label: "Become an agent", href: "/become-agent" },
         { label: "Privacy Policy", href: "/privacy" },
         { label: "Cookie Policy", href: "/cookies" },
-        { label: "Contacts", href: "/contacts" },
+        { label: "Contacts", href: "/contact" },
       ],
     },
     {
       title: "BETTING",
       links: [
         { label: "Sports", href: "/sports" },
+        { label: "Cricket", href: "/cricket" },
+        { label: "Football", href: "/football" },
         { label: "MultiLIVE", href: "/multi-live" },
         { label: "Live", href: "/live" },
         { label: "Toto", href: "/toto" },
@@ -1135,6 +1137,7 @@ function Footer() {
     {
       title: "GAMES",
       links: [
+        { label: "Games", href: "/games" },
         { label: "Casino", href: "/casino" },
         { label: "1xGames", href: "/1xgames" },
         { label: "Live Casino", href: "/live-casino" },
@@ -1150,26 +1153,33 @@ function Footer() {
     {
       title: "USEFUL LINKS",
       links: [
-        { label: "Payment methods", href: "/payment-methods" },
-        { label: "Mobile version", href: "/mobile" },
+        { label: "Payment methods", href: "/payments" },
+        { label: "Promotions", href: "/promotions" },
+        { label: "Mobile app", href: "/app" },
         { label: "Registration", href: "/registration" },
+        { label: "FAQ", href: "/faq" },
+        { label: "Help Centre", href: "/help" },
+        { label: "Responsible Gaming", href: "/responsible-gaming" },
       ],
     },
   ];
   return (
     <footer className="mt-2 bg-brand-deep p-3 pb-20 text-primary-foreground lg:pb-3">
       <div className="space-y-2 lg:space-y-1">
-        {["1xBET Login – Online Bookmaker in India", "Popular events and sports news", "FAQ"].map(
-          (x) => (
-            <div
-              key={x}
-              className="flex justify-between rounded-md bg-brand p-4 text-sm font-bold uppercase lg:rounded-sm lg:p-3"
-            >
-              {x}
-              <ChevronDown />
-            </div>
-          ),
-        )}
+        {[
+          { label: "1xBET Login – Online Bookmaker in India", href: "/about" },
+          { label: "Popular events and sports news", href: "/top-events" },
+          { label: "FAQ", href: "/faq" },
+        ].map((x) => (
+          <a
+            key={x.label}
+            href={x.href}
+            className="flex justify-between rounded-md bg-brand p-4 text-sm font-bold uppercase lg:rounded-sm lg:p-3"
+          >
+            {x.label}
+            <ChevronDown />
+          </a>
+        ))}
       </div>
 
       {/* Mobile-only: 1xLIVE / TV GAMES already rendered above; partners + app banner + socials */}

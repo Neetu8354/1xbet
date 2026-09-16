@@ -79,3 +79,44 @@ export function SEOPageBreadcrumb({ items }: { items: { name: string; url: strin
     />
   );
 }
+
+export function ArticleSchema({
+  title,
+  description,
+  url,
+  datePublished = "2026-09-16",
+  dateModified = "2026-09-16",
+}: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished?: string;
+  dateModified?: string;
+}) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: title,
+          description,
+          mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${url}` },
+          datePublished,
+          dateModified,
+          author: { "@type": "Organization", name: "1xBET India", url: SITE_URL },
+          publisher: {
+            "@type": "Organization",
+            name: "1xBET India",
+            url: SITE_URL,
+            logo: {
+              "@type": "ImageObject",
+              url: `${SITE_URL}/assets/brand/logo-dark.svg`,
+            },
+          },
+        }),
+      }}
+    />
+  );
+}

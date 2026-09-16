@@ -11,7 +11,7 @@ export const Route = createFileRoute("/payment-methods")({
           "Payment methods at 1xBET India. UPI, NetBanking, cards, e-wallets and cryptocurrency deposits and withdrawals.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/payment-methods" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/payments" }],
   }),
   component: () => (
     <SEOPage

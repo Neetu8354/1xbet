@@ -11,7 +11,7 @@ export const Route = createFileRoute("/promo")({
           "Exclusive promotions and bonuses at 1xBET India. Welcome bonus, cashback offers, free bets and special promotions.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/promo" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/promotions" }],
   }),
   component: () => (
     <SEOPage

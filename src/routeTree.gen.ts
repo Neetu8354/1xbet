@@ -14,14 +14,19 @@ import { Route as R1xgamesRouteImport } from './routes/1xgames'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AffiliateRouteImport } from './routes/affiliate'
 import { Route as AndroidRouteImport } from './routes/android'
+import { Route as AppRouteImport } from './routes/app'
 import { Route as BecomeAgentRouteImport } from './routes/become-agent'
 import { Route as CasinoRouteImport } from './routes/casino'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ContactsRouteImport } from './routes/contacts'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as CricketRouteImport } from './routes/cricket'
 import { Route as EsportsRouteImport } from './routes/esports'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FootballRouteImport } from './routes/football'
 import { Route as FullVersionRouteImport } from './routes/full-version'
+import { Route as GamesRouteImport } from './routes/games'
+import { Route as HelpRouteImport } from './routes/help'
 import { Route as IosRouteImport } from './routes/ios'
 import { Route as LiveRouteImport } from './routes/live'
 import { Route as LiveCasinoRouteImport } from './routes/live-casino'
@@ -30,8 +35,10 @@ import { Route as MoreRouteImport } from './routes/more'
 import { Route as MultiLiveRouteImport } from './routes/multi-live'
 import { Route as OtherAppsRouteImport } from './routes/other-apps'
 import { Route as PaymentMethodsRouteImport } from './routes/payment-methods'
+import { Route as PaymentsRouteImport } from './routes/payments'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PromoRouteImport } from './routes/promo'
+import { Route as PromotionsRouteImport } from './routes/promotions'
 import { Route as RegistrationRouteImport } from './routes/registration'
 import { Route as ResponsibleGamingRouteImport } from './routes/responsible-gaming'
 import { Route as ResultsRouteImport } from './routes/results'
@@ -66,6 +73,11 @@ const AndroidRoute = AndroidRouteImport.update({
   path: '/android',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AppRoute = AppRouteImport.update({
+  id: '/app',
+  path: '/app',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BecomeAgentRoute = BecomeAgentRouteImport.update({
   id: '/become-agent',
   path: '/become-agent',
@@ -74,6 +86,11 @@ const BecomeAgentRoute = BecomeAgentRouteImport.update({
 const CasinoRoute = CasinoRouteImport.update({
   id: '/casino',
   path: '/casino',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactsRoute = ContactsRouteImport.update({
@@ -96,6 +113,11 @@ const EsportsRoute = EsportsRouteImport.update({
   path: '/esports',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FootballRoute = FootballRouteImport.update({
   id: '/football',
   path: '/football',
@@ -104,6 +126,16 @@ const FootballRoute = FootballRouteImport.update({
 const FullVersionRoute = FullVersionRouteImport.update({
   id: '/full-version',
   path: '/full-version',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GamesRoute = GamesRouteImport.update({
+  id: '/games',
+  path: '/games',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HelpRoute = HelpRouteImport.update({
+  id: '/help',
+  path: '/help',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IosRoute = IosRouteImport.update({
@@ -146,6 +178,11 @@ const PaymentMethodsRoute = PaymentMethodsRouteImport.update({
   path: '/payment-methods',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PaymentsRoute = PaymentsRouteImport.update({
+  id: '/payments',
+  path: '/payments',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
@@ -154,6 +191,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const PromoRoute = PromoRouteImport.update({
   id: '/promo',
   path: '/promo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PromotionsRoute = PromotionsRouteImport.update({
+  id: '/promotions',
+  path: '/promotions',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RegistrationRoute = RegistrationRouteImport.update({
@@ -203,14 +245,19 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/affiliate': typeof AffiliateRoute
   '/android': typeof AndroidRoute
+  '/app': typeof AppRoute
   '/become-agent': typeof BecomeAgentRoute
   '/casino': typeof CasinoRoute
+  '/contact': typeof ContactRoute
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
   '/esports': typeof EsportsRoute
+  '/faq': typeof FaqRoute
   '/football': typeof FootballRoute
   '/full-version': typeof FullVersionRoute
+  '/games': typeof GamesRoute
+  '/help': typeof HelpRoute
   '/ios': typeof IosRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
@@ -219,8 +266,10 @@ export interface FileRoutesByFullPath {
   '/multi-live': typeof MultiLiveRoute
   '/other-apps': typeof OtherAppsRoute
   '/payment-methods': typeof PaymentMethodsRoute
+  '/payments': typeof PaymentsRoute
   '/privacy': typeof PrivacyRoute
   '/promo': typeof PromoRoute
+  '/promotions': typeof PromotionsRoute
   '/registration': typeof RegistrationRoute
   '/responsible-gaming': typeof ResponsibleGamingRoute
   '/results': typeof ResultsRoute
@@ -236,14 +285,19 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/affiliate': typeof AffiliateRoute
   '/android': typeof AndroidRoute
+  '/app': typeof AppRoute
   '/become-agent': typeof BecomeAgentRoute
   '/casino': typeof CasinoRoute
+  '/contact': typeof ContactRoute
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
   '/esports': typeof EsportsRoute
+  '/faq': typeof FaqRoute
   '/football': typeof FootballRoute
   '/full-version': typeof FullVersionRoute
+  '/games': typeof GamesRoute
+  '/help': typeof HelpRoute
   '/ios': typeof IosRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
@@ -252,8 +306,10 @@ export interface FileRoutesByTo {
   '/multi-live': typeof MultiLiveRoute
   '/other-apps': typeof OtherAppsRoute
   '/payment-methods': typeof PaymentMethodsRoute
+  '/payments': typeof PaymentsRoute
   '/privacy': typeof PrivacyRoute
   '/promo': typeof PromoRoute
+  '/promotions': typeof PromotionsRoute
   '/registration': typeof RegistrationRoute
   '/responsible-gaming': typeof ResponsibleGamingRoute
   '/results': typeof ResultsRoute
@@ -270,14 +326,19 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/affiliate': typeof AffiliateRoute
   '/android': typeof AndroidRoute
+  '/app': typeof AppRoute
   '/become-agent': typeof BecomeAgentRoute
   '/casino': typeof CasinoRoute
+  '/contact': typeof ContactRoute
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
   '/esports': typeof EsportsRoute
+  '/faq': typeof FaqRoute
   '/football': typeof FootballRoute
   '/full-version': typeof FullVersionRoute
+  '/games': typeof GamesRoute
+  '/help': typeof HelpRoute
   '/ios': typeof IosRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
@@ -286,8 +347,10 @@ export interface FileRoutesById {
   '/multi-live': typeof MultiLiveRoute
   '/other-apps': typeof OtherAppsRoute
   '/payment-methods': typeof PaymentMethodsRoute
+  '/payments': typeof PaymentsRoute
   '/privacy': typeof PrivacyRoute
   '/promo': typeof PromoRoute
+  '/promotions': typeof PromotionsRoute
   '/registration': typeof RegistrationRoute
   '/responsible-gaming': typeof ResponsibleGamingRoute
   '/results': typeof ResultsRoute
@@ -305,14 +368,19 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate'
     | '/android'
+    | '/app'
     | '/become-agent'
     | '/casino'
+    | '/contact'
     | '/contacts'
     | '/cookies'
     | '/cricket'
     | '/esports'
+    | '/faq'
     | '/football'
     | '/full-version'
+    | '/games'
+    | '/help'
     | '/ios'
     | '/live'
     | '/live-casino'
@@ -321,8 +389,10 @@ export interface FileRouteTypes {
     | '/multi-live'
     | '/other-apps'
     | '/payment-methods'
+    | '/payments'
     | '/privacy'
     | '/promo'
+    | '/promotions'
     | '/registration'
     | '/responsible-gaming'
     | '/results'
@@ -338,14 +408,19 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate'
     | '/android'
+    | '/app'
     | '/become-agent'
     | '/casino'
+    | '/contact'
     | '/contacts'
     | '/cookies'
     | '/cricket'
     | '/esports'
+    | '/faq'
     | '/football'
     | '/full-version'
+    | '/games'
+    | '/help'
     | '/ios'
     | '/live'
     | '/live-casino'
@@ -354,8 +429,10 @@ export interface FileRouteTypes {
     | '/multi-live'
     | '/other-apps'
     | '/payment-methods'
+    | '/payments'
     | '/privacy'
     | '/promo'
+    | '/promotions'
     | '/registration'
     | '/responsible-gaming'
     | '/results'
@@ -371,14 +448,19 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate'
     | '/android'
+    | '/app'
     | '/become-agent'
     | '/casino'
+    | '/contact'
     | '/contacts'
     | '/cookies'
     | '/cricket'
     | '/esports'
+    | '/faq'
     | '/football'
     | '/full-version'
+    | '/games'
+    | '/help'
     | '/ios'
     | '/live'
     | '/live-casino'
@@ -387,8 +469,10 @@ export interface FileRouteTypes {
     | '/multi-live'
     | '/other-apps'
     | '/payment-methods'
+    | '/payments'
     | '/privacy'
     | '/promo'
+    | '/promotions'
     | '/registration'
     | '/responsible-gaming'
     | '/results'
@@ -405,14 +489,19 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AffiliateRoute: typeof AffiliateRoute
   AndroidRoute: typeof AndroidRoute
+  AppRoute: typeof AppRoute
   BecomeAgentRoute: typeof BecomeAgentRoute
   CasinoRoute: typeof CasinoRoute
+  ContactRoute: typeof ContactRoute
   ContactsRoute: typeof ContactsRoute
   CookiesRoute: typeof CookiesRoute
   CricketRoute: typeof CricketRoute
   EsportsRoute: typeof EsportsRoute
+  FaqRoute: typeof FaqRoute
   FootballRoute: typeof FootballRoute
   FullVersionRoute: typeof FullVersionRoute
+  GamesRoute: typeof GamesRoute
+  HelpRoute: typeof HelpRoute
   IosRoute: typeof IosRoute
   LiveRoute: typeof LiveRoute
   LiveCasinoRoute: typeof LiveCasinoRoute
@@ -421,8 +510,10 @@ export interface RootRouteChildren {
   MultiLiveRoute: typeof MultiLiveRoute
   OtherAppsRoute: typeof OtherAppsRoute
   PaymentMethodsRoute: typeof PaymentMethodsRoute
+  PaymentsRoute: typeof PaymentsRoute
   PrivacyRoute: typeof PrivacyRoute
   PromoRoute: typeof PromoRoute
+  PromotionsRoute: typeof PromotionsRoute
   RegistrationRoute: typeof RegistrationRoute
   ResponsibleGamingRoute: typeof ResponsibleGamingRoute
   ResultsRoute: typeof ResultsRoute
@@ -470,6 +561,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AndroidRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/app': {
+      id: '/app'
+      path: '/app'
+      fullPath: '/app'
+      preLoaderRoute: typeof AppRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/become-agent': {
       id: '/become-agent'
       path: '/become-agent'
@@ -482,6 +580,13 @@ declare module '@tanstack/react-router' {
       path: '/casino'
       fullPath: '/casino'
       preLoaderRoute: typeof CasinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contacts': {
@@ -512,6 +617,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EsportsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/football': {
       id: '/football'
       path: '/football'
@@ -524,6 +636,20 @@ declare module '@tanstack/react-router' {
       path: '/full-version'
       fullPath: '/full-version'
       preLoaderRoute: typeof FullVersionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/games': {
+      id: '/games'
+      path: '/games'
+      fullPath: '/games'
+      preLoaderRoute: typeof GamesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/help': {
+      id: '/help'
+      path: '/help'
+      fullPath: '/help'
+      preLoaderRoute: typeof HelpRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ios': {
@@ -582,6 +708,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PaymentMethodsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/payments': {
+      id: '/payments'
+      path: '/payments'
+      fullPath: '/payments'
+      preLoaderRoute: typeof PaymentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -594,6 +727,13 @@ declare module '@tanstack/react-router' {
       path: '/promo'
       fullPath: '/promo'
       preLoaderRoute: typeof PromoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/promotions': {
+      id: '/promotions'
+      path: '/promotions'
+      fullPath: '/promotions'
+      preLoaderRoute: typeof PromotionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/registration': {
@@ -661,14 +801,19 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AffiliateRoute: AffiliateRoute,
   AndroidRoute: AndroidRoute,
+  AppRoute: AppRoute,
   BecomeAgentRoute: BecomeAgentRoute,
   CasinoRoute: CasinoRoute,
+  ContactRoute: ContactRoute,
   ContactsRoute: ContactsRoute,
   CookiesRoute: CookiesRoute,
   CricketRoute: CricketRoute,
   EsportsRoute: EsportsRoute,
+  FaqRoute: FaqRoute,
   FootballRoute: FootballRoute,
   FullVersionRoute: FullVersionRoute,
+  GamesRoute: GamesRoute,
+  HelpRoute: HelpRoute,
   IosRoute: IosRoute,
   LiveRoute: LiveRoute,
   LiveCasinoRoute: LiveCasinoRoute,
@@ -677,8 +822,10 @@ const rootRouteChildren: RootRouteChildren = {
   MultiLiveRoute: MultiLiveRoute,
   OtherAppsRoute: OtherAppsRoute,
   PaymentMethodsRoute: PaymentMethodsRoute,
+  PaymentsRoute: PaymentsRoute,
   PrivacyRoute: PrivacyRoute,
   PromoRoute: PromoRoute,
+  PromotionsRoute: PromotionsRoute,
   RegistrationRoute: RegistrationRoute,
   ResponsibleGamingRoute: ResponsibleGamingRoute,
   ResultsRoute: ResultsRoute,

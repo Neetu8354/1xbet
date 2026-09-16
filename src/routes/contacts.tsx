@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contacts")({
           "Contact 1xBET India support team. Get help with your account, deposits, withdrawals and betting queries.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/contacts" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/contact" }],
   }),
   component: () => (
     <SEOPage

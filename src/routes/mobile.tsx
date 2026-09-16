@@ -11,7 +11,7 @@ export const Route = createFileRoute("/mobile")({
           "Download the 1xBET India mobile app for iOS and Android. Bet on sports and play casino games on the go.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/mobile" }],
+    links: [{ rel: "canonical", href: "https://www.1xbetindia.live/app" }],
   }),
   component: () => (
     <SEOPage
