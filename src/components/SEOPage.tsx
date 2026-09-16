@@ -7,11 +7,13 @@ export function SEOPage({
   title,
   description,
   content,
+  sections,
   children,
 }: {
   title: string;
   description: string;
-  content: string;
+  content?: string;
+  sections?: { heading: string; body: React.ReactNode }[];
   children?: React.ReactNode;
 }) {
   return (
@@ -29,7 +31,18 @@ export function SEOPage({
         <h1 className="text-2xl font-bold tracking-tight lg:text-3xl">{title}</h1>
         <p className="mt-2 text-base text-muted-foreground lg:text-lg">{description}</p>
 
-        <div className="mt-6 whitespace-pre-line text-sm leading-7 text-foreground">{content}</div>
+        {content ? (
+          <div className="mt-6 whitespace-pre-line text-sm leading-7 text-foreground">
+            {content}
+          </div>
+        ) : null}
+
+        {sections?.map((s) => (
+          <section key={s.heading} className="mt-6">
+            <h2 className="text-lg font-bold text-foreground">{s.heading}</h2>
+            <div className="mt-2 text-sm leading-7 text-foreground">{s.body}</div>
+          </section>
+        ))}
 
         {children}
 

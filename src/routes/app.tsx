@@ -8,7 +8,7 @@ export const Route = createFileRoute("/app")({
       {
         name: "description",
         content:
-          "Download the 1xBET India app for Android (APK) and iOS. Bet on sports, play casino games and manage your account on the go.",
+          "Download the 1xBET India app for Android (APK) and iOS. Bet on sports, play casino games, deposit via UPI and get push notifications on the go.",
       },
       { property: "og:title", content: "1xBET App — Download for Android & iOS" },
       {
@@ -25,29 +25,82 @@ export const Route = createFileRoute("/app")({
       <SEOPageBreadcrumb
         items={[
           { name: "Home", url: "/" },
-          { name: "App", url: "/app" },
+          { name: "Mobile App", url: "/app" },
         ]}
       />
       <SEOPage
         title="1xBET Mobile App"
         description="Download the 1xBET India app for Android and iOS"
-        content={`
-Bet anytime, anywhere with the official 1xBET India mobile app. The app gives you full access to the sportsbook, live betting, casino games and account management in a fast, lightweight package.
-
-Available platforms:
-- Android: download the APK directly from our website
-- iOS: available for iPhone and iPad
-- Mobile web: no download required — works in any browser
-
-App features:
-- Live in-play betting with real-time odds updates
-- Instant deposits and withdrawals via UPI and e-wallets
-- Push notifications for match results and promotions
-- Full casino and 1xGames library
-- Secure biometric login
-
-System requirements: Android 5.0+ or iOS 12+. The APK is approximately 40 MB.
-        `}
+        sections={[
+          {
+            heading: "Bet anywhere with the 1xBET app",
+            body: (
+              <p>
+                The official 1xBET India app puts the full sportsbook,{" "}
+                <a href="/live" className="text-brand underline">
+                  live betting
+                </a>
+                ,{" "}
+                <a href="/casino" className="text-brand underline">
+                  casino
+                </a>{" "}
+                and{" "}
+                <a href="/games" className="text-brand underline">
+                  games
+                </a>{" "}
+                library in your pocket. It is faster than the mobile site, uses less data and keeps
+                you logged in securely.
+              </p>
+            ),
+          },
+          {
+            heading: "Download for Android (APK)",
+            body: (
+              <p>
+                Download the Android APK directly from our{" "}
+                <a href="/android" className="text-brand underline">
+                  Android page
+                </a>
+                . The file is about 40 MB and requires Android 5.0 or later. Enable "install from
+                unknown sources" once, install, log in and you are ready to bet.
+              </p>
+            ),
+          },
+          {
+            heading: "Download for iOS",
+            body: (
+              <p>
+                iPhone and iPad users can get the app via our{" "}
+                <a href="/ios" className="text-brand underline">
+                  iOS page
+                </a>
+                . It requires iOS 12 or later and supports Face ID login. No device? The{" "}
+                <a href="/mobile" className="text-brand underline">
+                  mobile website
+                </a>{" "}
+                offers the same features in any browser — see also{" "}
+                <a href="/other-apps" className="text-brand underline">
+                  other apps
+                </a>
+                .
+              </p>
+            ),
+          },
+          {
+            heading: "App features",
+            body: (
+              <p>
+                Live in-play betting with instant odds updates, push notifications for goals,
+                wickets and results, one-tap deposits via{" "}
+                <a href="/payments" className="text-brand underline">
+                  UPI and e-wallets
+                </a>
+                , biometric login, bet history, cash out and 24/7 in-app support — everything from
+                the desktop site, optimised for your phone.
+              </p>
+            ),
+          },
+        ]}
       />
     </>
   ),

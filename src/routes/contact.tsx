@@ -4,11 +4,11 @@ import { SEOPage, SEOPageBreadcrumb } from "../components/SEOPage";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — 1xBET India" },
+      { title: "Contact Us — 24/7 Support | 1xBET India" },
       {
         name: "description",
         content:
-          "Contact the 1xBET India support team. 24/7 live chat, WhatsApp +91 97023 08448, email and phone support for account, deposit and betting queries.",
+          "Contact 1xBET India support. 24/7 live chat, WhatsApp +91 97023 08448 and phone support for account, deposit, withdrawal and betting queries.",
       },
       { property: "og:title", content: "Contact Us — 1xBET India" },
       {
@@ -30,26 +30,52 @@ export const Route = createFileRoute("/contact")({
       />
       <SEOPage
         title="Contact Us"
-        description="Get in touch with the 1xBET India support team"
-        content={`
-Need help? Our customer support team is available 24 hours a day, 7 days a week.
-
-Contact options:
-- Live chat: available on every page of the website — fastest response
-- WhatsApp: +91 97023 08448
-- Phone: +91 97023 08448
-- Email support: replies within 24 hours
-
-What we can help with:
-- Account registration and verification (KYC)
-- Deposits, withdrawals and payment issues
-- Bonus and promotion questions
-- Betting rules and bet settlement queries
-- Technical problems with the website or app
-- Responsible gaming support and self-exclusion requests
-
-For the quickest resolution, please have your account ID ready when contacting support.
-        `}
+        description="Get in touch with the 1xBET India support team — 24/7"
+        sections={[
+          {
+            heading: "Support channels",
+            body: (
+              <p>
+                Our support team is available 24 hours a day, 7 days a week. The fastest option is
+                WhatsApp on <b>+91 97023 08448</b> — or use live chat on the website, phone support
+                on the same number, or email for non-urgent queries (replies within 24 hours).
+              </p>
+            ),
+          },
+          {
+            heading: "What we can help with",
+            body: (
+              <p>
+                Account registration and KYC verification, deposits and withdrawals via{" "}
+                <a href="/payments" className="text-brand underline">
+                  UPI and other methods
+                </a>
+                , bonus and{" "}
+                <a href="/promotions" className="text-brand underline">
+                  promotion
+                </a>{" "}
+                questions, betting rules and bet settlement, technical issues on the website or{" "}
+                <a href="/app" className="text-brand underline">
+                  app
+                </a>
+                , and responsible gaming requests including limits and self-exclusion.
+              </p>
+            ),
+          },
+          {
+            heading: "Before you contact us",
+            body: (
+              <p>
+                Many common questions are already answered in the{" "}
+                <a href="/faq" className="text-brand underline">
+                  FAQ
+                </a>{" "}
+                — registration, minimum deposits, withdrawal times, bonus terms and the mobile app.
+                For a quicker resolution, please have your account ID ready when you message us.
+              </p>
+            ),
+          },
+        ]}
       />
     </>
   ),
