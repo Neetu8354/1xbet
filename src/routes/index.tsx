@@ -607,7 +607,10 @@ function Promo() {
         src={active.image}
         alt={active.title}
         className="absolute inset-0 h-full w-full object-cover"
-        loading="lazy"
+        fetchPriority="high"
+        decoding="async"
+        width={960}
+        height={384}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-deep/90 via-brand/50 to-transparent" />
       <div className="relative flex h-full flex-col justify-center px-6 py-7 lg:px-12 lg:py-10">
@@ -664,6 +667,7 @@ function GameStrip() {
             alt={name}
             className="h-20 w-full object-cover"
             loading="lazy"
+            decoding="async"
             width="144"
             height="80"
           />
@@ -1055,6 +1059,7 @@ function GameTile({ name, image }: { name: string; image: string }) {
         alt={name}
         className="h-28 w-full object-cover"
         loading="lazy"
+        decoding="async"
         width="176"
         height="112"
       />
@@ -1157,6 +1162,9 @@ function PartnerImage({ partner, dark }: { partner: Partner; dark?: boolean }) {
           alt={partner.name}
           className="max-h-16 w-auto object-contain"
           loading="lazy"
+          decoding="async"
+          width={64}
+          height={64}
         />
       ) : (
         <span

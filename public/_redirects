@@ -1,0 +1,10 @@
+# Enforce HTTPS and www
+http://1xbetindia.live/* https://www.1xbetindia.live/:splat 301!
+http://www.1xbetindia.live/* https://www.1xbetindia.live/:splat 301!
+https://1xbetindia.live/* https://www.1xbetindia.live/:splat 301!
+
+# Renamed pages — 301 to canonical URLs
+/contacts /contact 301
+/payment-methods /payments 301
+/promo /promotions 301
+/mobile /app 301
