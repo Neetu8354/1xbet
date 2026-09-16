@@ -79,6 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "A responsive sportsbook interface demo with live events and interactive odds.",
       },
       { name: "author", content: "1xBET" },
+      { name: "google-site-verification", content: "ubhMdETu1c-wjXvHxR9f1ur3Or0GaaoXqa5tJSVDQ_I" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
