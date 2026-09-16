@@ -138,14 +138,14 @@ const events: Event[] = [
 ];
 
 const sports = [
-  ["Football", 47, "⚽"],
-  ["Tennis", 29, "🎾"],
-  ["Basketball", 25, "🏀"],
-  ["Ice Hockey", 10, "🏒"],
-  ["Volleyball", 17, "🏐"],
-  ["Table Tennis", 54, "🏓"],
-  ["Cricket", 23, "🏏"],
-  ["Esports", 26, "🎮"],
+  ["Football", 47, "⚽", "/football"],
+  ["Tennis", 29, "🎾", "/sports"],
+  ["Basketball", 25, "🏀", "/sports"],
+  ["Ice Hockey", 10, "🏒", "/sports"],
+  ["Volleyball", 17, "🏐", "/sports"],
+  ["Table Tennis", 54, "🏓", "/sports"],
+  ["Cricket", 23, "🏏", "/cricket"],
+  ["Esports", 26, "🎮", "/esports"],
 ] as const;
 const games = [
   ["1xGames", "/assets/games/1xgames.jpg"],
@@ -530,18 +530,18 @@ function LeftSidebar({
         <div className="p-2">SPORTS</div>
       </div>
       <div className="bg-market px-2 py-2 text-xs font-bold">ALL 885 &nbsp; ▷ 415</div>
-      {sports.map(([name, count, icon]) => (
-        <Button
+      {sports.map(([name, count, icon, href]) => (
+        <a
           key={name}
-          variant="ghost"
+          href={href}
           onClick={() => setActiveSport(name)}
-          className={`flex h-8 w-full justify-between rounded-none border-b border-border px-2 text-xs ${activeSport === name ? "bg-accent font-bold" : "bg-card"}`}
+          className={`flex h-8 w-full items-center justify-between border-b border-border px-2 text-xs ${activeSport === name ? "bg-accent font-bold" : "bg-card"} hover:bg-accent`}
         >
           <span>
             {icon} &nbsp;{name} ({count})
           </span>
-          <ChevronDown />
-        </Button>
+          <ChevronDown className="size-4" />
+        </a>
       ))}
     </aside>
   );
@@ -711,15 +711,15 @@ function SportTabs({
 }) {
   return (
     <div className="no-scrollbar flex overflow-x-auto bg-brand-deep text-xs font-semibold text-primary-foreground/80">
-      {sports.map(([name, , icon]) => (
-        <Button
+      {sports.map(([name, , icon, href]) => (
+        <a
           key={name}
-          variant="ghost"
+          href={href}
           onClick={() => setActiveSport(name)}
-          className={`h-9 shrink-0 rounded-none px-3 ${activeSport === name ? "bg-market text-brand" : "text-primary-foreground/80 hover:bg-brand hover:text-primary-foreground"}`}
+          className={`flex h-9 shrink-0 items-center rounded-none px-3 text-xs font-semibold ${activeSport === name ? "bg-market text-brand" : "text-primary-foreground/80 hover:bg-brand hover:text-primary-foreground"}`}
         >
           {icon} {name}
-        </Button>
+        </a>
       ))}
     </div>
   );
