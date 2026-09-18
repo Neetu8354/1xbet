@@ -199,7 +199,11 @@ export function SiteFooter() {
       links: [
         { label: "Sports", href: "/sports" },
         { label: "Cricket", href: "/cricket" },
-        { label: "Football", href: "/football" },
+        { label: "Football Betting", href: "/football" },
+        { label: "Football Live Betting", href: "/live" },
+        { label: "Football Odds", href: "/football/odds" },
+        { label: "Football Schedule", href: "/football/schedule" },
+        { label: "Football Results", href: "/results" },
         { label: "MultiLIVE", href: "/multi-live" },
         { label: "Live", href: "/live" },
         { label: "Toto", href: "/toto" },

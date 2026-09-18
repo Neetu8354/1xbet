@@ -8,28 +8,45 @@ export function SEOPage({
   description,
   content,
   sections,
+  breadcrumbs,
+  topContent,
   children,
 }: {
   title: string;
   description: string;
   content?: string;
   sections?: { heading: string; body: React.ReactNode }[];
+  breadcrumbs?: { name: string; url: string }[];
+  topContent?: React.ReactNode;
   children?: React.ReactNode;
 }) {
+  const trail = breadcrumbs ?? [{ name: "Home", url: "/" }];
   return (
     <div className="min-h-screen bg-background pb-16 lg:pb-0">
       <SiteHeader />
       <main className="mx-auto max-w-3xl px-4 py-6 lg:px-6 lg:py-8">
         <nav aria-label="Breadcrumb" className="mb-4 text-sm text-muted-foreground">
-          <Link to="/" className="hover:underline">
-            Home
-          </Link>
-          <span className="mx-1">/</span>
-          <span>{title}</span>
+          {trail.map((item, i) => {
+            const isLast = i === trail.length - 1;
+            return (
+              <span key={item.url}>
+                {i > 0 && <span className="mx-1">/</span>}
+                {isLast ? (
+                  <span>{item.name}</span>
+                ) : (
+                  <Link to={item.url} className="hover:underline">
+                    {item.name}
+                  </Link>
+                )}
+              </span>
+            );
+          })}
         </nav>
 
         <h1 className="text-2xl font-bold tracking-tight lg:text-3xl">{title}</h1>
         <p className="mt-2 text-base text-muted-foreground lg:text-lg">{description}</p>
+
+        {topContent}
 
         {content ? (
           <div className="mt-6 whitespace-pre-line text-sm leading-7 text-foreground">

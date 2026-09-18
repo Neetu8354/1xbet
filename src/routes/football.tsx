@@ -127,6 +127,46 @@ export const Route = createFileRoute("/football")({
       <SEOPage
         title="Football Betting India"
         description="Live football odds on the EPL, Champions League, ISL and more — bet in INR on mobile or desktop"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Sports", url: "/sports" },
+          { name: "Football Betting", url: "/football" },
+        ]}
+        topContent={
+          <>
+            <img
+              src="/assets/seo/football-betting-india.svg"
+              alt="Football betting markets available in India — EPL, Champions League and ISL odds"
+              width="800"
+              height="300"
+              decoding="async"
+              className="mt-4 w-full rounded-lg border"
+            />
+            <nav
+              aria-label="Football quick links"
+              className="mt-4 grid grid-cols-1 gap-2 text-sm font-semibold sm:grid-cols-3"
+            >
+              <a
+                href="/live"
+                className="rounded-md bg-brand px-3 py-2.5 text-center text-primary-foreground hover:opacity-90"
+              >
+                Live Odds
+              </a>
+              <a
+                href="/football/schedule"
+                className="rounded-md bg-brand px-3 py-2.5 text-center text-primary-foreground hover:opacity-90"
+              >
+                Today's Matches
+              </a>
+              <a
+                href="/sports"
+                className="rounded-md bg-brand px-3 py-2.5 text-center text-primary-foreground hover:opacity-90"
+              >
+                Popular Football Leagues
+              </a>
+            </nav>
+          </>
+        }
         sections={[
           {
             heading: "Best football leagues available for betting",
@@ -254,6 +294,36 @@ export const Route = createFileRoute("/football")({
               Football Statistics →
             </a>
           </nav>
+        </section>
+
+        <section className="mt-6">
+          <h2 className="text-lg font-bold text-foreground">Safe &amp; secure betting</h2>
+          <div className="mt-3 grid grid-cols-1 gap-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
+            <a href="/responsible-gaming" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">Responsible Gaming</b>
+              <span className="text-muted-foreground">Limits, self-exclusion &amp; support</span>
+            </a>
+            <div className="rounded-md border bg-card p-3">
+              <b className="block">18+ Only</b>
+              <span className="text-muted-foreground">Strictly for adults — KYC verified</span>
+            </div>
+            <div className="rounded-md border bg-card p-3">
+              <b className="block">SSL Secured</b>
+              <span className="text-muted-foreground">Encrypted data &amp; transactions</span>
+            </div>
+            <a href="/payments" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">INR Payments</b>
+              <span className="text-muted-foreground">UPI, Paytm, cards — min ₹100</span>
+            </a>
+            <a href="/contact" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">24/7 Support</b>
+              <span className="text-muted-foreground">Live chat &amp; WhatsApp</span>
+            </a>
+            <a href="/terms" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">Fair Terms</b>
+              <span className="text-muted-foreground">Transparent betting rules</span>
+            </a>
+          </div>
         </section>
       </SEOPage>
     </>
