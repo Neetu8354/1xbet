@@ -242,7 +242,7 @@ export function SiteFooter() {
     <footer className="mt-2 bg-brand-deep p-3 pb-20 text-primary-foreground lg:pb-3">
       <div className="space-y-2 lg:space-y-1">
         {[
-          { label: "1xBET Login – Online Bookmaker in India", href: "/about" },
+          { label: "About 1xBET", href: "/about" },
           { label: "Popular events and sports news", href: "/top-events" },
           { label: "FAQ", href: "/faq" },
         ].map((x) => (
