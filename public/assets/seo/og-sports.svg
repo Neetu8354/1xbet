@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="1xBET India sports betting">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071d42"/>
+      <stop offset="1" stop-color="#0f3d91"/>
+    </linearGradient>
+    <linearGradient id="pitch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e7a3c"/>
+      <stop offset="1" stop-color="#135c2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="430" width="1200" height="200" fill="url(#pitch)"/>
+  <g stroke="#ffffff" stroke-opacity="0.4" fill="none" stroke-width="3">
+    <line x1="0" y1="430" x2="1200" y2="430"/>
+    <line x1="600" y1="430" x2="600" y2="630"/>
+    <circle cx="600" cy="560" r="70"/>
+    <rect x="60" y="465" width="150" height="165"/>
+    <rect x="990" y="465" width="150" height="165"/>
+  </g>
+  <g>
+    <circle cx="980" cy="180" r="80" fill="#ffffff"/>
+    <g fill="#071d42">
+      <polygon points="980,141 1005,165 996,194 964,194 955,165"/>
+      <polygon points="914,180 931,165 951,180 942,206 922,206"/>
+      <polygon points="1046,180 1029,165 1009,180 1018,206 1038,206"/>
+      <polygon points="941,239 953,220 974,228 968,254 948,254"/>
+      <polygon points="1019,239 1007,220 986,228 992,254 1012,254"/>
+    </g>
+  </g>
+  <text x="80" y="140" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#7fd4ff">1xBET INDIA</text>
+  <text x="80" y="240" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#ffffff">Sports Betting India</text>
+  <text x="80" y="310" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#9fc3ff">Cricket · Football · Live Odds · INR Payouts</text>
+  <rect x="80" y="350" width="240" height="56" rx="8" fill="#28a745"/>
+  <text x="200" y="388" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#ffffff">BET NOW</text>
+</svg>

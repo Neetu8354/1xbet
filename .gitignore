@@ -45,3 +45,4 @@ bun.lock
 # Secrets
 .env
 .env.*
+.playwright-mcp/

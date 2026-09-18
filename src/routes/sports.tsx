@@ -61,9 +61,38 @@ export const Route = createFileRoute("/sports")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE_URL}/sports` },
+      { property: "og:image", content: `${SITE_URL}/assets/seo/og-sports.png` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "Sports Betting India: Cricket, Football & Live Odds | 1xBET",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Bet on cricket, football, tennis and 30+ sports with live odds and INR payouts at 1xBET India.",
+      },
+      { name: "twitter:image", content: `${SITE_URL}/assets/seo/og-sports.png` },
     ],
     links: [{ rel: "canonical", href: `${SITE_URL}/sports` }],
     scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": `${SITE_URL}/sports#webpage`,
+          url: `${SITE_URL}/sports`,
+          name: "Sports Betting India: Cricket, Football & Live Odds | 1xBET",
+          description:
+            "Sports betting in India at 1xBET. Bet on cricket, football, tennis and 30+ sports with live odds, in-play markets and fast INR payouts.",
+          isPartOf: { "@id": `${SITE_URL}/#website` },
+          about: { "@id": `${SITE_URL}/#organization` },
+          inLanguage: "en",
+        }),
+      },
       {
         type: "application/ld+json",
         innerHTML: JSON.stringify({
@@ -217,11 +246,27 @@ export const Route = createFileRoute("/sports")({
                   <a href="/payments" className="text-brand underline">
                     UPI, Paytm or NetBanking
                   </a>
-                  , and claim a 100% welcome bonus up to ₹10,000. Bet on desktop or the{" "}
+                  , and claim a{" "}
+                  <a href="/promotions" className="text-brand underline">
+                    100% welcome bonus up to ₹10,000
+                  </a>{" "}
+                  — wagering requirements and eligibility conditions apply, see the{" "}
+                  <a href="/terms" className="text-brand underline">
+                    bonus terms
+                  </a>
+                  . Bet on desktop or the{" "}
                   <a href="/app" className="text-brand underline">
                     mobile app
                   </a>
-                  .
+                  . Withdrawals are paid in INR — see{" "}
+                  <a href="/payments" className="text-brand underline">
+                    payout methods and processing times
+                  </a>
+                  , and our{" "}
+                  <a href="/help" className="text-brand underline">
+                    Help Centre
+                  </a>{" "}
+                  for account questions.
                 </p>
               </>
             ),
@@ -258,6 +303,44 @@ export const Route = createFileRoute("/sports")({
               </details>
             ))}
           </div>
+        </section>
+
+        <section className="mt-6">
+          <h2 className="text-lg font-bold text-foreground">Legal, trust &amp; support</h2>
+          <nav
+            aria-label="Legal and support links"
+            className="mt-3 grid grid-cols-1 gap-2 text-sm sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <a href="/terms" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">Terms &amp; Conditions</b>
+              <span className="text-muted-foreground">Betting rules &amp; bonus terms</span>
+            </a>
+            <a href="/privacy" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">Privacy Policy</b>
+              <span className="text-muted-foreground">How your data is handled</span>
+            </a>
+            <a href="/responsible-gaming" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">Responsible Gaming</b>
+              <span className="text-muted-foreground">Limits, self-exclusion — 18+ only</span>
+            </a>
+            <a href="/payments" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">Payment Information</b>
+              <span className="text-muted-foreground">Deposits, withdrawals &amp; fees</span>
+            </a>
+            <a href="/contact" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">Contact &amp; Support</b>
+              <span className="text-muted-foreground">24/7 live chat &amp; WhatsApp</span>
+            </a>
+            <a href="/about" className="rounded-md border bg-card p-3 hover:bg-accent">
+              <b className="block">About 1xBET India</b>
+              <span className="text-muted-foreground">Platform &amp; operator information</span>
+            </a>
+          </nav>
+          <p className="mt-3 text-xs leading-5 text-muted-foreground">
+            1xBET India operates under an international gaming licence. Sports betting is strictly
+            for players aged 18 and over, subject to eligibility verification (KYC) and the laws of
+            your state. All transactions are SSL-encrypted.
+          </p>
         </section>
       </SEOPage>
     </>

@@ -84,7 +84,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.1xbetindia.live/" },
       { property: "og:site_name", content: "1xBET India" },
-      { property: "og:image", content: "https://www.1xbetindia.live/assets/brand/logo-dark.svg" },
+      { property: "og:image", content: "https://www.1xbetindia.live/assets/seo/og-sports.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@1xbetindia" },
       { name: "twitter:title", content: "1xBET India — Online Sports Betting" },
@@ -93,7 +95,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "1xBET India — your premier destination for online sports betting, live casino games, cricket betting, esports and more.",
       },
-      { name: "twitter:image", content: "https://www.1xbetindia.live/assets/brand/logo-dark.svg" },
+      { name: "twitter:image", content: "https://www.1xbetindia.live/assets/seo/og-sports.png" },
     ],
     links: [
       {
@@ -101,11 +103,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/assets/brand/logo-dark.svg", type: "image/svg+xml" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap",
+        rel: "preload",
+        href: "/fonts/roboto-condensed-latin.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
       },
     ],
     scripts: [
@@ -114,6 +117,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
+          "@id": "https://www.1xbetindia.live/#organization",
           name: "1xBET India",
           alternateName: "1xBET",
           url: "https://www.1xbetindia.live",
@@ -137,7 +141,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
+          "@id": "https://www.1xbetindia.live/#website",
           name: "1xBET India",
+          publisher: { "@id": "https://www.1xbetindia.live/#organization" },
           url: "https://www.1xbetindia.live",
           potentialAction: {
             "@type": "SearchAction",
