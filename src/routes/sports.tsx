@@ -21,23 +21,27 @@ const sports = [
 const faqs = [
   {
     q: "What sports can I bet on at 1xBET India?",
-    a: "You can bet on 30+ sports including cricket, football, tennis, basketball, volleyball, table tennis, ice hockey, badminton, kabaddi and esports, with pre-match and live markets on every event.",
+    a: "Available sports can include cricket, football, tennis, basketball, volleyball, table tennis, ice hockey, badminton, esports and other sports depending on the current event schedule.",
   },
   {
-    q: "How does sports betting work?",
-    a: "Choose a sport and event, pick a market such as match winner or totals, click the odds to add the selection to your bet slip, enter your stake and confirm. Winnings are paid in INR at the odds taken.",
+    q: "Can I bet on live sports?",
+    a: "Where live markets are available, users can place bets while an event is in progress. Odds and available markets can change throughout the event.",
   },
   {
-    q: "What is the difference between pre-match and live betting?",
-    a: "Pre-match bets are placed before an event starts at fixed prices. Live (in-play) betting lets you bet during the event as odds update in real time, with cash out available on most markets.",
+    q: "What types of sports betting markets are available?",
+    a: "Common markets can include match winner, 1X2, double chance, totals, handicaps, correct score, player markets and sport-specific options.",
   },
   {
-    q: "What is an accumulator bet?",
-    a: "An accumulator combines two or more selections into one bet — all legs must win, and the odds multiply together for a larger potential return.",
+    q: "Can I bet on cricket and football?",
+    a: "Yes. Dedicated cricket and football sections provide available matches, competitions and betting markets for those sports.",
   },
   {
-    q: "What is the minimum bet at 1xBET India?",
-    a: "Minimum stakes start from just a few rupees depending on the market. Deposits start at ₹100 via UPI, Paytm, PhonePe, NetBanking, cards and crypto.",
+    q: "Where can I check current odds?",
+    a: "Current odds are displayed beside each available market within the relevant sports or live betting section. Odds can change, so users should check the displayed value before confirming a bet.",
+  },
+  {
+    q: "Is sports betting restricted by age?",
+    a: "Sports betting is intended only for users who meet the applicable legal age and eligibility requirements in their jurisdiction. Users should review the site terms and responsible-gaming information before participating.",
   },
 ];
 
@@ -116,7 +120,7 @@ export const Route = createFileRoute("/sports")({
         ]}
       />
       <SEOPage
-        title="Online Sports Betting at 1xBET India"
+        title="Online Sports Betting in India"
         description="Pre-match and live betting on 30+ sports with competitive INR odds"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -124,12 +128,20 @@ export const Route = createFileRoute("/sports")({
         ]}
         sections={[
           {
-            heading: "Sports categories",
+            heading: "Bet on Popular Sports",
             body: (
               <>
                 <p>
-                  The 1xBET India sportsbook covers more than 30 sports with thousands of markets
-                  every day. Pick a category below to start betting:
+                  Explore sports betting across cricket, football, tennis, basketball, esports and
+                  many other popular sports at 1xBET India. Browse pre-match and live betting
+                  markets, compare available odds and choose from a wide range of betting options
+                  for major leagues, tournaments and sporting events.
+                </p>
+                <p className="mt-2">
+                  Whether you follow international cricket, European football, tennis tournaments or
+                  esports competitions, the sportsbook brings multiple sports and markets together
+                  in one place — more than 30 sports covering both major international competitions
+                  and selected regional events.
                 </p>
                 <nav
                   aria-label="Sports categories"
@@ -149,150 +161,184 @@ export const Route = createFileRoute("/sports")({
             ),
           },
           {
-            heading: "Pre-match betting",
-            body: (
-              <p>
-                Pre-match betting lets you place bets before an event starts, giving you time to
-                study form, statistics and prices. Odds are published days or weeks ahead for major
-                competitions, and early prices often offer better value than the closing line.
-                Markets are settled after the event finishes according to the official result.
-              </p>
-            ),
-          },
-          {
-            heading: "Live and in-play betting",
-            body: (
-              <p>
-                Our{" "}
-                <a href="/live" className="text-brand underline">
-                  live betting
-                </a>{" "}
-                section updates odds in real time as the action unfolds — every run, goal and point
-                reprices the market. Cash out is available on most live markets, letting you settle
-                a bet before the event ends. Follow several matches at once with{" "}
-                <a href="/multi-live" className="text-brand underline">
-                  Multi-Live
-                </a>
-                .
-              </p>
-            ),
-          },
-          {
-            heading: "Popular betting markets",
-            body: (
-              <p>
-                Every event offers a wide choice of markets: match winner (1X2), double chance,
-                totals (over/under), handicaps, both teams to score, correct score, player props and
-                hundreds of event-specific options. Accumulator betting combines selections for
-                bigger returns, and accumulator boost{" "}
-                <a href="/promotions" className="text-brand underline">
-                  promotions
-                </a>{" "}
-                regularly increase multi-bet winnings.
-              </p>
-            ),
-          },
-          {
-            heading: "Cricket betting markets",
-            body: (
-              <p>
-                <a href="/cricket" className="text-brand underline">
-                  Cricket betting
-                </a>{" "}
-                covers match winner, toss, top batsman, top bowler, total runs, total wickets,
-                innings scores, over-by-over betting and player performance. The{" "}
-                <a href="/cricket" className="text-brand underline">
-                  IPL
-                </a>
-                , T20 World Cup, Test series, The Ashes and India's domestic competitions are priced
-                with live ball-by-ball markets.
-              </p>
-            ),
-          },
-          {
-            heading: "Football betting markets",
-            body: (
-              <p>
-                <a href="/football" className="text-brand underline">
-                  Football betting
-                </a>{" "}
-                includes 1X2, double chance, both teams to score, over/under goals, handicaps,
-                correct score, corners, cards and player specials — see the{" "}
-                <a href="/football/odds" className="text-brand underline">
-                  odds guide
-                </a>{" "}
-                for how each market works. Coverage spans the{" "}
-                <a href="/football" className="text-brand underline">
-                  Premier League, Champions League, La Liga, Serie A, Bundesliga and ISL
-                </a>
-                , plus World Cup and international tournaments.
-              </p>
-            ),
-          },
-          {
-            heading: "How sports betting works",
+            heading: "Pre-Match and Live Sports Betting",
             body: (
               <>
                 <p>
-                  Betting is simple: pick a sport and event, choose a market, click the odds to add
-                  the selection to your bet slip, enter your stake and confirm. Your potential
-                  return equals stake × odds — ₹100 at 2.50 returns ₹250.
+                  Sports betting can generally be divided into pre-match betting and live betting.
+                  Pre-match markets are available before an event begins and allow users to review
+                  the available odds and markets in advance. Depending on the sport, these may
+                  include match winner, total points or goals, handicaps, player markets and other
+                  event-specific options.
                 </p>
                 <p className="mt-2">
-                  <a href="/registration" className="text-brand underline">
-                    Register
+                  Live betting allows users to view markets while an event is in progress. Odds and
+                  available markets can change as the match develops, giving users updated options
+                  based on what is happening during the event. Visit the{" "}
+                  <a href="/live" className="text-brand underline">
+                    Live Betting
                   </a>{" "}
-                  an account, deposit from ₹100 via{" "}
-                  <a href="/payments" className="text-brand underline">
-                    UPI, Paytm or NetBanking
-                  </a>
-                  , and claim a{" "}
-                  <a href="/promotions" className="text-brand underline">
-                    100% welcome bonus up to ₹10,000
-                  </a>{" "}
-                  — wagering requirements and eligibility conditions apply, see the{" "}
-                  <a href="/terms" className="text-brand underline">
-                    bonus terms
-                  </a>
-                  . Bet on desktop or the{" "}
-                  <a href="/app" className="text-brand underline">
-                    mobile app
-                  </a>
-                  . Withdrawals are paid in INR — see{" "}
-                  <a href="/payments" className="text-brand underline">
-                    payout methods and processing times
-                  </a>
-                  , and our{" "}
-                  <a href="/help" className="text-brand underline">
-                    Help Centre
-                  </a>{" "}
-                  for account questions.
+                  section to view sporting events currently available for in-play betting.
                 </p>
               </>
             ),
           },
           {
-            heading: "Bet responsibly",
+            heading: "Popular Sports Betting Markets",
             body: (
               <p>
-                Sports betting is for players aged 18+. Set deposit and loss limits, take breaks and
-                never bet money you cannot afford to lose. Limits and self-exclusion tools are on
-                our{" "}
+                Different sports offer different types of betting markets. Some of the most commonly
+                available options include match winner, 1X2, double chance, over/under totals,
+                handicaps, both teams to score, correct score and player-related markets. In
+                football, for example, users may find markets for the final result, total goals,
+                first goalscorer or team performance. Cricket markets can include match winner,
+                innings totals, player runs, wickets and other match-specific options. Accumulator
+                or multi-bet options may also allow several selections to be combined into one bet.
+                Available markets and conditions vary depending on the event.
+              </p>
+            ),
+          },
+          {
+            heading: "Cricket Betting",
+            body: (
+              <>
+                <p>
+                  Cricket is one of the key sports available on the 1xBET India sportsbook. Users
+                  can find betting markets for major cricket formats including T20, One Day
+                  Internationals and Test cricket, as well as selected domestic and international
+                  competitions. Popular cricket events may include the Indian Premier League,
+                  international cricket series and major T20 competitions.
+                </p>
+                <p className="mt-2">
+                  Depending on the match, available markets can include match winner, team totals,
+                  individual player performance, innings markets and live cricket betting. Explore
+                  the dedicated{" "}
+                  <a href="/cricket" className="text-brand underline">
+                    Cricket Betting
+                  </a>{" "}
+                  page to see available matches and markets.
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Football Betting",
+            body: (
+              <>
+                <p>
+                  Football betting covers domestic leagues, international competitions and club
+                  tournaments from around the world. Major competitions may include the{" "}
+                  <a href="/football" className="text-brand underline">
+                    Premier League, UEFA Champions League, La Liga, Serie A, Bundesliga and Indian
+                    Super League
+                  </a>
+                  , subject to event availability.
+                </p>
+                <p className="mt-2">
+                  Common football markets include match result, double chance, total goals, both
+                  teams to score, handicaps, correct score and player-related markets. Visit the
+                  dedicated{" "}
+                  <a href="/football" className="text-brand underline">
+                    Football Betting
+                  </a>{" "}
+                  section for upcoming fixtures, markets and available odds.
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Tennis, Basketball and Other Sports",
+            body: (
+              <p>
+                The sportsbook is not limited to cricket and football. Tennis betting may cover
+                major tournaments and individual matches, with markets such as match winner, set
+                winner and total games. Basketball markets may include match winner, point spreads,
+                totals and quarter- or half-specific betting. Other available categories can include
+                volleyball, table tennis, ice hockey, badminton and additional sports depending on
+                the current event schedule.
+              </p>
+            ),
+          },
+          {
+            heading: "Esports Betting",
+            body: (
+              <p>
+                Esports followers can browse markets for selected competitive gaming tournaments and
+                matches. Depending on availability, coverage may include games such as
+                Counter-Strike 2, Dota 2, League of Legends and Valorant. Esports markets can vary
+                by title and competition, including match winner, map winner and other game-specific
+                options. Visit the{" "}
+                <a href="/esports" className="text-brand underline">
+                  Esports Betting
+                </a>{" "}
+                section to browse available competitions.
+              </p>
+            ),
+          },
+          {
+            heading: "Understanding Sports Betting Odds",
+            body: (
+              <p>
+                Betting odds show the potential return associated with a particular selection. They
+                can change before and during an event as market conditions develop. Users should
+                review the displayed odds, market rules and bet details before confirming any
+                selection. Where different odds formats are available, users can choose the format
+                they find easiest to understand.
+              </p>
+            ),
+          },
+          {
+            heading: "Sports Betting in INR",
+            body: (
+              <p>
+                Where supported, account balances, deposits, betting stakes and withdrawals can be
+                handled in Indian Rupees. Visit the{" "}
+                <a href="/payments" className="text-brand underline">
+                  Payment Methods
+                </a>{" "}
+                page for current information about available deposit and withdrawal options,
+                processing conditions, minimum or maximum amounts and any applicable requirements.
+              </p>
+            ),
+          },
+          {
+            heading: "Promotions and Sports Betting Offers",
+            body: (
+              <p>
+                Eligible users may have access to sports-related{" "}
+                <a href="/promotions" className="text-brand underline">
+                  promotions
+                </a>{" "}
+                or account offers from time to time. Promotion values, wagering requirements,
+                eligible events and expiry dates can vary, so users should always review the
+                complete{" "}
+                <a href="/terms" className="text-brand underline">
+                  promotional terms
+                </a>{" "}
+                before participating.
+              </p>
+            ),
+          },
+          {
+            heading: "Responsible Sports Betting",
+            body: (
+              <p>
+                Sports betting should be treated as entertainment rather than a way to make
+                guaranteed income. Only eligible adults should participate. Users should set
+                personal spending limits, avoid chasing losses and take breaks when needed. Visit
+                the{" "}
                 <a href="/responsible-gaming" className="text-brand underline">
                   Responsible Gaming
                 </a>{" "}
-                page, and common questions are answered in the{" "}
-                <a href="/faq" className="text-brand underline">
-                  FAQ
-                </a>
-                .
+                page for information about available account controls, limits and safer-gambling
+                resources.
               </p>
             ),
           },
         ]}
       >
         <section className="mt-6">
-          <h2 className="text-lg font-bold text-foreground">Sports betting FAQs</h2>
+          <h2 className="text-lg font-bold text-foreground">Frequently Asked Questions</h2>
           <div className="mt-3 space-y-3">
             {faqs.map((f) => (
               <details key={f.q} className="rounded-md border bg-card p-4 open:pb-4">
