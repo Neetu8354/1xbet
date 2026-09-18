@@ -47,6 +47,9 @@ import { Route as StatisticsRouteImport } from './routes/statistics'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TopEventsRouteImport } from './routes/top-events'
 import { Route as TotoRouteImport } from './routes/toto'
+import { Route as FootballOddsRouteImport } from './routes/football_.odds'
+import { Route as FootballScheduleRouteImport } from './routes/football_.schedule'
+import { Route as FootballTipsRouteImport } from './routes/football_.tips'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -238,6 +241,21 @@ const TotoRoute = TotoRouteImport.update({
   path: '/toto',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FootballOddsRoute = FootballOddsRouteImport.update({
+  id: '/football_/odds',
+  path: '/football/odds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FootballScheduleRoute = FootballScheduleRouteImport.update({
+  id: '/football_/schedule',
+  path: '/football/schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FootballTipsRoute = FootballTipsRouteImport.update({
+  id: '/football_/tips',
+  path: '/football/tips',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -278,6 +296,9 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/top-events': typeof TopEventsRoute
   '/toto': typeof TotoRoute
+  '/football/odds': typeof FootballOddsRoute
+  '/football/schedule': typeof FootballScheduleRoute
+  '/football/tips': typeof FootballTipsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -318,6 +339,9 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/top-events': typeof TopEventsRoute
   '/toto': typeof TotoRoute
+  '/football/odds': typeof FootballOddsRoute
+  '/football/schedule': typeof FootballScheduleRoute
+  '/football/tips': typeof FootballTipsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -359,6 +383,9 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/top-events': typeof TopEventsRoute
   '/toto': typeof TotoRoute
+  '/football_/odds': typeof FootballOddsRoute
+  '/football_/schedule': typeof FootballScheduleRoute
+  '/football_/tips': typeof FootballTipsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -401,6 +428,9 @@ export interface FileRouteTypes {
     | '/terms'
     | '/top-events'
     | '/toto'
+    | '/football/odds'
+    | '/football/schedule'
+    | '/football/tips'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -441,6 +471,9 @@ export interface FileRouteTypes {
     | '/terms'
     | '/top-events'
     | '/toto'
+    | '/football/odds'
+    | '/football/schedule'
+    | '/football/tips'
   id:
     | '__root__'
     | '/'
@@ -481,6 +514,9 @@ export interface FileRouteTypes {
     | '/terms'
     | '/top-events'
     | '/toto'
+    | '/football_/odds'
+    | '/football_/schedule'
+    | '/football_/tips'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -522,6 +558,9 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   TopEventsRoute: typeof TopEventsRoute
   TotoRoute: typeof TotoRoute
+  FootballOddsRoute: typeof FootballOddsRoute
+  FootballScheduleRoute: typeof FootballScheduleRoute
+  FootballTipsRoute: typeof FootballTipsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -792,6 +831,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TotoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/football_/odds': {
+      id: '/football_/odds'
+      path: '/football/odds'
+      fullPath: '/football/odds'
+      preLoaderRoute: typeof FootballOddsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/football_/schedule': {
+      id: '/football_/schedule'
+      path: '/football/schedule'
+      fullPath: '/football/schedule'
+      preLoaderRoute: typeof FootballScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/football_/tips': {
+      id: '/football_/tips'
+      path: '/football/tips'
+      fullPath: '/football/tips'
+      preLoaderRoute: typeof FootballTipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -834,6 +894,9 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   TopEventsRoute: TopEventsRoute,
   TotoRoute: TotoRoute,
+  FootballOddsRoute: FootballOddsRoute,
+  FootballScheduleRoute: FootballScheduleRoute,
+  FootballTipsRoute: FootballTipsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

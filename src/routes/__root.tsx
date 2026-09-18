@@ -107,7 +107,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap",
       },
-      { rel: "canonical", href: "https://www.1xbetindia.live/" },
     ],
     scripts: [
       {
@@ -116,8 +115,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "1xBET India",
+          alternateName: "1xBET",
           url: "https://www.1xbetindia.live",
-          logo: "https://www.1xbetindia.live/assets/brand/logo-dark.svg",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.1xbetindia.live/assets/brand/logo-dark.svg",
+          },
+          brand: { "@type": "Brand", name: "1xBET" },
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+91-97023-08448",
+            contactType: "customer support",
+            areaServed: "IN",
+            availableLanguage: ["en", "hi"],
+          },
           sameAs: [],
         }),
       },
