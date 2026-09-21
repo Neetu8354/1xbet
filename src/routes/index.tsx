@@ -129,11 +129,11 @@ const events: Event[] = [
 
 const sports = [
   ["Football", 47, "⚽", "/football"],
-  ["Tennis", 29, "🎾", "/sports"],
-  ["Basketball", 25, "🏀", "/sports"],
-  ["Ice Hockey", 10, "🏒", "/sports"],
-  ["Volleyball", 17, "🏐", "/sports"],
-  ["Table Tennis", 54, "🏓", "/sports"],
+  ["Tennis", 29, "🎾", "/tennis"],
+  ["Basketball", 25, "🏀", "/basketball"],
+  ["Ice Hockey", 10, "🏒", "/ice-hockey"],
+  ["Volleyball", 17, "🏐", "/volleyball"],
+  ["Table Tennis", 54, "🏓", "/table-tennis"],
   ["Cricket", 23, "🏏", "/cricket"],
   ["Esports", 26, "🎮", "/esports"],
 ] as const;
