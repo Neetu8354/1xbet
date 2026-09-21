@@ -81,6 +81,12 @@ import { Route as IceHockeyNhlRouteImport } from './routes/ice-hockey_.nhl'
 import { Route as IceHockeyOddsRouteImport } from './routes/ice-hockey_.odds'
 import { Route as IceHockeyResultsRouteImport } from './routes/ice-hockey_.results'
 import { Route as IceHockeyScheduleRouteImport } from './routes/ice-hockey_.schedule'
+import { Route as TableTennisIttfRouteImport } from './routes/table-tennis_.ittf'
+import { Route as TableTennisLiveRouteImport } from './routes/table-tennis_.live'
+import { Route as TableTennisOddsRouteImport } from './routes/table-tennis_.odds'
+import { Route as TableTennisResultsRouteImport } from './routes/table-tennis_.results'
+import { Route as TableTennisScheduleRouteImport } from './routes/table-tennis_.schedule'
+import { Route as TableTennisWttRouteImport } from './routes/table-tennis_.wtt'
 import { Route as TennisAtpRouteImport } from './routes/tennis_.atp'
 import { Route as TennisGrandSlamsRouteImport } from './routes/tennis_.grand-slams'
 import { Route as TennisResultsRouteImport } from './routes/tennis_.results'
@@ -453,6 +459,36 @@ const IceHockeyScheduleRoute = IceHockeyScheduleRouteImport.update({
   path: '/ice-hockey/schedule',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TableTennisIttfRoute = TableTennisIttfRouteImport.update({
+  id: '/table-tennis_/ittf',
+  path: '/table-tennis/ittf',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TableTennisLiveRoute = TableTennisLiveRouteImport.update({
+  id: '/table-tennis_/live',
+  path: '/table-tennis/live',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TableTennisOddsRoute = TableTennisOddsRouteImport.update({
+  id: '/table-tennis_/odds',
+  path: '/table-tennis/odds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TableTennisResultsRoute = TableTennisResultsRouteImport.update({
+  id: '/table-tennis_/results',
+  path: '/table-tennis/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TableTennisScheduleRoute = TableTennisScheduleRouteImport.update({
+  id: '/table-tennis_/schedule',
+  path: '/table-tennis/schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TableTennisWttRoute = TableTennisWttRouteImport.update({
+  id: '/table-tennis_/wtt',
+  path: '/table-tennis/wtt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TennisAtpRoute = TennisAtpRouteImport.update({
   id: '/tennis_/atp',
   path: '/tennis/atp',
@@ -583,6 +619,12 @@ export interface FileRoutesByFullPath {
   '/ice-hockey/odds': typeof IceHockeyOddsRoute
   '/ice-hockey/results': typeof IceHockeyResultsRoute
   '/ice-hockey/schedule': typeof IceHockeyScheduleRoute
+  '/table-tennis/ittf': typeof TableTennisIttfRoute
+  '/table-tennis/live': typeof TableTennisLiveRoute
+  '/table-tennis/odds': typeof TableTennisOddsRoute
+  '/table-tennis/results': typeof TableTennisResultsRoute
+  '/table-tennis/schedule': typeof TableTennisScheduleRoute
+  '/table-tennis/wtt': typeof TableTennisWttRoute
   '/tennis/atp': typeof TennisAtpRoute
   '/tennis/grand-slams': typeof TennisGrandSlamsRoute
   '/tennis/results': typeof TennisResultsRoute
@@ -668,6 +710,12 @@ export interface FileRoutesByTo {
   '/ice-hockey/odds': typeof IceHockeyOddsRoute
   '/ice-hockey/results': typeof IceHockeyResultsRoute
   '/ice-hockey/schedule': typeof IceHockeyScheduleRoute
+  '/table-tennis/ittf': typeof TableTennisIttfRoute
+  '/table-tennis/live': typeof TableTennisLiveRoute
+  '/table-tennis/odds': typeof TableTennisOddsRoute
+  '/table-tennis/results': typeof TableTennisResultsRoute
+  '/table-tennis/schedule': typeof TableTennisScheduleRoute
+  '/table-tennis/wtt': typeof TableTennisWttRoute
   '/tennis/atp': typeof TennisAtpRoute
   '/tennis/grand-slams': typeof TennisGrandSlamsRoute
   '/tennis/results': typeof TennisResultsRoute
@@ -754,6 +802,12 @@ export interface FileRoutesById {
   '/ice-hockey_/odds': typeof IceHockeyOddsRoute
   '/ice-hockey_/results': typeof IceHockeyResultsRoute
   '/ice-hockey_/schedule': typeof IceHockeyScheduleRoute
+  '/table-tennis_/ittf': typeof TableTennisIttfRoute
+  '/table-tennis_/live': typeof TableTennisLiveRoute
+  '/table-tennis_/odds': typeof TableTennisOddsRoute
+  '/table-tennis_/results': typeof TableTennisResultsRoute
+  '/table-tennis_/schedule': typeof TableTennisScheduleRoute
+  '/table-tennis_/wtt': typeof TableTennisWttRoute
   '/tennis_/atp': typeof TennisAtpRoute
   '/tennis_/grand-slams': typeof TennisGrandSlamsRoute
   '/tennis_/results': typeof TennisResultsRoute
@@ -841,6 +895,12 @@ export interface FileRouteTypes {
     | '/ice-hockey/odds'
     | '/ice-hockey/results'
     | '/ice-hockey/schedule'
+    | '/table-tennis/ittf'
+    | '/table-tennis/live'
+    | '/table-tennis/odds'
+    | '/table-tennis/results'
+    | '/table-tennis/schedule'
+    | '/table-tennis/wtt'
     | '/tennis/atp'
     | '/tennis/grand-slams'
     | '/tennis/results'
@@ -926,6 +986,12 @@ export interface FileRouteTypes {
     | '/ice-hockey/odds'
     | '/ice-hockey/results'
     | '/ice-hockey/schedule'
+    | '/table-tennis/ittf'
+    | '/table-tennis/live'
+    | '/table-tennis/odds'
+    | '/table-tennis/results'
+    | '/table-tennis/schedule'
+    | '/table-tennis/wtt'
     | '/tennis/atp'
     | '/tennis/grand-slams'
     | '/tennis/results'
@@ -1011,6 +1077,12 @@ export interface FileRouteTypes {
     | '/ice-hockey_/odds'
     | '/ice-hockey_/results'
     | '/ice-hockey_/schedule'
+    | '/table-tennis_/ittf'
+    | '/table-tennis_/live'
+    | '/table-tennis_/odds'
+    | '/table-tennis_/results'
+    | '/table-tennis_/schedule'
+    | '/table-tennis_/wtt'
     | '/tennis_/atp'
     | '/tennis_/grand-slams'
     | '/tennis_/results'
@@ -1097,6 +1169,12 @@ export interface RootRouteChildren {
   IceHockeyOddsRoute: typeof IceHockeyOddsRoute
   IceHockeyResultsRoute: typeof IceHockeyResultsRoute
   IceHockeyScheduleRoute: typeof IceHockeyScheduleRoute
+  TableTennisIttfRoute: typeof TableTennisIttfRoute
+  TableTennisLiveRoute: typeof TableTennisLiveRoute
+  TableTennisOddsRoute: typeof TableTennisOddsRoute
+  TableTennisResultsRoute: typeof TableTennisResultsRoute
+  TableTennisScheduleRoute: typeof TableTennisScheduleRoute
+  TableTennisWttRoute: typeof TableTennisWttRoute
   TennisAtpRoute: typeof TennisAtpRoute
   TennisGrandSlamsRoute: typeof TennisGrandSlamsRoute
   TennisResultsRoute: typeof TennisResultsRoute
@@ -1616,6 +1694,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IceHockeyScheduleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/table-tennis_/ittf': {
+      id: '/table-tennis_/ittf'
+      path: '/table-tennis/ittf'
+      fullPath: '/table-tennis/ittf'
+      preLoaderRoute: typeof TableTennisIttfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/table-tennis_/live': {
+      id: '/table-tennis_/live'
+      path: '/table-tennis/live'
+      fullPath: '/table-tennis/live'
+      preLoaderRoute: typeof TableTennisLiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/table-tennis_/odds': {
+      id: '/table-tennis_/odds'
+      path: '/table-tennis/odds'
+      fullPath: '/table-tennis/odds'
+      preLoaderRoute: typeof TableTennisOddsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/table-tennis_/results': {
+      id: '/table-tennis_/results'
+      path: '/table-tennis/results'
+      fullPath: '/table-tennis/results'
+      preLoaderRoute: typeof TableTennisResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/table-tennis_/schedule': {
+      id: '/table-tennis_/schedule'
+      path: '/table-tennis/schedule'
+      fullPath: '/table-tennis/schedule'
+      preLoaderRoute: typeof TableTennisScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/table-tennis_/wtt': {
+      id: '/table-tennis_/wtt'
+      path: '/table-tennis/wtt'
+      fullPath: '/table-tennis/wtt'
+      preLoaderRoute: typeof TableTennisWttRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tennis_/atp': {
       id: '/tennis_/atp'
       path: '/tennis/atp'
@@ -1769,6 +1889,12 @@ const rootRouteChildren: RootRouteChildren = {
   IceHockeyOddsRoute: IceHockeyOddsRoute,
   IceHockeyResultsRoute: IceHockeyResultsRoute,
   IceHockeyScheduleRoute: IceHockeyScheduleRoute,
+  TableTennisIttfRoute: TableTennisIttfRoute,
+  TableTennisLiveRoute: TableTennisLiveRoute,
+  TableTennisOddsRoute: TableTennisOddsRoute,
+  TableTennisResultsRoute: TableTennisResultsRoute,
+  TableTennisScheduleRoute: TableTennisScheduleRoute,
+  TableTennisWttRoute: TableTennisWttRoute,
   TennisAtpRoute: TennisAtpRoute,
   TennisGrandSlamsRoute: TennisGrandSlamsRoute,
   TennisResultsRoute: TennisResultsRoute,

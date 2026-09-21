@@ -183,6 +183,29 @@ const images = [
     w: 1200,
     h: 630,
   },
+  {
+    file: "table-tennis-betting-india",
+    title: "Table Tennis Betting India",
+    sub: "WTT · ITTF · Olympics — Handicaps & Totals in INR",
+    accent: "#2dd4bf",
+    icon: "trophy",
+  },
+  {
+    file: "live-table-tennis-betting",
+    title: "Live Table Tennis Betting",
+    sub: "Point-by-Point In-Play Odds on Every Match",
+    accent: "#a3e635",
+    icon: "live",
+  },
+  {
+    file: "og-table-tennis",
+    title: "Table Tennis Betting India",
+    sub: "WTT · ITTF · Olympics — Handicaps & Totals in INR",
+    accent: "#2dd4bf",
+    icon: "trophy",
+    w: 1200,
+    h: 630,
+  },
 ];
 
 const esc = (s) => s.replace(/&/g, "&amp;");
