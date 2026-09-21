@@ -21,6 +21,10 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ContactsRouteImport } from './routes/contacts'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as CricketRouteImport } from './routes/cricket'
+import { Route as CricketLiveRouteImport } from './routes/cricket-live'
+import { Route as CricketOddsRouteImport } from './routes/cricket-odds'
+import { Route as CricketResultsRouteImport } from './routes/cricket-results'
+import { Route as CricketScheduleRouteImport } from './routes/cricket-schedule'
 import { Route as Cs2BettingRouteImport } from './routes/cs2-betting'
 import { Route as Dota2BettingRouteImport } from './routes/dota2-betting'
 import { Route as EsportsRouteImport } from './routes/esports'
@@ -32,6 +36,7 @@ import { Route as FullVersionRouteImport } from './routes/full-version'
 import { Route as GamesRouteImport } from './routes/games'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as IosRouteImport } from './routes/ios'
+import { Route as IplBettingRouteImport } from './routes/ipl-betting'
 import { Route as LiveRouteImport } from './routes/live'
 import { Route as LiveCasinoRouteImport } from './routes/live-casino'
 import { Route as LolBettingRouteImport } from './routes/lol-betting'
@@ -117,6 +122,26 @@ const CricketRoute = CricketRouteImport.update({
   path: '/cricket',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CricketLiveRoute = CricketLiveRouteImport.update({
+  id: '/cricket-live',
+  path: '/cricket-live',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CricketOddsRoute = CricketOddsRouteImport.update({
+  id: '/cricket-odds',
+  path: '/cricket-odds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CricketResultsRoute = CricketResultsRouteImport.update({
+  id: '/cricket-results',
+  path: '/cricket-results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CricketScheduleRoute = CricketScheduleRouteImport.update({
+  id: '/cricket-schedule',
+  path: '/cricket-schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Cs2BettingRoute = Cs2BettingRouteImport.update({
   id: '/cs2-betting',
   path: '/cs2-betting',
@@ -170,6 +195,11 @@ const HelpRoute = HelpRouteImport.update({
 const IosRoute = IosRouteImport.update({
   id: '/ios',
   path: '/ios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IplBettingRoute = IplBettingRouteImport.update({
+  id: '/ipl-betting',
+  path: '/ipl-betting',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LiveRoute = LiveRouteImport.update({
@@ -306,6 +336,10 @@ export interface FileRoutesByFullPath {
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
+  '/cricket-live': typeof CricketLiveRoute
+  '/cricket-odds': typeof CricketOddsRoute
+  '/cricket-results': typeof CricketResultsRoute
+  '/cricket-schedule': typeof CricketScheduleRoute
   '/cs2-betting': typeof Cs2BettingRoute
   '/dota2-betting': typeof Dota2BettingRoute
   '/esports': typeof EsportsRoute
@@ -317,6 +351,7 @@ export interface FileRoutesByFullPath {
   '/games': typeof GamesRoute
   '/help': typeof HelpRoute
   '/ios': typeof IosRoute
+  '/ipl-betting': typeof IplBettingRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
   '/lol-betting': typeof LolBettingRoute
@@ -355,6 +390,10 @@ export interface FileRoutesByTo {
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
+  '/cricket-live': typeof CricketLiveRoute
+  '/cricket-odds': typeof CricketOddsRoute
+  '/cricket-results': typeof CricketResultsRoute
+  '/cricket-schedule': typeof CricketScheduleRoute
   '/cs2-betting': typeof Cs2BettingRoute
   '/dota2-betting': typeof Dota2BettingRoute
   '/esports': typeof EsportsRoute
@@ -366,6 +405,7 @@ export interface FileRoutesByTo {
   '/games': typeof GamesRoute
   '/help': typeof HelpRoute
   '/ios': typeof IosRoute
+  '/ipl-betting': typeof IplBettingRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
   '/lol-betting': typeof LolBettingRoute
@@ -405,6 +445,10 @@ export interface FileRoutesById {
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
+  '/cricket-live': typeof CricketLiveRoute
+  '/cricket-odds': typeof CricketOddsRoute
+  '/cricket-results': typeof CricketResultsRoute
+  '/cricket-schedule': typeof CricketScheduleRoute
   '/cs2-betting': typeof Cs2BettingRoute
   '/dota2-betting': typeof Dota2BettingRoute
   '/esports': typeof EsportsRoute
@@ -416,6 +460,7 @@ export interface FileRoutesById {
   '/games': typeof GamesRoute
   '/help': typeof HelpRoute
   '/ios': typeof IosRoute
+  '/ipl-betting': typeof IplBettingRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
   '/lol-betting': typeof LolBettingRoute
@@ -456,6 +501,10 @@ export interface FileRouteTypes {
     | '/contacts'
     | '/cookies'
     | '/cricket'
+    | '/cricket-live'
+    | '/cricket-odds'
+    | '/cricket-results'
+    | '/cricket-schedule'
     | '/cs2-betting'
     | '/dota2-betting'
     | '/esports'
@@ -467,6 +516,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/help'
     | '/ios'
+    | '/ipl-betting'
     | '/live'
     | '/live-casino'
     | '/lol-betting'
@@ -505,6 +555,10 @@ export interface FileRouteTypes {
     | '/contacts'
     | '/cookies'
     | '/cricket'
+    | '/cricket-live'
+    | '/cricket-odds'
+    | '/cricket-results'
+    | '/cricket-schedule'
     | '/cs2-betting'
     | '/dota2-betting'
     | '/esports'
@@ -516,6 +570,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/help'
     | '/ios'
+    | '/ipl-betting'
     | '/live'
     | '/live-casino'
     | '/lol-betting'
@@ -554,6 +609,10 @@ export interface FileRouteTypes {
     | '/contacts'
     | '/cookies'
     | '/cricket'
+    | '/cricket-live'
+    | '/cricket-odds'
+    | '/cricket-results'
+    | '/cricket-schedule'
     | '/cs2-betting'
     | '/dota2-betting'
     | '/esports'
@@ -565,6 +624,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/help'
     | '/ios'
+    | '/ipl-betting'
     | '/live'
     | '/live-casino'
     | '/lol-betting'
@@ -604,6 +664,10 @@ export interface RootRouteChildren {
   ContactsRoute: typeof ContactsRoute
   CookiesRoute: typeof CookiesRoute
   CricketRoute: typeof CricketRoute
+  CricketLiveRoute: typeof CricketLiveRoute
+  CricketOddsRoute: typeof CricketOddsRoute
+  CricketResultsRoute: typeof CricketResultsRoute
+  CricketScheduleRoute: typeof CricketScheduleRoute
   Cs2BettingRoute: typeof Cs2BettingRoute
   Dota2BettingRoute: typeof Dota2BettingRoute
   EsportsRoute: typeof EsportsRoute
@@ -615,6 +679,7 @@ export interface RootRouteChildren {
   GamesRoute: typeof GamesRoute
   HelpRoute: typeof HelpRoute
   IosRoute: typeof IosRoute
+  IplBettingRoute: typeof IplBettingRoute
   LiveRoute: typeof LiveRoute
   LiveCasinoRoute: typeof LiveCasinoRoute
   LolBettingRoute: typeof LolBettingRoute
@@ -727,6 +792,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CricketRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cricket-live': {
+      id: '/cricket-live'
+      path: '/cricket-live'
+      fullPath: '/cricket-live'
+      preLoaderRoute: typeof CricketLiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cricket-odds': {
+      id: '/cricket-odds'
+      path: '/cricket-odds'
+      fullPath: '/cricket-odds'
+      preLoaderRoute: typeof CricketOddsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cricket-results': {
+      id: '/cricket-results'
+      path: '/cricket-results'
+      fullPath: '/cricket-results'
+      preLoaderRoute: typeof CricketResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cricket-schedule': {
+      id: '/cricket-schedule'
+      path: '/cricket-schedule'
+      fullPath: '/cricket-schedule'
+      preLoaderRoute: typeof CricketScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cs2-betting': {
       id: '/cs2-betting'
       path: '/cs2-betting'
@@ -802,6 +895,13 @@ declare module '@tanstack/react-router' {
       path: '/ios'
       fullPath: '/ios'
       preLoaderRoute: typeof IosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ipl-betting': {
+      id: '/ipl-betting'
+      path: '/ipl-betting'
+      fullPath: '/ipl-betting'
+      preLoaderRoute: typeof IplBettingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/live': {
@@ -988,6 +1088,10 @@ const rootRouteChildren: RootRouteChildren = {
   ContactsRoute: ContactsRoute,
   CookiesRoute: CookiesRoute,
   CricketRoute: CricketRoute,
+  CricketLiveRoute: CricketLiveRoute,
+  CricketOddsRoute: CricketOddsRoute,
+  CricketResultsRoute: CricketResultsRoute,
+  CricketScheduleRoute: CricketScheduleRoute,
   Cs2BettingRoute: Cs2BettingRoute,
   Dota2BettingRoute: Dota2BettingRoute,
   EsportsRoute: EsportsRoute,
@@ -999,6 +1103,7 @@ const rootRouteChildren: RootRouteChildren = {
   GamesRoute: GamesRoute,
   HelpRoute: HelpRoute,
   IosRoute: IosRoute,
+  IplBettingRoute: IplBettingRoute,
   LiveRoute: LiveRoute,
   LiveCasinoRoute: LiveCasinoRoute,
   LolBettingRoute: LolBettingRoute,

@@ -199,6 +199,11 @@ export function SiteFooter() {
       links: [
         { label: "Sports", href: "/sports" },
         { label: "Cricket", href: "/cricket" },
+        { label: "IPL Betting", href: "/ipl-betting" },
+        { label: "Live Cricket Betting", href: "/cricket-live" },
+        { label: "Cricket Odds", href: "/cricket-odds" },
+        { label: "Cricket Schedule", href: "/cricket-schedule" },
+        { label: "Cricket Results", href: "/cricket-results" },
         { label: "Football Betting", href: "/football" },
         { label: "Football Live Betting", href: "/live" },
         { label: "Football Odds", href: "/football/odds" },

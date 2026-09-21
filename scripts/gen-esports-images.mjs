@@ -61,6 +61,36 @@ const images = [
     w: 1200,
     h: 630,
   },
+  {
+    file: "cricket-betting-india",
+    title: "Cricket Betting India",
+    sub: "IPL · T20 · ODI · Test — Live Cricket Odds in INR",
+    accent: "#22c55e",
+    icon: "trophy",
+  },
+  {
+    file: "ipl-betting-india",
+    title: "IPL Betting India",
+    sub: "Indian Premier League — Match, Player & Outright Markets",
+    accent: "#7c3aed",
+    icon: "trophy",
+  },
+  {
+    file: "live-cricket-betting",
+    title: "Live Cricket Betting",
+    sub: "Ball-by-Ball In-Play Odds on Every Over",
+    accent: "#f97316",
+    icon: "live",
+  },
+  {
+    file: "og-cricket",
+    title: "Cricket Betting India",
+    sub: "IPL · T20 · ODI · Test — Live Cricket Odds in INR",
+    accent: "#22c55e",
+    icon: "trophy",
+    w: 1200,
+    h: 630,
+  },
 ];
 
 const esc = (s) => s.replace(/&/g, "&amp;");
