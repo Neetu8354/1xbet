@@ -158,7 +158,7 @@ export const Route = createFileRoute("/tennis")({
     <>
       <SEOPageBreadcrumb items={breadcrumbItems} />
       <SEOPage
-        title="Tennis Betting India – Live ATP, WTA & Grand Slam Betting"
+        title="Tennis Betting India - Live ATP, WTA & Grand Slam Betting"
         description="Grand Slam, ATP and WTA odds — match, set and game markets, pre-match and live in INR"
         breadcrumbs={breadcrumbItems}
         topContent={
@@ -207,30 +207,29 @@ export const Route = createFileRoute("/tennis")({
             body: (
               <>
                 <p>
-                  Tennis runs nearly year-round, making it one of the deepest sports on the
-                  sportsbook for Indian bettors. From January's Australian Open to the season-ending
-                  ATP and WTA Finals in November, professional tennis offers singles and doubles
-                  matches almost every day — all with pre-match and live markets priced in INR.
-                </p>
-                <p className="mt-2">
-                  1xBET India covers the four Grand Slams, the full{" "}
+                  Tennis is one of the most popular international sports with matches taking place
+                  throughout the year across major tournaments and professional tours. At 1xBET
+                  India, tennis fans can explore betting opportunities across{" "}
                   <a href="/tennis/atp" className="text-brand underline">
                     ATP
-                  </a>{" "}
-                  and{" "}
+                  </a>
+                  ,{" "}
                   <a href="/tennis/wta" className="text-brand underline">
                     WTA
-                  </a>{" "}
-                  tours, Challenger and ITF events, plus Davis Cup and Billie Jean King Cup ties.
-                  Check upcoming fixtures on the{" "}
-                  <a href="/tennis/schedule" className="text-brand underline">
-                    tennis schedule
-                  </a>{" "}
-                  and recent form on the{" "}
-                  <a href="/tennis/results" className="text-brand underline">
-                    tennis results
-                  </a>{" "}
-                  page.
+                  </a>
+                  ,{" "}
+                  <a href="/tennis/grand-slams" className="text-brand underline">
+                    Grand Slam tournaments
+                  </a>
+                  , Challenger events, and other professional competitions.
+                </p>
+                <p className="mt-2">
+                  From pre-match markets to{" "}
+                  <a href="/live" className="text-brand underline">
+                    live tennis betting
+                  </a>
+                  , users can access different betting options including match winners, set betting,
+                  total games, handicaps, tie-break markets, and tournament outcomes.
                 </p>
               </>
             ),
@@ -239,89 +238,135 @@ export const Route = createFileRoute("/tennis")({
             heading: "Latest Tennis Betting Odds",
             body: (
               <p>
-                Tennis odds at 1xBET India are shown in decimal format — your stake multiplied by
-                the price is your potential return. Match winner prices move with ranking, recent
-                form, surface record, head-to-head history and injury news. Because tennis is an
-                individual sport, a single fitness concern can shift a market quickly, so always
-                check the displayed odds beside each market before confirming a bet.
+                Tennis odds change continuously based on player form, rankings, court surface,
+                injuries, and match conditions. Before placing a bet, understanding recent
+                performances, head-to-head records, and playing styles can help users analyze
+                available markets. Check upcoming fixtures on the{" "}
+                <a href="/tennis/schedule" className="text-brand underline">
+                  tennis schedule
+                </a>{" "}
+                and recent form on the{" "}
+                <a href="/tennis/results" className="text-brand underline">
+                  tennis results
+                </a>{" "}
+                page.
               </p>
             ),
           },
           {
             heading: "ATP Tennis Betting",
             body: (
-              <p>
-                The men's ATP tour runs from January's Australian swing through the Masters 1000
-                events — Indian Wells, Miami, Monte Carlo, Madrid, Rome, Canada, Cincinnati,
-                Shanghai and Paris — to the ATP Finals in November. Five-set Grand Slam matches and
-                best-of-three tour events price differently, so format matters when comparing
-                markets. See the{" "}
-                <a href="/tennis/atp" className="text-brand underline">
-                  ATP betting guide
-                </a>{" "}
-                for the full tournament calendar and market detail.
-              </p>
-            ),
-          },
-          {
-            heading: "WTA Tennis Betting",
-            body: (
-              <p>
-                The women's WTA tour mirrors the ATP calendar with its own 1000-level events, WTA
-                Finals and all four Grand Slams. WTA matches are best-of-three sets throughout,
-                which makes them more volatile than men's five-set Slam matches — breaks of serve
-                are more common and favourites win less predictably. Explore the{" "}
-                <a href="/tennis/wta" className="text-brand underline">
-                  WTA betting guide
-                </a>{" "}
-                for tournament coverage and market options.
-              </p>
-            ),
-          },
-          {
-            heading: "Grand Slam Betting",
-            body: (
-              <p>
-                The four Grand Slams are the biggest tennis betting events of the year, each with
-                two weeks of markets across 128-player singles draws:
-              </p>
-            ),
-          },
-          {
-            heading: "Australian Open, Roland Garros, Wimbledon & US Open",
-            body: (
               <>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
-                  <li>
-                    <strong>Australian Open</strong> (January, hard court) — the season's first
-                    major, played in Melbourne's summer heat
-                  </li>
-                  <li>
-                    <strong>Roland Garros</strong> (May-June, clay) — the slowest surface, favouring
-                    baseline grinders
-                  </li>
-                  <li>
-                    <strong>Wimbledon</strong> (June-July, grass) — the fastest surface, rewarding
-                    big servers
-                  </li>
-                  <li>
-                    <strong>US Open</strong> (August-September, hard court) — the year's final Slam
-                    in New York
-                  </li>
-                </ul>
+                <p>
+                  ATP tennis features some of the world's leading male tennis players competing
+                  across major tournaments and international events. ATP betting markets include
+                  match winner, set scores, total games, handicaps, and tournament winner
+                  selections.
+                </p>
                 <p className="mt-2">
-                  Each Slam offers outright winner, quarter winner, stage-of-elimination and daily
-                  match markets. Read the{" "}
-                  <a href="/tennis/grand-slams" className="text-brand underline">
-                    Grand Slam betting guide
-                  </a>{" "}
-                  for surface-by-surface detail.
+                  Factors such as player ranking, recent results, service performance, return
+                  statistics, and surface preference can influence match outcomes. Hard courts, clay
+                  courts, and grass courts each create different playing conditions that can impact
+                  player performance. See the full{" "}
+                  <a href="/tennis/atp" className="text-brand underline">
+                    ATP betting guide
+                  </a>
+                  .
                 </p>
               </>
             ),
           },
           {
-            heading: "Live Tennis Betting Guide",
+            heading: "WTA Tennis Betting",
+            body: (
+              <>
+                <p>
+                  WTA tournaments provide exciting betting opportunities throughout the season.
+                  Users can follow women's professional tennis events and explore markets including
+                  match winners, set betting, total games, and outright tournament winners.
+                </p>
+                <p className="mt-2">
+                  Player consistency, recent form, surface performance, and previous match history
+                  are important factors to consider when analyzing WTA matches — read the{" "}
+                  <a href="/tennis/wta" className="text-brand underline">
+                    WTA betting guide
+                  </a>
+                  .
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Grand Slam Tennis Betting",
+            body: (
+              <>
+                <p>
+                  Grand Slam tournaments are among the biggest events in professional tennis and
+                  attract worldwide attention. The four major tournaments include:
+                </p>
+                <h3 className="mt-3 font-semibold">Australian Open</h3>
+                <p>
+                  The Australian Open is the first Grand Slam tournament of the year and is played
+                  on hard courts. Players compete for one of tennis's most prestigious titles.
+                </p>
+                <h3 className="mt-3 font-semibold">French Open</h3>
+                <p>
+                  The French Open, also known as Roland Garros, is famous for clay-court
+                  competition. Players with strong endurance and baseline skills often perform well
+                  on this surface.
+                </p>
+                <h3 className="mt-3 font-semibold">Wimbledon</h3>
+                <p>
+                  Wimbledon is the oldest Grand Slam tournament and is played on grass courts. Fast
+                  serves and strong net play are important elements on this surface.
+                </p>
+                <h3 className="mt-3 font-semibold">US Open</h3>
+                <p>
+                  The US Open is played on hard courts and features some of the most competitive
+                  matches of the tennis season. Explore all four on the{" "}
+                  <a href="/tennis/grand-slams" className="text-brand underline">
+                    Grand Slam betting
+                  </a>{" "}
+                  page.
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Popular Tennis Betting Markets",
+            body: (
+              <>
+                <h3 className="mt-2 font-semibold">Match Winner Betting</h3>
+                <p>Match winner betting allows users to select which player will win the match.</p>
+                <h3 className="mt-3 font-semibold">Set Betting</h3>
+                <p>
+                  Set betting focuses on predicting the final set outcome, such as a straight-set
+                  victory or a three-set match.
+                </p>
+                <h3 className="mt-3 font-semibold">Total Games Betting</h3>
+                <p>
+                  Total games markets involve predicting whether the number of games played will be
+                  over or under a specific value.
+                </p>
+                <h3 className="mt-3 font-semibold">Handicap Betting</h3>
+                <p>
+                  Handicap markets adjust the starting advantage between players and provide
+                  additional betting options.
+                </p>
+                <h3 className="mt-3 font-semibold">Tie-Break Betting</h3>
+                <p>
+                  Tie-break markets allow users to predict whether a tie-break will occur during a
+                  match.
+                </p>
+                <h3 className="mt-3 font-semibold">Tournament Winner Betting</h3>
+                <p>
+                  Users can select players they believe have the potential to win major tournaments.
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Live Tennis Betting",
             body: (
               <>
                 <img
@@ -334,73 +379,80 @@ export const Route = createFileRoute("/tennis")({
                   className="mb-3 w-full rounded-lg border"
                 />
                 <p>
-                  Tennis reprices on every point — no other sport moves as granularly. A break of
-                  serve, a tie-break, a medical timeout or a fifth-set momentum swing all shift odds
-                  in real time. In-play markets include next game winner, set winner, game handicaps
-                  and revised match winner prices, with cash out on selected markets.
+                  Live tennis betting allows users to follow matches while they are happening and
+                  explore changing odds during different moments of play.
                 </p>
                 <p className="mt-2">
-                  Follow matches in the{" "}
+                  Tennis matches can change quickly due to breaks of serve, momentum shifts,
+                  injuries, and tie-break situations. Live betting markets provide options based on
+                  real-time match developments — follow the action in the{" "}
                   <a href="/live" className="text-brand underline">
                     live betting
                   </a>{" "}
-                  lobby, where point-by-point scores sit beside each market.
+                  section.
                 </p>
               </>
             ),
           },
           {
-            heading: "Tennis Betting Markets Explained",
+            heading: "How to Analyze Tennis Matches Before Betting",
             body: (
               <>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
-                  <li>
-                    <strong>Match winner</strong> — which player wins the match
-                  </li>
-                  <li>
-                    <strong>Set betting</strong> — exact set score, e.g. 2-0 or 2-1
-                  </li>
-                  <li>
-                    <strong>First set winner</strong> — who takes the opening set
-                  </li>
-                  <li>
-                    <strong>Total games</strong> — over/under on games played in the match
-                  </li>
-                  <li>
-                    <strong>Game handicap</strong> — backing a player with a games advantage or
-                    deficit
-                  </li>
-                  <li>
-                    <strong>Tie-break markets</strong> — whether a set or match goes to a tie-break
-                  </li>
-                  <li>
-                    <strong>Outright winner</strong> — tournament, quarter and half-of-draw markets
-                  </li>
-                </ul>
-                <p className="mt-2">
-                  Surface records matter — a clay-court specialist's odds differ sharply between
-                  Roland Garros and Wimbledon. Check head-to-heads by surface before betting.
+                <p>Understanding key match factors can help users make informed decisions:</p>
+                <h3 className="mt-3 font-semibold">Player Form</h3>
+                <p>Review recent performances, winning streaks, and tournament results.</p>
+                <h3 className="mt-3 font-semibold">Head-to-Head Records</h3>
+                <p>Previous meetings between players can provide useful historical information.</p>
+                <h3 className="mt-3 font-semibold">Court Surface</h3>
+                <p>Players often perform differently on clay, grass, and hard courts.</p>
+                <h3 className="mt-3 font-semibold">Fitness and Schedule</h3>
+                <p>Recent workload, injuries, and tournament schedules may affect performance.</p>
+                <h3 className="mt-3 font-semibold">Playing Style</h3>
+                <p>
+                  Serve strength, return ability, and tactical approach can influence match
+                  outcomes.
                 </p>
               </>
+            ),
+          },
+          {
+            heading: "Tennis Betting Tips",
+            body: (
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>Research player statistics before selecting markets.</li>
+                <li>Compare odds across available betting options.</li>
+                <li>Consider tournament importance and player motivation.</li>
+                <li>Follow recent tennis news and updates.</li>
+                <li>Avoid making decisions based only on rankings.</li>
+              </ul>
             ),
           },
           {
             heading: "Responsible Tennis Betting",
             body: (
               <p>
-                Tennis betting should be entertainment, not a way to make guaranteed income. Only
-                bet if you are 18+ and eligible, set personal limits and never chase losses. Use the
-                account controls on{" "}
+                Sports betting should always be approached responsibly. Set personal limits,
+                understand the risks involved, and only participate if you meet the legal age
+                requirements in your location. Visit{" "}
                 <a href="/responsible-gaming" className="text-brand underline">
                   Responsible Gaming
-                </a>
-                , review INR options on{" "}
-                <a href="/payments" className="text-brand underline">
-                  Payments
                 </a>{" "}
-                and the rules on{" "}
-                <a href="/terms" className="text-brand underline">
-                  Terms & Conditions
+                for account controls and safer-gambling resources.
+              </p>
+            ),
+          },
+          {
+            heading: "Explore Tennis Betting Markets",
+            body: (
+              <p>
+                Follow ATP, WTA, and Grand Slam tournaments with a wide range of tennis betting
+                markets. Explore match odds,{" "}
+                <a href="/live" className="text-brand underline">
+                  live betting options
+                </a>
+                , and tournament selections at 1xBET India — deposit and withdraw in INR via{" "}
+                <a href="/payments" className="text-brand underline">
+                  supported payment methods
                 </a>
                 .
               </p>
