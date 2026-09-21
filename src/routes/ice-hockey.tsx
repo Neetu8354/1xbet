@@ -12,23 +12,23 @@ const breadcrumbItems = [
 const faqs = [
   {
     q: "What ice hockey leagues can I bet on?",
-    a: "You can bet on the NHL, KHL, IIHF World Championship, Olympic hockey, plus European domestic leagues such as Sweden's SHL, Finland's Liiga, the Czech Extraliga and Switzerland's National League.",
+    a: "You can explore betting markets across competitions such as NHL, KHL, IIHF World Championship, and international hockey tournaments.",
   },
   {
     q: "What is puck line betting in hockey?",
-    a: "The puck line is hockey's version of a point spread, most commonly set at ±1.5 goals. The favourite must win by two or more goals; the underdog covers by winning outright or losing by a single goal.",
+    a: "Puck line betting uses a goal handicap between two teams, usually set around 1.5 goals.",
   },
   {
     q: "How does hockey totals betting work?",
-    a: "Totals betting is an over/under market on the combined goals scored by both teams, usually around 5.5 or 6.5 goals in the NHL. Overtime and shootout-deciding goals normally count toward the total.",
+    a: "Hockey totals betting focuses on whether the combined goals scored by both teams will be over or under a selected number.",
   },
   {
     q: "Can I bet on NHL matches live?",
-    a: "Yes — live NHL betting markets reprice after every goal, power play and period break. Because most NHL games are played overnight India time, live betting is often the most practical way to follow the action.",
+    a: "Yes, live hockey betting allows users to follow matches and explore available markets while games are in progress.",
   },
   {
-    q: "What hockey tournaments are available?",
-    a: "Beyond league play, you can bet on the Stanley Cup playoffs, the IIHF World Championship each May, Olympic hockey tournaments, the KHL's Gagarin Cup playoffs and various European league championships.",
+    q: "What hockey tournaments are available for betting?",
+    a: "Major tournaments include NHL events, Stanley Cup Playoffs, KHL competitions, IIHF World Championship, and other international hockey events.",
   },
 ];
 
@@ -148,7 +148,7 @@ export const Route = createFileRoute("/ice-hockey")({
     <>
       <SEOPageBreadcrumb items={breadcrumbItems} />
       <SEOPage
-        title="Ice Hockey Betting India"
+        title="Ice Hockey Betting India - NHL, KHL & Live Hockey Odds"
         description="NHL, KHL and IIHF hockey odds — puck line, totals, period and live markets in INR"
         breadcrumbs={breadcrumbItems}
         topContent={
@@ -193,50 +193,48 @@ export const Route = createFileRoute("/ice-hockey")({
         }
         sections={[
           {
-            heading: "Ice Hockey Betting Guide",
+            heading: "Ice Hockey Betting at 1xBET India",
             body: (
               <>
                 <p>
-                  Ice hockey is one of the fastest sports in the world, and that speed translates
-                  directly into its betting markets — momentum can swing on a single shift, power
-                  play or goaltending change. At 1xBET India you can bet on the sport across the
-                  full calendar: the{" "}
+                  Ice hockey is one of the fastest and most exciting sports in the world, offering
+                  betting opportunities throughout the year. At 1xBET India, hockey fans can explore
+                  markets across major competitions including the{" "}
                   <a href="/ice-hockey/nhl" className="text-brand underline">
                     NHL
-                  </a>{" "}
-                  and its Stanley Cup playoffs, Russia's{" "}
+                  </a>
+                  ,{" "}
                   <a href="/ice-hockey/khl" className="text-brand underline">
                     KHL
                   </a>
-                  , the IIHF World Championship, Olympic hockey and Europe's top domestic leagues.
+                  , IIHF World Championship, Olympic hockey tournaments, and other international
+                  events.
                 </p>
                 <p className="mt-2">
-                  Pre-match and{" "}
+                  With pre-match and{" "}
                   <a href="/ice-hockey/live" className="text-brand underline">
                     live betting
                   </a>{" "}
-                  are available on every competition, with markets spanning match winners, puck
-                  lines, totals, period betting and outrights — all settled in INR.
+                  options available, users can follow hockey games and explore different markets
+                  including match winners, puck lines, totals, period betting, player-focused
+                  markets, and tournament winner selections.
                 </p>
               </>
             ),
           },
           {
-            heading: "Latest Ice Hockey Odds",
+            heading: "Latest Ice Hockey Betting Odds",
             body: (
               <p>
-                Hockey odds move more than in most sports because goaltending announcements come
-                late — a starting goalie confirmed an hour before puck drop can shift the moneyline
-                by 20–30 points. Travel schedules, back-to-back games and injuries to top-six
-                forwards all feed into pricing. Compare current prices on the{" "}
+                Ice hockey odds are influenced by several factors including team form, player
+                availability, offensive and defensive performance, goaltender statistics, injuries,
+                and recent match results. Understanding these factors can help users analyse
+                different hockey betting markets before making selections. Compare current prices on
+                the{" "}
                 <a href="/ice-hockey/odds" className="text-brand underline">
                   ice hockey odds
                 </a>{" "}
-                page and check recent form on{" "}
-                <a href="/ice-hockey/results" className="text-brand underline">
-                  hockey results
-                </a>
-                .
+                page.
               </p>
             ),
           },
@@ -245,21 +243,25 @@ export const Route = createFileRoute("/ice-hockey")({
             body: (
               <>
                 <p>
-                  The NHL is the world's premier hockey league: 32 teams playing an 82-game regular
-                  season from October to April, followed by four rounds of Stanley Cup playoffs.
-                  Popular NHL markets include:
+                  The NHL is the most popular professional ice hockey league in the world and
+                  features top teams competing throughout the regular season and Stanley Cup
+                  playoffs.
                 </p>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
-                  <li>Moneyline and regulation-time winner</li>
-                  <li>Puck line (usually ±1.5 goals)</li>
+                <p className="mt-2">NHL betting markets include:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
+                  <li>Match winner and moneyline betting</li>
+                  <li>Regulation time and overtime markets</li>
+                  <li>Puck line betting</li>
                   <li>Total goals over/under</li>
-                  <li>Period winners and period totals</li>
-                  <li>Player props — goals, assists, points, saves</li>
-                  <li>Stanley Cup, conference and division outrights</li>
+                  <li>Period betting</li>
+                  <li>Team totals</li>
+                  <li>Stanley Cup winner markets</li>
+                  <li>Conference and division winner markets</li>
                 </ul>
                 <p className="mt-2">
-                  For India-based bettors, NHL games run overnight into early morning — live betting
-                  during the second and third periods is the most practical way in. See the full{" "}
+                  When analysing NHL games, factors such as team performance, starting goaltenders,
+                  recent form, home advantage, and player injuries can influence match outcomes. See
+                  the{" "}
                   <a href="/ice-hockey/nhl" className="text-brand underline">
                     NHL betting guide
                   </a>
@@ -271,29 +273,47 @@ export const Route = createFileRoute("/ice-hockey")({
           {
             heading: "KHL Hockey Betting",
             body: (
+              <p>
+                The Kontinental Hockey League (KHL) is one of the leading professional hockey
+                leagues outside North America. Teams from different regions compete in a high-level
+                tournament featuring skilled players and tactical gameplay. KHL betting markets
+                include match winners, puck lines, totals, period results, and tournament winner
+                options — explore the{" "}
+                <a href="/ice-hockey/khl" className="text-brand underline">
+                  KHL betting guide
+                </a>
+                .
+              </p>
+            ),
+          },
+          {
+            heading: "IIHF World Championship Betting",
+            body: (
               <>
                 <p>
-                  The KHL is the strongest league outside North America, with clubs across Russia
-                  and neighbouring countries competing for the Gagarin Cup. KHL games run at
-                  convenient evening times in India, and the league's tighter, lower-scoring style
-                  makes puck line and under-totals markets particularly popular. Explore the{" "}
-                  <a href="/ice-hockey/khl" className="text-brand underline">
-                    KHL betting guide
-                  </a>
-                  .
+                  The IIHF World Championship brings together national teams from around the world.
+                  International hockey tournaments create unique betting opportunities because teams
+                  often have different playing styles and strategies.
                 </p>
+                <p className="mt-2">Popular IIHF betting markets include:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
+                  <li>Match winner</li>
+                  <li>Tournament winner</li>
+                  <li>Total goals</li>
+                  <li>Period results</li>
+                  <li>Correct score markets</li>
+                </ul>
               </>
             ),
           },
           {
-            heading: "IIHF Tournament Betting",
+            heading: "Stanley Cup Betting",
             body: (
               <p>
-                The IIHF World Championship runs every May and brings together national teams from
-                the top hockey nations — Canada, USA, Finland, Sweden, Czechia and more. Olympic
-                hockey adds another major event every four years. Tournament markets include match
-                winners, group standings, outright champion and top scorer, with live betting on
-                every game.
+                The Stanley Cup Playoffs are among the biggest events in ice hockey. Teams compete
+                through multiple playoff rounds before reaching the championship final. Users can
+                explore markets including series winners, conference champions, and overall
+                tournament winners.
               </p>
             ),
           },
@@ -301,36 +321,43 @@ export const Route = createFileRoute("/ice-hockey")({
             heading: "Popular Ice Hockey Betting Markets",
             body: (
               <>
-                <h3 className="mt-2 font-semibold">Puck Line Betting Explained</h3>
+                <h3 className="mt-2 font-semibold">Match Winner Betting</h3>
                 <p>
-                  The puck line is hockey's handicap market, most commonly set at ±1.5 goals. Back
-                  the favourite and they must win by two or more; back the underdog and they cover
-                  by winning or losing by a single goal. In low-scoring leagues like the KHL, the
-                  +1.5 underdog covers often enough to carry real value.
+                  Match winner betting allows users to select which team will win an ice hockey
+                  game. Markets may include regulation-time results or outcomes including overtime
+                  depending on the competition rules.
                 </p>
-                <h3 className="mt-3 font-semibold">Hockey Totals Betting</h3>
+                <h3 className="mt-3 font-semibold">Puck Line Betting</h3>
                 <p>
-                  Totals are an over/under on combined goals — typically 5.5 or 6.5 in the NHL.
-                  Goaltender matchups, power-play efficiency and recent scoring trends drive the
-                  number. Overtime and the shootout-deciding goal usually count toward the total.
+                  Puck line betting is similar to handicap betting in other sports. One team
+                  receives a goal advantage or disadvantage, commonly set at 1.5 goals.
+                </p>
+                <h3 className="mt-3 font-semibold">Total Goals Betting</h3>
+                <p>
+                  Total goals betting focuses on the combined number of goals scored by both teams.
+                  Users can select whether the final score will be over or under a specific total.
                 </p>
                 <h3 className="mt-3 font-semibold">Period Betting</h3>
                 <p>
-                  Hockey splits into three 20-minute periods, each with its own markets: period
-                  winner, period totals and team to score first. Some teams are famously fast
-                  starters or strong closers, which makes period betting a useful niche.
+                  Ice hockey games are divided into three periods, creating additional betting
+                  opportunities. Users can explore period winners, period totals, and other
+                  period-based markets.
                 </p>
-                <h3 className="mt-3 font-semibold">Stanley Cup Betting</h3>
+                <h3 className="mt-3 font-semibold">Both Teams to Score Betting</h3>
                 <p>
-                  Outright markets run all season — Stanley Cup champion, conference winners,
-                  division winners and individual awards like the Hart and Conn Smythe trophies.
-                  Prices shift dramatically once the playoff bracket is set.
+                  This market focuses on whether both teams will score at least one goal during the
+                  match.
+                </p>
+                <h3 className="mt-3 font-semibold">Correct Score Betting</h3>
+                <p>
+                  Correct score betting involves predicting the final score outcome of an ice hockey
+                  game.
                 </p>
               </>
             ),
           },
           {
-            heading: "Live Hockey Betting",
+            heading: "Live Ice Hockey Betting",
             body: (
               <>
                 <img
@@ -343,46 +370,45 @@ export const Route = createFileRoute("/ice-hockey")({
                   className="mb-3 w-full rounded-lg border"
                 />
                 <p>
-                  Live hockey betting reprices after every goal, penalty and power play — and the
-                  empty-net finish makes the last two minutes uniquely volatile. A team trailing by
-                  one late will pull its goalie, which swings both the match-winner and totals
-                  markets in seconds.
+                  Live hockey betting allows users to follow matches while they are happening and
+                  explore changing odds during different moments of play.
                 </p>
                 <p className="mt-2">
-                  In-play markets include next-goal scorer (team), live puck line, updated totals,
-                  period results and match winner. Follow every game on the{" "}
+                  Ice hockey can change quickly because of power plays, penalty situations,
+                  goaltender changes, and late-game strategies. Live betting markets provide
+                  opportunities based on real-time match developments — follow the action in the{" "}
                   <a href="/ice-hockey/live" className="text-brand underline">
-                    live hockey betting
+                    live hockey
                   </a>{" "}
-                  page.
+                  section.
                 </p>
               </>
             ),
           },
           {
-            heading: "How to Analyse Hockey Matches",
+            heading: "How to Analyse Ice Hockey Matches Before Betting",
             body: (
               <>
-                <h3 className="mt-2 font-semibold">Goaltending</h3>
+                <h3 className="mt-2 font-semibold">Team Performance</h3>
                 <p>
-                  The starting goalie is the single biggest variable — check confirmed starters and
-                  save-percentage form before any puck-line or totals bet.
+                  Review recent results, scoring ability, defensive records, and overall
+                  consistency.
                 </p>
-                <h3 className="mt-3 font-semibold">Schedule and travel</h3>
+                <h3 className="mt-3 font-semibold">Goaltender Performance</h3>
                 <p>
-                  Back-to-back games and long road trips measurably hurt performance, especially in
-                  the NHL's compressed schedule.
+                  The goalkeeper plays an important role in ice hockey. Recent saves, goals
+                  conceded, and starting goalie information can influence match analysis.
                 </p>
-                <h3 className="mt-3 font-semibold">Special teams</h3>
+                <h3 className="mt-3 font-semibold">Player Availability</h3>
+                <p>Injuries, suspensions, and lineup changes can affect team strength.</p>
+                <h3 className="mt-3 font-semibold">Head-to-Head Records</h3>
+                <p>Previous meetings between teams can provide useful historical information.</p>
+                <h3 className="mt-3 font-semibold">Home and Away Form</h3>
                 <p>
-                  Power-play and penalty-kill percentages decide tight games — a top-five power play
-                  against a weak penalty kill is a genuine edge.
+                  Some teams perform differently depending on whether they play at home or away.
                 </p>
-                <h3 className="mt-3 font-semibold">Head-to-head and home/away</h3>
-                <p>
-                  Divisional rivals play each other often, and home-ice advantage remains real in
-                  hockey — check both before pricing a match winner.
-                </p>
+                <h3 className="mt-3 font-semibold">Power Play and Penalty Kill Statistics</h3>
+                <p>Special teams performance can have a major impact on hockey matches.</p>
               </>
             ),
           },
@@ -390,16 +416,18 @@ export const Route = createFileRoute("/ice-hockey")({
             heading: "Ice Hockey Betting Tips",
             body: (
               <ul className="mt-2 list-disc space-y-1 pl-5">
-                <li>Always confirm the starting goaltender before betting.</li>
-                <li>Compare puck-line prices with the moneyline — the +1.5 often offers value.</li>
-                <li>Factor in rest days, back-to-backs and travel distance.</li>
-                <li>Check the hockey schedule for divisional and rivalry games.</li>
-                <li>Set personal betting limits and make responsible decisions.</li>
+                <li>Research teams and player statistics before selecting markets.</li>
+                <li>
+                  Compare different betting options instead of focusing only on match winners.
+                </li>
+                <li>Consider injuries, recent form, and tournament importance.</li>
+                <li>Follow hockey news and lineup updates.</li>
+                <li>Set personal limits and approach betting responsibly.</li>
               </ul>
             ),
           },
           {
-            heading: "Responsible Hockey Betting",
+            heading: "Responsible Ice Hockey Betting",
             body: (
               <p>
                 Sports betting should always be approached responsibly. Understand the risks
@@ -408,7 +436,7 @@ export const Route = createFileRoute("/ice-hockey")({
                 <a href="/responsible-gaming" className="text-brand underline">
                   Responsible Gaming
                 </a>{" "}
-                for deposit limits, self-exclusion tools and safer-gambling resources, or{" "}
+                for account controls and safer-gambling resources, or{" "}
                 <a href="/contact" className="text-brand underline">
                   contact support
                 </a>{" "}
@@ -420,14 +448,15 @@ export const Route = createFileRoute("/ice-hockey")({
             heading: "Explore Ice Hockey Betting Markets",
             body: (
               <p>
-                Follow the NHL, KHL and international hockey with a full range of markets — puck
-                line, totals, period betting and outrights. Deposit and withdraw in INR via{" "}
+                Follow NHL, KHL, IIHF, and international hockey competitions with a wide range of
+                betting options. Explore ice hockey{" "}
+                <a href="/ice-hockey/odds" className="text-brand underline">
+                  odds
+                </a>
+                , puck lines, totals, period markets, and live betting opportunities at 1xBET India
+                — deposit and withdraw in INR via{" "}
                 <a href="/payments" className="text-brand underline">
                   supported payment methods
-                </a>
-                , check today's games on the{" "}
-                <a href="/ice-hockey/schedule" className="text-brand underline">
-                  hockey schedule
                 </a>
                 , and review our{" "}
                 <a href="/terms" className="text-brand underline">
@@ -444,7 +473,7 @@ export const Route = createFileRoute("/ice-hockey")({
         ]}
       >
         <section className="mt-10">
-          <h2 className="text-xl font-bold sm:text-2xl">Frequently Asked Questions</h2>
+          <h2 className="text-xl font-bold sm:text-2xl">Ice Hockey Betting FAQ</h2>
           <div className="mt-4 space-y-3">
             {faqs.map((f) => (
               <details key={f.q} className="rounded-lg border bg-card p-4">
