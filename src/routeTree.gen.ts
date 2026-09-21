@@ -66,6 +66,12 @@ import { Route as TopEventsRouteImport } from './routes/top-events'
 import { Route as TotoRouteImport } from './routes/toto'
 import { Route as ValorantBettingRouteImport } from './routes/valorant-betting'
 import { Route as VolleyballRouteImport } from './routes/volleyball'
+import { Route as BasketballEuroleagueRouteImport } from './routes/basketball_.euroleague'
+import { Route as BasketballLiveRouteImport } from './routes/basketball_.live'
+import { Route as BasketballNbaRouteImport } from './routes/basketball_.nba'
+import { Route as BasketballOddsRouteImport } from './routes/basketball_.odds'
+import { Route as BasketballResultsRouteImport } from './routes/basketball_.results'
+import { Route as BasketballScheduleRouteImport } from './routes/basketball_.schedule'
 import { Route as FootballOddsRouteImport } from './routes/football_.odds'
 import { Route as FootballScheduleRouteImport } from './routes/football_.schedule'
 import { Route as FootballTipsRouteImport } from './routes/football_.tips'
@@ -360,6 +366,36 @@ const VolleyballRoute = VolleyballRouteImport.update({
   path: '/volleyball',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BasketballEuroleagueRoute = BasketballEuroleagueRouteImport.update({
+  id: '/basketball_/euroleague',
+  path: '/basketball/euroleague',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BasketballLiveRoute = BasketballLiveRouteImport.update({
+  id: '/basketball_/live',
+  path: '/basketball/live',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BasketballNbaRoute = BasketballNbaRouteImport.update({
+  id: '/basketball_/nba',
+  path: '/basketball/nba',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BasketballOddsRoute = BasketballOddsRouteImport.update({
+  id: '/basketball_/odds',
+  path: '/basketball/odds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BasketballResultsRoute = BasketballResultsRouteImport.update({
+  id: '/basketball_/results',
+  path: '/basketball/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BasketballScheduleRoute = BasketballScheduleRouteImport.update({
+  id: '/basketball_/schedule',
+  path: '/basketball/schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FootballOddsRoute = FootballOddsRouteImport.update({
   id: '/football_/odds',
   path: '/football/odds',
@@ -459,6 +495,12 @@ export interface FileRoutesByFullPath {
   '/toto': typeof TotoRoute
   '/valorant-betting': typeof ValorantBettingRoute
   '/volleyball': typeof VolleyballRoute
+  '/basketball/euroleague': typeof BasketballEuroleagueRoute
+  '/basketball/live': typeof BasketballLiveRoute
+  '/basketball/nba': typeof BasketballNbaRoute
+  '/basketball/odds': typeof BasketballOddsRoute
+  '/basketball/results': typeof BasketballResultsRoute
+  '/basketball/schedule': typeof BasketballScheduleRoute
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
@@ -526,6 +568,12 @@ export interface FileRoutesByTo {
   '/toto': typeof TotoRoute
   '/valorant-betting': typeof ValorantBettingRoute
   '/volleyball': typeof VolleyballRoute
+  '/basketball/euroleague': typeof BasketballEuroleagueRoute
+  '/basketball/live': typeof BasketballLiveRoute
+  '/basketball/nba': typeof BasketballNbaRoute
+  '/basketball/odds': typeof BasketballOddsRoute
+  '/basketball/results': typeof BasketballResultsRoute
+  '/basketball/schedule': typeof BasketballScheduleRoute
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
@@ -594,6 +642,12 @@ export interface FileRoutesById {
   '/toto': typeof TotoRoute
   '/valorant-betting': typeof ValorantBettingRoute
   '/volleyball': typeof VolleyballRoute
+  '/basketball_/euroleague': typeof BasketballEuroleagueRoute
+  '/basketball_/live': typeof BasketballLiveRoute
+  '/basketball_/nba': typeof BasketballNbaRoute
+  '/basketball_/odds': typeof BasketballOddsRoute
+  '/basketball_/results': typeof BasketballResultsRoute
+  '/basketball_/schedule': typeof BasketballScheduleRoute
   '/football_/odds': typeof FootballOddsRoute
   '/football_/schedule': typeof FootballScheduleRoute
   '/football_/tips': typeof FootballTipsRoute
@@ -663,6 +717,12 @@ export interface FileRouteTypes {
     | '/toto'
     | '/valorant-betting'
     | '/volleyball'
+    | '/basketball/euroleague'
+    | '/basketball/live'
+    | '/basketball/nba'
+    | '/basketball/odds'
+    | '/basketball/results'
+    | '/basketball/schedule'
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
@@ -730,6 +790,12 @@ export interface FileRouteTypes {
     | '/toto'
     | '/valorant-betting'
     | '/volleyball'
+    | '/basketball/euroleague'
+    | '/basketball/live'
+    | '/basketball/nba'
+    | '/basketball/odds'
+    | '/basketball/results'
+    | '/basketball/schedule'
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
@@ -797,6 +863,12 @@ export interface FileRouteTypes {
     | '/toto'
     | '/valorant-betting'
     | '/volleyball'
+    | '/basketball_/euroleague'
+    | '/basketball_/live'
+    | '/basketball_/nba'
+    | '/basketball_/odds'
+    | '/basketball_/results'
+    | '/basketball_/schedule'
     | '/football_/odds'
     | '/football_/schedule'
     | '/football_/tips'
@@ -865,6 +937,12 @@ export interface RootRouteChildren {
   TotoRoute: typeof TotoRoute
   ValorantBettingRoute: typeof ValorantBettingRoute
   VolleyballRoute: typeof VolleyballRoute
+  BasketballEuroleagueRoute: typeof BasketballEuroleagueRoute
+  BasketballLiveRoute: typeof BasketballLiveRoute
+  BasketballNbaRoute: typeof BasketballNbaRoute
+  BasketballOddsRoute: typeof BasketballOddsRoute
+  BasketballResultsRoute: typeof BasketballResultsRoute
+  BasketballScheduleRoute: typeof BasketballScheduleRoute
   FootballOddsRoute: typeof FootballOddsRoute
   FootballScheduleRoute: typeof FootballScheduleRoute
   FootballTipsRoute: typeof FootballTipsRoute
@@ -1276,6 +1354,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VolleyballRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/basketball_/euroleague': {
+      id: '/basketball_/euroleague'
+      path: '/basketball/euroleague'
+      fullPath: '/basketball/euroleague'
+      preLoaderRoute: typeof BasketballEuroleagueRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/basketball_/live': {
+      id: '/basketball_/live'
+      path: '/basketball/live'
+      fullPath: '/basketball/live'
+      preLoaderRoute: typeof BasketballLiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/basketball_/nba': {
+      id: '/basketball_/nba'
+      path: '/basketball/nba'
+      fullPath: '/basketball/nba'
+      preLoaderRoute: typeof BasketballNbaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/basketball_/odds': {
+      id: '/basketball_/odds'
+      path: '/basketball/odds'
+      fullPath: '/basketball/odds'
+      preLoaderRoute: typeof BasketballOddsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/basketball_/results': {
+      id: '/basketball_/results'
+      path: '/basketball/results'
+      fullPath: '/basketball/results'
+      preLoaderRoute: typeof BasketballResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/basketball_/schedule': {
+      id: '/basketball_/schedule'
+      path: '/basketball/schedule'
+      fullPath: '/basketball/schedule'
+      preLoaderRoute: typeof BasketballScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/football_/odds': {
       id: '/football_/odds'
       path: '/football/odds'
@@ -1393,6 +1513,12 @@ const rootRouteChildren: RootRouteChildren = {
   TotoRoute: TotoRoute,
   ValorantBettingRoute: ValorantBettingRoute,
   VolleyballRoute: VolleyballRoute,
+  BasketballEuroleagueRoute: BasketballEuroleagueRoute,
+  BasketballLiveRoute: BasketballLiveRoute,
+  BasketballNbaRoute: BasketballNbaRoute,
+  BasketballOddsRoute: BasketballOddsRoute,
+  BasketballResultsRoute: BasketballResultsRoute,
+  BasketballScheduleRoute: BasketballScheduleRoute,
   FootballOddsRoute: FootballOddsRoute,
   FootballScheduleRoute: FootballScheduleRoute,
   FootballTipsRoute: FootballTipsRoute,

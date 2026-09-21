@@ -114,6 +114,29 @@ const images = [
     w: 1200,
     h: 630,
   },
+  {
+    file: "basketball-betting-india",
+    title: "Basketball Betting India",
+    sub: "NBA · EuroLeague · International — Live Odds in INR",
+    accent: "#f97316",
+    icon: "trophy",
+  },
+  {
+    file: "live-basketball-betting",
+    title: "Live Basketball Betting",
+    sub: "Quarter-by-Quarter In-Play Odds on Every Game",
+    accent: "#38bdf8",
+    icon: "live",
+  },
+  {
+    file: "og-basketball",
+    title: "Basketball Betting India",
+    sub: "NBA · EuroLeague · International — Live Odds in INR",
+    accent: "#f97316",
+    icon: "trophy",
+    w: 1200,
+    h: 630,
+  },
 ];
 
 const esc = (s) => s.replace(/&/g, "&amp;");

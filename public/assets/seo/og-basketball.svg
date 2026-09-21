@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Basketball Betting India">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1030"/>
+      <stop offset="1" stop-color="#14224f"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#f97316" stroke-opacity="0.25" fill="none" stroke-width="2">
+    <path d="M0 550 L1200 550"/>
+    <path d="M0 560 L1200 560" stroke-dasharray="6 10"/>
+    <circle cx="600" cy="140" r="120"/>
+    <circle cx="600" cy="140" r="160" stroke-dasharray="4 12"/>
+  </g>
+  <rect x="440" y="30" width="320" height="240" fill="url(#glow)"/>
+  <path d="M560 70h80v18h22v14c0 24-12 42-30 48-8 14-20 24-32 28v10h20v14h-80v-14h20v-10c-12-4-24-14-32-28-18-6-30-24-30-48V88h22z" fill="#f97316"/>
+  <rect x="60" y="60" width="190" height="44" rx="8" fill="#f97316"/>
+  <text x="155" y="90" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#ffffff">1xBET</text>
+  <text x="60" y="330" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#ffffff">Basketball Betting India</text>
+  <text x="60" y="385" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#a9c4ff">NBA · EuroLeague · International — Live Odds in INR</text>
+  <rect x="60" y="415" width="200" height="50" rx="8" fill="#28a745"/>
+  <text x="160" y="448" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#ffffff">BET NOW</text>
+</svg>
