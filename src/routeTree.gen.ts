@@ -69,6 +69,11 @@ import { Route as VolleyballRouteImport } from './routes/volleyball'
 import { Route as FootballOddsRouteImport } from './routes/football_.odds'
 import { Route as FootballScheduleRouteImport } from './routes/football_.schedule'
 import { Route as FootballTipsRouteImport } from './routes/football_.tips'
+import { Route as TennisAtpRouteImport } from './routes/tennis_.atp'
+import { Route as TennisGrandSlamsRouteImport } from './routes/tennis_.grand-slams'
+import { Route as TennisResultsRouteImport } from './routes/tennis_.results'
+import { Route as TennisScheduleRouteImport } from './routes/tennis_.schedule'
+import { Route as TennisWtaRouteImport } from './routes/tennis_.wta'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -370,6 +375,31 @@ const FootballTipsRoute = FootballTipsRouteImport.update({
   path: '/football/tips',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TennisAtpRoute = TennisAtpRouteImport.update({
+  id: '/tennis_/atp',
+  path: '/tennis/atp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TennisGrandSlamsRoute = TennisGrandSlamsRouteImport.update({
+  id: '/tennis_/grand-slams',
+  path: '/tennis/grand-slams',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TennisResultsRoute = TennisResultsRouteImport.update({
+  id: '/tennis_/results',
+  path: '/tennis/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TennisScheduleRoute = TennisScheduleRouteImport.update({
+  id: '/tennis_/schedule',
+  path: '/tennis/schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TennisWtaRoute = TennisWtaRouteImport.update({
+  id: '/tennis_/wta',
+  path: '/tennis/wta',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -432,6 +462,11 @@ export interface FileRoutesByFullPath {
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
+  '/tennis/atp': typeof TennisAtpRoute
+  '/tennis/grand-slams': typeof TennisGrandSlamsRoute
+  '/tennis/results': typeof TennisResultsRoute
+  '/tennis/schedule': typeof TennisScheduleRoute
+  '/tennis/wta': typeof TennisWtaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -494,6 +529,11 @@ export interface FileRoutesByTo {
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
+  '/tennis/atp': typeof TennisAtpRoute
+  '/tennis/grand-slams': typeof TennisGrandSlamsRoute
+  '/tennis/results': typeof TennisResultsRoute
+  '/tennis/schedule': typeof TennisScheduleRoute
+  '/tennis/wta': typeof TennisWtaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -557,6 +597,11 @@ export interface FileRoutesById {
   '/football_/odds': typeof FootballOddsRoute
   '/football_/schedule': typeof FootballScheduleRoute
   '/football_/tips': typeof FootballTipsRoute
+  '/tennis_/atp': typeof TennisAtpRoute
+  '/tennis_/grand-slams': typeof TennisGrandSlamsRoute
+  '/tennis_/results': typeof TennisResultsRoute
+  '/tennis_/schedule': typeof TennisScheduleRoute
+  '/tennis_/wta': typeof TennisWtaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -621,6 +666,11 @@ export interface FileRouteTypes {
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
+    | '/tennis/atp'
+    | '/tennis/grand-slams'
+    | '/tennis/results'
+    | '/tennis/schedule'
+    | '/tennis/wta'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -683,6 +733,11 @@ export interface FileRouteTypes {
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
+    | '/tennis/atp'
+    | '/tennis/grand-slams'
+    | '/tennis/results'
+    | '/tennis/schedule'
+    | '/tennis/wta'
   id:
     | '__root__'
     | '/'
@@ -745,6 +800,11 @@ export interface FileRouteTypes {
     | '/football_/odds'
     | '/football_/schedule'
     | '/football_/tips'
+    | '/tennis_/atp'
+    | '/tennis_/grand-slams'
+    | '/tennis_/results'
+    | '/tennis_/schedule'
+    | '/tennis_/wta'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -808,6 +868,11 @@ export interface RootRouteChildren {
   FootballOddsRoute: typeof FootballOddsRoute
   FootballScheduleRoute: typeof FootballScheduleRoute
   FootballTipsRoute: typeof FootballTipsRoute
+  TennisAtpRoute: typeof TennisAtpRoute
+  TennisGrandSlamsRoute: typeof TennisGrandSlamsRoute
+  TennisResultsRoute: typeof TennisResultsRoute
+  TennisScheduleRoute: typeof TennisScheduleRoute
+  TennisWtaRoute: typeof TennisWtaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1232,6 +1297,41 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FootballTipsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tennis_/atp': {
+      id: '/tennis_/atp'
+      path: '/tennis/atp'
+      fullPath: '/tennis/atp'
+      preLoaderRoute: typeof TennisAtpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tennis_/grand-slams': {
+      id: '/tennis_/grand-slams'
+      path: '/tennis/grand-slams'
+      fullPath: '/tennis/grand-slams'
+      preLoaderRoute: typeof TennisGrandSlamsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tennis_/results': {
+      id: '/tennis_/results'
+      path: '/tennis/results'
+      fullPath: '/tennis/results'
+      preLoaderRoute: typeof TennisResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tennis_/schedule': {
+      id: '/tennis_/schedule'
+      path: '/tennis/schedule'
+      fullPath: '/tennis/schedule'
+      preLoaderRoute: typeof TennisScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tennis_/wta': {
+      id: '/tennis_/wta'
+      path: '/tennis/wta'
+      fullPath: '/tennis/wta'
+      preLoaderRoute: typeof TennisWtaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -1296,6 +1396,11 @@ const rootRouteChildren: RootRouteChildren = {
   FootballOddsRoute: FootballOddsRoute,
   FootballScheduleRoute: FootballScheduleRoute,
   FootballTipsRoute: FootballTipsRoute,
+  TennisAtpRoute: TennisAtpRoute,
+  TennisGrandSlamsRoute: TennisGrandSlamsRoute,
+  TennisResultsRoute: TennisResultsRoute,
+  TennisScheduleRoute: TennisScheduleRoute,
+  TennisWtaRoute: TennisWtaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

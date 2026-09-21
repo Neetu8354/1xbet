@@ -216,6 +216,8 @@ export function SiteFooter() {
         { label: "LoL Betting", href: "/lol-betting" },
         { label: "Esports Schedule", href: "/esports-schedule" },
         { label: "Esports Results", href: "/esports-results" },
+        { label: "Tennis Betting", href: "/tennis" },
+        { label: "Grand Slam Betting", href: "/tennis/grand-slams" },
         { label: "MultiLIVE", href: "/multi-live" },
         { label: "Live", href: "/live" },
         { label: "Toto", href: "/toto" },

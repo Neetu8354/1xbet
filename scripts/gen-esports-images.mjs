@@ -91,6 +91,29 @@ const images = [
     w: 1200,
     h: 630,
   },
+  {
+    file: "tennis-betting-india",
+    title: "Tennis Betting India",
+    sub: "ATP · WTA · Grand Slams — Live Tennis Odds in INR",
+    accent: "#84cc16",
+    icon: "trophy",
+  },
+  {
+    file: "live-tennis-betting",
+    title: "Live Tennis Betting",
+    sub: "Point-by-Point In-Play Odds on Every Match",
+    accent: "#06b6d4",
+    icon: "live",
+  },
+  {
+    file: "og-tennis",
+    title: "Tennis Betting India",
+    sub: "ATP · WTA · Grand Slams — Live Tennis Odds in INR",
+    accent: "#84cc16",
+    icon: "trophy",
+    w: 1200,
+    h: 630,
+  },
 ];
 
 const esc = (s) => s.replace(/&/g, "&amp;");
