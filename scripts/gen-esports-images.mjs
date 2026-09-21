@@ -137,6 +137,29 @@ const images = [
     w: 1200,
     h: 630,
   },
+  {
+    file: "ice-hockey-betting-india",
+    title: "Ice Hockey Betting India",
+    sub: "NHL · KHL · IIHF Worlds — Puck Line & Totals in INR",
+    accent: "#7dd3fc",
+    icon: "trophy",
+  },
+  {
+    file: "live-ice-hockey-betting",
+    title: "Live Ice Hockey Betting",
+    sub: "Period-by-Period In-Play Odds on Every Game",
+    accent: "#38bdf8",
+    icon: "live",
+  },
+  {
+    file: "og-ice-hockey",
+    title: "Ice Hockey Betting India",
+    sub: "NHL · KHL · IIHF Worlds — Puck Line & Totals in INR",
+    accent: "#7dd3fc",
+    icon: "trophy",
+    w: 1200,
+    h: 630,
+  },
 ];
 
 const esc = (s) => s.replace(/&/g, "&amp;");

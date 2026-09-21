@@ -75,6 +75,12 @@ import { Route as BasketballScheduleRouteImport } from './routes/basketball_.sch
 import { Route as FootballOddsRouteImport } from './routes/football_.odds'
 import { Route as FootballScheduleRouteImport } from './routes/football_.schedule'
 import { Route as FootballTipsRouteImport } from './routes/football_.tips'
+import { Route as IceHockeyKhlRouteImport } from './routes/ice-hockey_.khl'
+import { Route as IceHockeyLiveRouteImport } from './routes/ice-hockey_.live'
+import { Route as IceHockeyNhlRouteImport } from './routes/ice-hockey_.nhl'
+import { Route as IceHockeyOddsRouteImport } from './routes/ice-hockey_.odds'
+import { Route as IceHockeyResultsRouteImport } from './routes/ice-hockey_.results'
+import { Route as IceHockeyScheduleRouteImport } from './routes/ice-hockey_.schedule'
 import { Route as TennisAtpRouteImport } from './routes/tennis_.atp'
 import { Route as TennisGrandSlamsRouteImport } from './routes/tennis_.grand-slams'
 import { Route as TennisResultsRouteImport } from './routes/tennis_.results'
@@ -411,6 +417,36 @@ const FootballTipsRoute = FootballTipsRouteImport.update({
   path: '/football/tips',
   getParentRoute: () => rootRouteImport,
 } as any)
+const IceHockeyKhlRoute = IceHockeyKhlRouteImport.update({
+  id: '/ice-hockey_/khl',
+  path: '/ice-hockey/khl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IceHockeyLiveRoute = IceHockeyLiveRouteImport.update({
+  id: '/ice-hockey_/live',
+  path: '/ice-hockey/live',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IceHockeyNhlRoute = IceHockeyNhlRouteImport.update({
+  id: '/ice-hockey_/nhl',
+  path: '/ice-hockey/nhl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IceHockeyOddsRoute = IceHockeyOddsRouteImport.update({
+  id: '/ice-hockey_/odds',
+  path: '/ice-hockey/odds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IceHockeyResultsRoute = IceHockeyResultsRouteImport.update({
+  id: '/ice-hockey_/results',
+  path: '/ice-hockey/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IceHockeyScheduleRoute = IceHockeyScheduleRouteImport.update({
+  id: '/ice-hockey_/schedule',
+  path: '/ice-hockey/schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TennisAtpRoute = TennisAtpRouteImport.update({
   id: '/tennis_/atp',
   path: '/tennis/atp',
@@ -504,6 +540,12 @@ export interface FileRoutesByFullPath {
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
+  '/ice-hockey/khl': typeof IceHockeyKhlRoute
+  '/ice-hockey/live': typeof IceHockeyLiveRoute
+  '/ice-hockey/nhl': typeof IceHockeyNhlRoute
+  '/ice-hockey/odds': typeof IceHockeyOddsRoute
+  '/ice-hockey/results': typeof IceHockeyResultsRoute
+  '/ice-hockey/schedule': typeof IceHockeyScheduleRoute
   '/tennis/atp': typeof TennisAtpRoute
   '/tennis/grand-slams': typeof TennisGrandSlamsRoute
   '/tennis/results': typeof TennisResultsRoute
@@ -577,6 +619,12 @@ export interface FileRoutesByTo {
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
+  '/ice-hockey/khl': typeof IceHockeyKhlRoute
+  '/ice-hockey/live': typeof IceHockeyLiveRoute
+  '/ice-hockey/nhl': typeof IceHockeyNhlRoute
+  '/ice-hockey/odds': typeof IceHockeyOddsRoute
+  '/ice-hockey/results': typeof IceHockeyResultsRoute
+  '/ice-hockey/schedule': typeof IceHockeyScheduleRoute
   '/tennis/atp': typeof TennisAtpRoute
   '/tennis/grand-slams': typeof TennisGrandSlamsRoute
   '/tennis/results': typeof TennisResultsRoute
@@ -651,6 +699,12 @@ export interface FileRoutesById {
   '/football_/odds': typeof FootballOddsRoute
   '/football_/schedule': typeof FootballScheduleRoute
   '/football_/tips': typeof FootballTipsRoute
+  '/ice-hockey_/khl': typeof IceHockeyKhlRoute
+  '/ice-hockey_/live': typeof IceHockeyLiveRoute
+  '/ice-hockey_/nhl': typeof IceHockeyNhlRoute
+  '/ice-hockey_/odds': typeof IceHockeyOddsRoute
+  '/ice-hockey_/results': typeof IceHockeyResultsRoute
+  '/ice-hockey_/schedule': typeof IceHockeyScheduleRoute
   '/tennis_/atp': typeof TennisAtpRoute
   '/tennis_/grand-slams': typeof TennisGrandSlamsRoute
   '/tennis_/results': typeof TennisResultsRoute
@@ -726,6 +780,12 @@ export interface FileRouteTypes {
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
+    | '/ice-hockey/khl'
+    | '/ice-hockey/live'
+    | '/ice-hockey/nhl'
+    | '/ice-hockey/odds'
+    | '/ice-hockey/results'
+    | '/ice-hockey/schedule'
     | '/tennis/atp'
     | '/tennis/grand-slams'
     | '/tennis/results'
@@ -799,6 +859,12 @@ export interface FileRouteTypes {
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
+    | '/ice-hockey/khl'
+    | '/ice-hockey/live'
+    | '/ice-hockey/nhl'
+    | '/ice-hockey/odds'
+    | '/ice-hockey/results'
+    | '/ice-hockey/schedule'
     | '/tennis/atp'
     | '/tennis/grand-slams'
     | '/tennis/results'
@@ -872,6 +938,12 @@ export interface FileRouteTypes {
     | '/football_/odds'
     | '/football_/schedule'
     | '/football_/tips'
+    | '/ice-hockey_/khl'
+    | '/ice-hockey_/live'
+    | '/ice-hockey_/nhl'
+    | '/ice-hockey_/odds'
+    | '/ice-hockey_/results'
+    | '/ice-hockey_/schedule'
     | '/tennis_/atp'
     | '/tennis_/grand-slams'
     | '/tennis_/results'
@@ -946,6 +1018,12 @@ export interface RootRouteChildren {
   FootballOddsRoute: typeof FootballOddsRoute
   FootballScheduleRoute: typeof FootballScheduleRoute
   FootballTipsRoute: typeof FootballTipsRoute
+  IceHockeyKhlRoute: typeof IceHockeyKhlRoute
+  IceHockeyLiveRoute: typeof IceHockeyLiveRoute
+  IceHockeyNhlRoute: typeof IceHockeyNhlRoute
+  IceHockeyOddsRoute: typeof IceHockeyOddsRoute
+  IceHockeyResultsRoute: typeof IceHockeyResultsRoute
+  IceHockeyScheduleRoute: typeof IceHockeyScheduleRoute
   TennisAtpRoute: typeof TennisAtpRoute
   TennisGrandSlamsRoute: typeof TennisGrandSlamsRoute
   TennisResultsRoute: typeof TennisResultsRoute
@@ -1417,6 +1495,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FootballTipsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ice-hockey_/khl': {
+      id: '/ice-hockey_/khl'
+      path: '/ice-hockey/khl'
+      fullPath: '/ice-hockey/khl'
+      preLoaderRoute: typeof IceHockeyKhlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ice-hockey_/live': {
+      id: '/ice-hockey_/live'
+      path: '/ice-hockey/live'
+      fullPath: '/ice-hockey/live'
+      preLoaderRoute: typeof IceHockeyLiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ice-hockey_/nhl': {
+      id: '/ice-hockey_/nhl'
+      path: '/ice-hockey/nhl'
+      fullPath: '/ice-hockey/nhl'
+      preLoaderRoute: typeof IceHockeyNhlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ice-hockey_/odds': {
+      id: '/ice-hockey_/odds'
+      path: '/ice-hockey/odds'
+      fullPath: '/ice-hockey/odds'
+      preLoaderRoute: typeof IceHockeyOddsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ice-hockey_/results': {
+      id: '/ice-hockey_/results'
+      path: '/ice-hockey/results'
+      fullPath: '/ice-hockey/results'
+      preLoaderRoute: typeof IceHockeyResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ice-hockey_/schedule': {
+      id: '/ice-hockey_/schedule'
+      path: '/ice-hockey/schedule'
+      fullPath: '/ice-hockey/schedule'
+      preLoaderRoute: typeof IceHockeyScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tennis_/atp': {
       id: '/tennis_/atp'
       path: '/tennis/atp'
@@ -1522,6 +1642,12 @@ const rootRouteChildren: RootRouteChildren = {
   FootballOddsRoute: FootballOddsRoute,
   FootballScheduleRoute: FootballScheduleRoute,
   FootballTipsRoute: FootballTipsRoute,
+  IceHockeyKhlRoute: IceHockeyKhlRoute,
+  IceHockeyLiveRoute: IceHockeyLiveRoute,
+  IceHockeyNhlRoute: IceHockeyNhlRoute,
+  IceHockeyOddsRoute: IceHockeyOddsRoute,
+  IceHockeyResultsRoute: IceHockeyResultsRoute,
+  IceHockeyScheduleRoute: IceHockeyScheduleRoute,
   TennisAtpRoute: TennisAtpRoute,
   TennisGrandSlamsRoute: TennisGrandSlamsRoute,
   TennisResultsRoute: TennisResultsRoute,

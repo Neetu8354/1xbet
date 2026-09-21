@@ -221,6 +221,8 @@ export function SiteFooter() {
         { label: "Basketball Betting", href: "/basketball" },
         { label: "NBA Betting", href: "/basketball/nba" },
         { label: "EuroLeague Betting", href: "/basketball/euroleague" },
+        { label: "Ice Hockey Betting", href: "/ice-hockey" },
+        { label: "NHL Betting", href: "/ice-hockey/nhl" },
         { label: "MultiLIVE", href: "/multi-live" },
         { label: "Live", href: "/live" },
         { label: "Toto", href: "/toto" },
