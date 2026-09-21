@@ -160,6 +160,29 @@ const images = [
     w: 1200,
     h: 630,
   },
+  {
+    file: "volleyball-betting-india",
+    title: "Volleyball Betting India",
+    sub: "VNL · World Championships · Club Leagues — Odds in INR",
+    accent: "#facc15",
+    icon: "trophy",
+  },
+  {
+    file: "live-volleyball-betting",
+    title: "Live Volleyball Betting",
+    sub: "Set-by-Set In-Play Odds on Every Match",
+    accent: "#fb923c",
+    icon: "live",
+  },
+  {
+    file: "og-volleyball",
+    title: "Volleyball Betting India",
+    sub: "VNL · World Championships · Club Leagues — Odds in INR",
+    accent: "#facc15",
+    icon: "trophy",
+    w: 1200,
+    h: 630,
+  },
 ];
 
 const esc = (s) => s.replace(/&/g, "&amp;");

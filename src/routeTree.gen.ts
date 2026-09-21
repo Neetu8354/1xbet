@@ -86,6 +86,12 @@ import { Route as TennisGrandSlamsRouteImport } from './routes/tennis_.grand-sla
 import { Route as TennisResultsRouteImport } from './routes/tennis_.results'
 import { Route as TennisScheduleRouteImport } from './routes/tennis_.schedule'
 import { Route as TennisWtaRouteImport } from './routes/tennis_.wta'
+import { Route as VolleyballLiveRouteImport } from './routes/volleyball_.live'
+import { Route as VolleyballOddsRouteImport } from './routes/volleyball_.odds'
+import { Route as VolleyballResultsRouteImport } from './routes/volleyball_.results'
+import { Route as VolleyballScheduleRouteImport } from './routes/volleyball_.schedule'
+import { Route as VolleyballVnlRouteImport } from './routes/volleyball_.vnl'
+import { Route as VolleyballWorldChampionshipRouteImport } from './routes/volleyball_.world-championship'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -472,6 +478,37 @@ const TennisWtaRoute = TennisWtaRouteImport.update({
   path: '/tennis/wta',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VolleyballLiveRoute = VolleyballLiveRouteImport.update({
+  id: '/volleyball_/live',
+  path: '/volleyball/live',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolleyballOddsRoute = VolleyballOddsRouteImport.update({
+  id: '/volleyball_/odds',
+  path: '/volleyball/odds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolleyballResultsRoute = VolleyballResultsRouteImport.update({
+  id: '/volleyball_/results',
+  path: '/volleyball/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolleyballScheduleRoute = VolleyballScheduleRouteImport.update({
+  id: '/volleyball_/schedule',
+  path: '/volleyball/schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolleyballVnlRoute = VolleyballVnlRouteImport.update({
+  id: '/volleyball_/vnl',
+  path: '/volleyball/vnl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolleyballWorldChampionshipRoute =
+  VolleyballWorldChampionshipRouteImport.update({
+    id: '/volleyball_/world-championship',
+    path: '/volleyball/world-championship',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -551,6 +588,12 @@ export interface FileRoutesByFullPath {
   '/tennis/results': typeof TennisResultsRoute
   '/tennis/schedule': typeof TennisScheduleRoute
   '/tennis/wta': typeof TennisWtaRoute
+  '/volleyball/live': typeof VolleyballLiveRoute
+  '/volleyball/odds': typeof VolleyballOddsRoute
+  '/volleyball/results': typeof VolleyballResultsRoute
+  '/volleyball/schedule': typeof VolleyballScheduleRoute
+  '/volleyball/vnl': typeof VolleyballVnlRoute
+  '/volleyball/world-championship': typeof VolleyballWorldChampionshipRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -630,6 +673,12 @@ export interface FileRoutesByTo {
   '/tennis/results': typeof TennisResultsRoute
   '/tennis/schedule': typeof TennisScheduleRoute
   '/tennis/wta': typeof TennisWtaRoute
+  '/volleyball/live': typeof VolleyballLiveRoute
+  '/volleyball/odds': typeof VolleyballOddsRoute
+  '/volleyball/results': typeof VolleyballResultsRoute
+  '/volleyball/schedule': typeof VolleyballScheduleRoute
+  '/volleyball/vnl': typeof VolleyballVnlRoute
+  '/volleyball/world-championship': typeof VolleyballWorldChampionshipRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -710,6 +759,12 @@ export interface FileRoutesById {
   '/tennis_/results': typeof TennisResultsRoute
   '/tennis_/schedule': typeof TennisScheduleRoute
   '/tennis_/wta': typeof TennisWtaRoute
+  '/volleyball_/live': typeof VolleyballLiveRoute
+  '/volleyball_/odds': typeof VolleyballOddsRoute
+  '/volleyball_/results': typeof VolleyballResultsRoute
+  '/volleyball_/schedule': typeof VolleyballScheduleRoute
+  '/volleyball_/vnl': typeof VolleyballVnlRoute
+  '/volleyball_/world-championship': typeof VolleyballWorldChampionshipRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -791,6 +846,12 @@ export interface FileRouteTypes {
     | '/tennis/results'
     | '/tennis/schedule'
     | '/tennis/wta'
+    | '/volleyball/live'
+    | '/volleyball/odds'
+    | '/volleyball/results'
+    | '/volleyball/schedule'
+    | '/volleyball/vnl'
+    | '/volleyball/world-championship'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -870,6 +931,12 @@ export interface FileRouteTypes {
     | '/tennis/results'
     | '/tennis/schedule'
     | '/tennis/wta'
+    | '/volleyball/live'
+    | '/volleyball/odds'
+    | '/volleyball/results'
+    | '/volleyball/schedule'
+    | '/volleyball/vnl'
+    | '/volleyball/world-championship'
   id:
     | '__root__'
     | '/'
@@ -949,6 +1016,12 @@ export interface FileRouteTypes {
     | '/tennis_/results'
     | '/tennis_/schedule'
     | '/tennis_/wta'
+    | '/volleyball_/live'
+    | '/volleyball_/odds'
+    | '/volleyball_/results'
+    | '/volleyball_/schedule'
+    | '/volleyball_/vnl'
+    | '/volleyball_/world-championship'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -1029,6 +1102,12 @@ export interface RootRouteChildren {
   TennisResultsRoute: typeof TennisResultsRoute
   TennisScheduleRoute: typeof TennisScheduleRoute
   TennisWtaRoute: typeof TennisWtaRoute
+  VolleyballLiveRoute: typeof VolleyballLiveRoute
+  VolleyballOddsRoute: typeof VolleyballOddsRoute
+  VolleyballResultsRoute: typeof VolleyballResultsRoute
+  VolleyballScheduleRoute: typeof VolleyballScheduleRoute
+  VolleyballVnlRoute: typeof VolleyballVnlRoute
+  VolleyballWorldChampionshipRoute: typeof VolleyballWorldChampionshipRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1572,6 +1651,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TennisWtaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/volleyball_/live': {
+      id: '/volleyball_/live'
+      path: '/volleyball/live'
+      fullPath: '/volleyball/live'
+      preLoaderRoute: typeof VolleyballLiveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volleyball_/odds': {
+      id: '/volleyball_/odds'
+      path: '/volleyball/odds'
+      fullPath: '/volleyball/odds'
+      preLoaderRoute: typeof VolleyballOddsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volleyball_/results': {
+      id: '/volleyball_/results'
+      path: '/volleyball/results'
+      fullPath: '/volleyball/results'
+      preLoaderRoute: typeof VolleyballResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volleyball_/schedule': {
+      id: '/volleyball_/schedule'
+      path: '/volleyball/schedule'
+      fullPath: '/volleyball/schedule'
+      preLoaderRoute: typeof VolleyballScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volleyball_/vnl': {
+      id: '/volleyball_/vnl'
+      path: '/volleyball/vnl'
+      fullPath: '/volleyball/vnl'
+      preLoaderRoute: typeof VolleyballVnlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volleyball_/world-championship': {
+      id: '/volleyball_/world-championship'
+      path: '/volleyball/world-championship'
+      fullPath: '/volleyball/world-championship'
+      preLoaderRoute: typeof VolleyballWorldChampionshipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -1653,6 +1774,12 @@ const rootRouteChildren: RootRouteChildren = {
   TennisResultsRoute: TennisResultsRoute,
   TennisScheduleRoute: TennisScheduleRoute,
   TennisWtaRoute: TennisWtaRoute,
+  VolleyballLiveRoute: VolleyballLiveRoute,
+  VolleyballOddsRoute: VolleyballOddsRoute,
+  VolleyballResultsRoute: VolleyballResultsRoute,
+  VolleyballScheduleRoute: VolleyballScheduleRoute,
+  VolleyballVnlRoute: VolleyballVnlRoute,
+  VolleyballWorldChampionshipRoute: VolleyballWorldChampionshipRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
