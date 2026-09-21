@@ -12,27 +12,23 @@ const breadcrumbItems = [
 const faqs = [
   {
     q: "What basketball competitions can I bet on?",
-    a: "At 1xBET India you can bet on the NBA, EuroLeague, Spain's ACB, Australia's NBL, FIBA World Cup, Olympic basketball and many other domestic leagues — pre-match and live.",
+    a: "You can explore basketball betting markets across competitions such as NBA, EuroLeague, FIBA tournaments, and international leagues.",
   },
   {
     q: "What is point spread betting in basketball?",
-    a: "Point spread betting gives the favourite a points handicap and the underdog a head start — for example Lakers -6.5 means they must win by 7 or more for the bet to win.",
+    a: "Point spread betting gives one team a points advantage or disadvantage, creating a more balanced betting market.",
   },
   {
     q: "How does basketball over/under betting work?",
-    a: "Over/under (totals) betting predicts whether the combined points scored by both teams will be above or below a set line, such as 224.5 total points.",
+    a: "Over/under betting focuses on whether the total points scored in a game will be higher or lower than the selected total.",
   },
   {
     q: "Does overtime count in basketball betting?",
-    a: "In most basketball markets — including match winner, spreads and totals — overtime counts toward the result. Always check the market rules shown beside each selection.",
+    a: "Overtime rules depend on the specific betting market and competition terms.",
   },
   {
     q: "What are basketball player props?",
-    a: "Player props are markets on individual player statistics — points scored, rebounds, assists, three-pointers made and combined stat lines.",
-  },
-  {
-    q: "How does live basketball betting work?",
-    a: "Live basketball betting lets you bet while a game is in progress. Odds update with every scoring run, timeout and quarter — markets include updated spread, totals and quarter-by-quarter betting.",
+    a: "Player props allow betting on individual statistics such as points, rebounds, assists, and other performances.",
   },
 ];
 
@@ -66,7 +62,9 @@ const basketballEvents = [
 export const Route = createFileRoute("/basketball")({
   head: () => ({
     meta: [
-      { title: "Basketball Betting India | NBA & EuroLeague Odds | 1xBET" },
+      {
+        title: "Basketball Betting India | NBA, EuroLeague & Live Basketball Odds | 1xBET",
+      },
       {
         name: "description",
         content:
@@ -138,7 +136,7 @@ export const Route = createFileRoute("/basketball")({
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Basketball Betting India — NBA & EuroLeague Odds",
+          headline: "Basketball Betting India — NBA, EuroLeague & Live Basketball Odds",
           dateModified: "2026-09-21",
           author: { "@type": "Organization", name: "1xBET Basketball Content Team" },
           publisher: { "@id": `${SITE_URL}/#organization` },
@@ -152,7 +150,7 @@ export const Route = createFileRoute("/basketball")({
     <>
       <SEOPageBreadcrumb items={breadcrumbItems} />
       <SEOPage
-        title="Basketball Betting India"
+        title="Basketball Betting India - NBA, EuroLeague & Live Basketball Odds"
         description="NBA, EuroLeague and international basketball odds — spreads, totals, props and live markets in INR"
         breadcrumbs={breadcrumbItems}
         topContent={
@@ -201,85 +199,145 @@ export const Route = createFileRoute("/basketball")({
             body: (
               <>
                 <p>
-                  Basketball is one of the fastest-scoring sports on the sportsbook, with games
-                  running almost every night of the year across multiple time zones. At 1xBET India
-                  you can bet on the NBA, EuroLeague, top domestic leagues and international
-                  tournaments — all priced in INR with pre-match and live markets.
+                  Basketball is one of the fastest-growing sports worldwide, offering exciting
+                  betting opportunities throughout the year. At 1xBET India, basketball fans can
+                  explore betting markets across major competitions including the{" "}
+                  <a href="/basketball/nba" className="text-brand underline">
+                    NBA
+                  </a>
+                  ,{" "}
+                  <a href="/basketball/euroleague" className="text-brand underline">
+                    EuroLeague
+                  </a>
+                  , FIBA tournaments, international leagues, and professional basketball events.
                 </p>
                 <p className="mt-2">
-                  Basketball's structure — four quarters, frequent scoring and timeouts — produces
-                  deep market lists on every game, from point spreads and totals to player props and
-                  quarter-by-quarter betting.
+                  With pre-match and{" "}
+                  <a href="/basketball/live" className="text-brand underline">
+                    live betting
+                  </a>{" "}
+                  options available, users can follow basketball games and explore different markets
+                  including match winners, point spreads, totals, quarter markets, player
+                  statistics, and tournament outcomes.
                 </p>
               </>
             ),
           },
           {
-            heading: "Latest Basketball Odds",
+            heading: "Latest Basketball Betting Odds",
             body: (
               <p>
-                Basketball odds move with injury news, rest days, back-to-back schedules and lineup
-                confirmations — NBA teams resting starters can shift a spread by several points
-                within hours. Check the{" "}
+                Basketball odds are influenced by several factors including team performance, player
+                availability, recent form, injuries, home advantage, and historical statistics.
+                Understanding these factors can help users analyse available markets before
+                selecting a betting option. Compare current prices on the{" "}
                 <a href="/basketball/odds" className="text-brand underline">
                   basketball odds
                 </a>{" "}
-                page for current prices, the{" "}
-                <a href="/basketball/schedule" className="text-brand underline">
-                  schedule
-                </a>{" "}
-                for upcoming games and{" "}
-                <a href="/basketball/results" className="text-brand underline">
-                  results
-                </a>{" "}
-                for recent form.
+                page.
               </p>
             ),
           },
           {
             heading: "NBA Betting India",
             body: (
-              <p>
-                The NBA is the world's premier basketball league — an 82-game regular season,
-                play-in tournament and four playoff rounds ending in the NBA Finals. NBA betting
-                covers every game with spreads, totals, player props and outright markets for
-                champion, conference and division winners, plus awards like MVP. See the{" "}
-                <a href="/basketball/nba" className="text-brand underline">
-                  NBA betting guide
-                </a>{" "}
-                for season coverage and market detail.
-              </p>
+              <>
+                <p>
+                  The NBA is the most popular basketball league in the world and attracts millions
+                  of fans every season. NBA betting includes regular-season games, playoffs,
+                  conference finals, and the NBA Finals.
+                </p>
+                <p className="mt-2">Popular NBA betting markets include:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
+                  <li>Match winner and moneyline betting</li>
+                  <li>Point spread betting</li>
+                  <li>Total points over/under</li>
+                  <li>Quarter and half-time markets</li>
+                  <li>Player props including points, rebounds, assists, and three-pointers</li>
+                  <li>NBA championship and conference winner markets</li>
+                </ul>
+                <p className="mt-2">
+                  Following team form, player performance, injuries, and recent statistics can
+                  provide valuable insights when analysing NBA games. See the{" "}
+                  <a href="/basketball/nba" className="text-brand underline">
+                    NBA betting guide
+                  </a>
+                  .
+                </p>
+              </>
             ),
           },
           {
-            heading: "EuroLeague Betting",
+            heading: "EuroLeague Basketball Betting",
             body: (
-              <p>
-                The EuroLeague is Europe's elite club competition — 18 teams, a long regular season
-                and playoffs culminating in the Final Four. EuroLeague betting offers a different
-                rhythm to the NBA: lower-scoring games, tactical coaching and tighter spreads.
-                Explore the{" "}
-                <a href="/basketball/euroleague" className="text-brand underline">
-                  EuroLeague betting guide
-                </a>{" "}
-                for markets and format.
-              </p>
+              <>
+                <p>
+                  EuroLeague brings together some of the strongest basketball clubs from Europe. The
+                  competition features teams with different playing styles, strategies, and tactical
+                  approaches.
+                </p>
+                <p className="mt-2">
+                  EuroLeague betting markets include match winners, handicaps, totals, quarter
+                  markets, and tournament winner selections — explore the{" "}
+                  <a href="/basketball/euroleague" className="text-brand underline">
+                    EuroLeague betting guide
+                  </a>
+                  .
+                </p>
+              </>
             ),
           },
           {
             heading: "International Basketball Betting",
             body: (
               <p>
-                Beyond the NBA and EuroLeague, the sportsbook prices Spain's ACB, Australia's NBL,
-                the VTB United League, FIBA Champions League, continental competitions and
-                international tournaments — the FIBA World Cup, Olympic basketball and continental
-                championships like EuroBasket and Asia Cup. National-team basketball produces
-                different dynamics: shorter tournaments, tighter rotations and more variance.
+                Apart from NBA and EuroLeague, basketball fans can explore international
+                competitions including FIBA events, national leagues, and major tournaments.
+                International basketball markets provide opportunities across different leagues and
+                competitions throughout the season.
               </p>
             ),
           },
           {
-            heading: "Live Basketball Odds & Betting Guide",
+            heading: "Popular Basketball Betting Markets",
+            body: (
+              <>
+                <h3 className="mt-2 font-semibold">Match Winner Betting</h3>
+                <p>
+                  Match winner betting allows users to select which team will win a basketball game.
+                  This is one of the most common basketball betting markets.
+                </p>
+                <h3 className="mt-3 font-semibold">Point Spread Betting</h3>
+                <p>
+                  Point spread betting creates a handicap between two teams. The selected team must
+                  win or stay within the assigned spread for the bet to be successful.
+                </p>
+                <h3 className="mt-3 font-semibold">Total Points Betting</h3>
+                <p>
+                  Total points betting focuses on the combined score of both teams. Users can select
+                  whether the total points scored will be over or under a given number.
+                </p>
+                <h3 className="mt-3 font-semibold">Quarter and Half-Time Betting</h3>
+                <p>
+                  Basketball games are divided into quarters, creating multiple betting
+                  opportunities. Users can bet on quarter winners, half-time results, and quarter
+                  totals.
+                </p>
+                <h3 className="mt-3 font-semibold">Player Props Betting</h3>
+                <p>
+                  Player props allow users to explore individual player performances, including
+                  points scored, rebounds, assists, steals, and three-pointers.
+                </p>
+                <h3 className="mt-3 font-semibold">Tournament Winner Betting</h3>
+                <p>
+                  Users can select teams expected to perform strongly throughout major competitions
+                  such as the NBA season, playoffs, and international tournaments.
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Live Basketball Betting",
             body: (
               <>
                 <img
@@ -292,70 +350,50 @@ export const Route = createFileRoute("/basketball")({
                   className="mb-3 w-full rounded-lg border"
                 />
                 <p>
-                  Live basketball betting lets you bet while a game is in progress. Scoring runs
-                  swing odds constantly — a 15-2 run can flip a spread in minutes — and markets
-                  reprice on every timeout and quarter break. In-play options include updated match
-                  winner, adjusted spreads and totals, next quarter winner and race-to-points
-                  markets, with cash out on selected games.
+                  Live basketball betting allows users to follow matches while they are happening
+                  and explore changing odds during different stages of the game.
                 </p>
                 <p className="mt-2">
-                  Follow games in the{" "}
+                  Basketball is known for quick momentum changes. A strong scoring run, defensive
+                  performance, player substitutions, or foul situations can influence the direction
+                  of a game within minutes.
+                </p>
+                <p className="mt-2">
+                  Live betting markets may include quarter winners, live spreads, totals, and match
+                  outcomes — follow the action in the{" "}
                   <a href="/basketball/live" className="text-brand underline">
                     live basketball
                   </a>{" "}
-                  or{" "}
-                  <a href="/live" className="text-brand underline">
-                    live betting
-                  </a>{" "}
-                  sections, where scores and statistics update in real time.
+                  section.
                 </p>
               </>
             ),
           },
           {
-            heading: "Popular Basketball Betting Markets",
+            heading: "How to Analyse Basketball Matches Before Betting",
             body: (
               <>
-                <h3 className="mt-2 font-semibold">Point Spread Betting</h3>
+                <h3 className="mt-2 font-semibold">Team Performance</h3>
                 <p>
-                  The point spread is basketball's core market — the favourite gives a handicap and
-                  the underdog gets a head start. Lakers -6.5 means they must win by 7+ for the bet
-                  to land; Celtics +6.5 wins if they lose by 6 or fewer, or win outright.
+                  Review recent results, scoring averages, defensive records, and overall team
+                  consistency.
                 </p>
-                <h3 className="mt-3 font-semibold">Over/Under Basketball Betting</h3>
+                <h3 className="mt-3 font-semibold">Player Availability</h3>
                 <p>
-                  Totals markets predict whether combined points go over or under a line — e.g.
-                  over/under 224.5. Pace of play, defensive matchups and overtime (which counts in
-                  most totals markets) all move the number.
+                  Important players can significantly influence basketball games. Check injury
+                  updates, suspensions, and lineup changes.
                 </p>
-                <h3 className="mt-3 font-semibold">Player Props Betting</h3>
+                <h3 className="mt-3 font-semibold">Head-to-Head Records</h3>
+                <p>Previous meetings between teams can provide useful historical information.</p>
+                <h3 className="mt-3 font-semibold">Home and Away Performance</h3>
                 <p>
-                  Player props cover individual stat lines — points, rebounds, assists,
-                  three-pointers and combos. Props are sensitive to rotation news and matchup, so
-                  check lineups close to tip-off.
+                  Some teams perform differently depending on whether they play at home or away.
                 </p>
-                <h3 className="mt-3 font-semibold">More markets</h3>
-                <ul className="mt-1 list-disc space-y-1 pl-5">
-                  <li>Match winner (moneyline), including overtime in most markets</li>
-                  <li>Quarter and half betting — winner, spread and totals</li>
-                  <li>Race to 10/20 points and winning margin bands</li>
-                  <li>Outrights — champion, MVP, conference and division winners</li>
-                </ul>
-              </>
-            ),
-          },
-          {
-            heading: "How to Analyze Basketball Matches",
-            body: (
-              <>
-                <p>Key factors that experienced basketball bettors check:</p>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
-                  <li>Rest and schedule — teams on back-to-backs perform measurably worse</li>
-                  <li>Injury reports and rotation news close to tip-off</li>
-                  <li>Pace ratings — fast teams push totals up, defensive teams pull them down</li>
-                  <li>Home-court advantage and travel distance</li>
-                  <li>Head-to-head and recent form on the results page</li>
-                </ul>
+                <h3 className="mt-3 font-semibold">Playing Style</h3>
+                <p>
+                  Offensive pace, defensive strength, shooting efficiency, and rebounding ability
+                  can affect match performance.
+                </p>
               </>
             ),
           },
@@ -363,11 +401,13 @@ export const Route = createFileRoute("/basketball")({
             heading: "Basketball Betting Tips",
             body: (
               <ul className="mt-2 list-disc space-y-1 pl-5">
-                <li>Check starting lineups before betting player props</li>
-                <li>Compare spreads across markets — alternative lines price differently</li>
-                <li>Watch for inflated lines on popular teams</li>
-                <li>Consider quarter markets when teams start slow but finish strong</li>
-                <li>Set a budget per week — NBA seasons are long</li>
+                <li>Research team and player statistics before selecting markets.</li>
+                <li>
+                  Compare different betting markets instead of focusing only on match winners.
+                </li>
+                <li>Consider current form, injuries, and team motivation.</li>
+                <li>Follow basketball news and competition updates.</li>
+                <li>Set personal betting limits and make responsible decisions.</li>
               </ul>
             ),
           },
@@ -375,27 +415,29 @@ export const Route = createFileRoute("/basketball")({
             heading: "Responsible Basketball Betting",
             body: (
               <p>
-                Basketball betting should be entertainment, not a way to make guaranteed income.
-                Only bet if you are 18+ and eligible, set deposit and loss limits, and never chase
-                losses. Use the account controls on{" "}
+                Sports betting should always be approached responsibly. Understand the risks
+                involved, set personal limits, and participate only if you meet the legal age
+                requirements in your location. Visit{" "}
                 <a href="/responsible-gaming" className="text-brand underline">
                   Responsible Gaming
-                </a>
-                , review the rules on{" "}
-                <a href="/terms" className="text-brand underline">
-                  Terms & Conditions
-                </a>
-                , data handling on{" "}
-                <a href="/privacy" className="text-brand underline">
-                  Privacy Policy
                 </a>{" "}
-                and reach{" "}
-                <a href="/contact" className="text-brand underline">
-                  support
-                </a>{" "}
-                24/7. INR options are listed on{" "}
+                for account controls and safer-gambling resources.
+              </p>
+            ),
+          },
+          {
+            heading: "Explore Basketball Betting Markets",
+            body: (
+              <p>
+                Follow NBA, EuroLeague, and international basketball competitions with a wide range
+                of betting options. Explore basketball{" "}
+                <a href="/basketball/odds" className="text-brand underline">
+                  odds
+                </a>
+                , live markets, spreads, totals, and player-focused betting markets at 1xBET India —
+                deposit and withdraw in INR via{" "}
                 <a href="/payments" className="text-brand underline">
-                  Payments
+                  supported payment methods
                 </a>
                 .
               </p>
@@ -404,7 +446,7 @@ export const Route = createFileRoute("/basketball")({
         ]}
       >
         <section className="mt-10">
-          <h2 className="text-xl font-bold sm:text-2xl">Frequently Asked Questions</h2>
+          <h2 className="text-xl font-bold sm:text-2xl">Basketball Betting FAQ</h2>
           <div className="mt-4 space-y-3">
             {faqs.map((f) => (
               <details key={f.q} className="rounded-lg border bg-card p-4">
