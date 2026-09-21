@@ -12,23 +12,23 @@ const breadcrumbItems = [
 const faqs = [
   {
     q: "What volleyball competitions can I bet on?",
-    a: "You can bet on the Volleyball Nations League (VNL), FIVB World Championships, Olympic volleyball, club leagues such as Italy's SuperLega and Poland's PlusLiga, and beach volleyball tournaments including the Beach Pro Tour.",
+    a: "You can explore volleyball betting markets across competitions including VNL, World Championships, Olympic tournaments, club leagues, and beach volleyball events.",
   },
   {
     q: "How does volleyball set betting work?",
-    a: "Set betting lets you predict the exact set outcome of a match — for example a 3-0 or 3-1 result in indoor volleyball, or 2-0/2-1 in beach volleyball. You can also bet on individual set winners.",
+    a: "Set betting allows users to predict outcomes related to individual sets or the final set score of a volleyball match.",
   },
   {
     q: "What is volleyball handicap betting?",
-    a: "Handicap betting applies a set or points advantage to one team — for example -1.5 sets means the favourite must win 3-0 or 3-1, while a points handicap works like a spread on total points won.",
+    a: "Volleyball handicap betting gives one team an advantage or disadvantage through set or point adjustments.",
   },
   {
     q: "Can I bet on VNL matches live?",
-    a: "Yes — live betting is available on Volleyball Nations League matches and most professional competitions, with odds updating after every set and key points.",
+    a: "Yes, live volleyball betting allows users to explore available markets while VNL matches are in progress.",
   },
   {
     q: "Which volleyball leagues are available?",
-    a: "Markets cover the VNL, FIVB World and Club World Championships, Italy's SuperLega, Poland's PlusLiga, Brazil's Superliga, Russia's Super League, Turkey's Sultanlar Ligi and the beach volleyball Beach Pro Tour.",
+    a: "Major volleyball leagues include international tournaments, European club competitions, and domestic leagues from countries such as Italy, Poland, Turkey, and Brazil.",
   },
 ];
 
@@ -63,7 +63,7 @@ export const Route = createFileRoute("/volleyball")({
   head: () => ({
     meta: [
       {
-        title: "Volleyball Betting India | VNL & World Championship Odds | 1xBET",
+        title: "Volleyball Betting India | VNL, World Championship & Live Odds | 1xBET",
       },
       {
         name: "description",
@@ -136,7 +136,7 @@ export const Route = createFileRoute("/volleyball")({
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Volleyball Betting India — VNL & World Championship Odds",
+          headline: "Volleyball Betting India — VNL, World Championship & Live Volleyball Odds",
           dateModified: "2026-09-21",
           author: { "@type": "Organization", name: "1xBET Volleyball Content Team" },
           publisher: { "@id": `${SITE_URL}/#organization` },
@@ -150,7 +150,7 @@ export const Route = createFileRoute("/volleyball")({
     <>
       <SEOPageBreadcrumb items={breadcrumbItems} />
       <SEOPage
-        title="Volleyball Betting India"
+        title="Volleyball Betting India - VNL, World Championship & Live Volleyball Odds"
         description="VNL, World Championship and club volleyball odds — set betting, handicaps, totals and live markets in INR"
         breadcrumbs={breadcrumbItems}
         topContent={
@@ -195,29 +195,30 @@ export const Route = createFileRoute("/volleyball")({
         }
         sections={[
           {
-            heading: "Volleyball Betting Guide",
+            heading: "Volleyball Betting at 1xBET India",
             body: (
               <>
                 <p>
-                  Volleyball is played year-round across national team tournaments and professional
-                  club leagues, making it a reliable betting sport even when the bigger leagues are
-                  quiet. At 1xBET India you can bet on the{" "}
+                  Volleyball is one of the most popular international sports, offering exciting
+                  betting opportunities throughout the year. At 1xBET India, users can explore
+                  volleyball betting markets across major competitions including the FIVB{" "}
                   <a href="/volleyball/vnl" className="text-brand underline">
-                    Volleyball Nations League
+                    Volleyball Nations League (VNL)
                   </a>
-                  , the{" "}
+                  ,{" "}
                   <a href="/volleyball/world-championship" className="text-brand underline">
-                    FIVB World Championship
+                    World Championships
                   </a>
-                  , Olympic volleyball, Europe's top club leagues and beach volleyball tours.
+                  , Olympic tournaments, Club World Championships, and leading domestic leagues.
                 </p>
                 <p className="mt-2">
-                  Pre-match and{" "}
+                  With pre-match and{" "}
                   <a href="/volleyball/live" className="text-brand underline">
                     live betting
                   </a>{" "}
-                  are available on every competition, with markets covering match winners, set
-                  betting, handicaps, totals and outrights — all settled in INR.
+                  options available, volleyball fans can follow professional matches and explore
+                  markets including match winners, set betting, handicaps, totals, correct set
+                  scores, and tournament winner selections.
                 </p>
               </>
             ),
@@ -226,41 +227,40 @@ export const Route = createFileRoute("/volleyball")({
             heading: "Latest Volleyball Betting Odds",
             body: (
               <p>
-                Volleyball odds are shaped by roster strength, recent form, injuries to key hitters
-                and setters, home-court advantage and head-to-head records. Because volleyball has
-                no draws, prices are two-way and favourites are often short — which is why set and
-                handicap markets carry most of the value. Compare current prices on the{" "}
+                Volleyball odds are influenced by several factors including team performance, player
+                form, tournament importance, injuries, rankings, and recent match results. Analysing
+                these factors can help users understand different betting markets before selecting
+                an option. Compare current prices on the{" "}
                 <a href="/volleyball/odds" className="text-brand underline">
                   volleyball odds
                 </a>{" "}
-                page and check recent form on{" "}
-                <a href="/volleyball/results" className="text-brand underline">
-                  volleyball results
-                </a>
-                .
+                page.
               </p>
             ),
           },
           {
-            heading: "VNL Betting India",
+            heading: "Volleyball Nations League (VNL) Betting",
             body: (
               <>
                 <p>
-                  The Volleyball Nations League is the biggest annual national-team competition — 16
-                  men's and 16 women's teams playing a multi-week preliminary round before the
-                  finals. Because the VNL runs every summer with several matches per day, it is the
-                  busiest volleyball betting window of the year. Popular markets include:
+                  The Volleyball Nations League is one of the biggest international volleyball
+                  competitions, featuring top national teams from around the world. Both men's and
+                  women's tournaments attract global audiences and provide multiple betting
+                  opportunities.
                 </p>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
+                <p className="mt-2">Popular VNL betting markets include:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
                   <li>Match winner</li>
-                  <li>Set handicap (±1.5 sets)</li>
-                  <li>Correct set score — 3-0, 3-1, 3-2</li>
+                  <li>Set winner</li>
+                  <li>Set handicap</li>
+                  <li>Total sets over/under</li>
                   <li>Total points over/under</li>
-                  <li>Set winners and set totals</li>
-                  <li>VNL outright winner</li>
+                  <li>Correct set score</li>
+                  <li>Tournament winner</li>
                 </ul>
                 <p className="mt-2">
-                  See the full{" "}
+                  Team strength, recent performances, player availability, and tactical approach can
+                  influence match outcomes during the competition. See the{" "}
                   <a href="/volleyball/vnl" className="text-brand underline">
                     VNL betting guide
                   </a>
@@ -270,14 +270,15 @@ export const Route = createFileRoute("/volleyball")({
             ),
           },
           {
-            heading: "World Championship Betting",
+            heading: "World Championship Volleyball Betting",
             body: (
               <p>
-                The FIVB Volleyball World Championship is the sport's premier national-team
-                tournament, held every four years with the world's top-ranked sides. Markets cover
-                group-stage matches, knockout rounds, outright winner and top-scorer specials.
-                National-team tournaments reward research on squad rotation — coaches rest starters
-                heavily in early group games. Full coverage on the{" "}
+                The Volleyball World Championship brings together leading national teams competing
+                for one of the sport's most prestigious titles. World Championship betting markets
+                include match outcomes, set markets, totals, and tournament winner selections.
+                Important factors to consider include team rankings, previous tournament
+                performances, offensive strength, defensive organisation, and player combinations —
+                explore the{" "}
                 <a href="/volleyball/world-championship" className="text-brand underline">
                   World Championship page
                 </a>
@@ -286,58 +287,88 @@ export const Route = createFileRoute("/volleyball")({
             ),
           },
           {
-            heading: "Club Volleyball Leagues",
+            heading: "Olympic Volleyball Betting",
             body: (
               <p>
-                Club volleyball provides year-round markets: Italy's SuperLega, Poland's PlusLiga,
-                Brazil's Superliga, Russia's Super League and Turkey's Sultanlar Ligi are among the
-                strongest competitions, with the FIVB Club World Championship closing the club
-                calendar each December. League matches often feature clearer form signals than
-                national-team games, making handicaps and totals the markets of choice.
+                Olympic volleyball tournaments feature the world's strongest teams competing on an
+                international stage. Both indoor volleyball and beach volleyball events provide
+                unique betting opportunities. Users can explore markets related to match winners,
+                sets, points, and tournament outcomes.
               </p>
+            ),
+          },
+          {
+            heading: "Club Volleyball Betting",
+            body: (
+              <>
+                <p>
+                  Club volleyball competitions provide year-round betting opportunities through some
+                  of the strongest domestic leagues.
+                </p>
+                <p className="mt-2">Popular club competitions include:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
+                  <li>Italian Volleyball League</li>
+                  <li>Polish Volleyball League</li>
+                  <li>Turkish Volleyball League</li>
+                  <li>Brazilian Volleyball League</li>
+                </ul>
+                <p className="mt-2">
+                  Club volleyball matches often feature different playing styles, making team
+                  analysis important before exploring betting markets.
+                </p>
+              </>
             ),
           },
           {
             heading: "Beach Volleyball Betting",
             body: (
               <p>
-                Beach volleyball — two players per side, best-of-three sets to 21 — is covered on
-                the Beach Pro Tour and at the Olympics. The shorter format and smaller rosters make
-                pair chemistry and recent tournament form the key factors. Markets include match
-                winner, set score (2-0/2-1) and total points.
+                Beach volleyball offers a different format compared with indoor volleyball. Matches
+                are played between pairs, creating unique strategies and betting opportunities.
+                Popular beach volleyball markets include match winners, set results, and tournament
+                outcomes.
               </p>
             ),
           },
           {
-            heading: "Volleyball Betting Markets Explained",
+            heading: "Popular Volleyball Betting Markets",
             body: (
               <>
-                <h3 className="mt-2 font-semibold">Set Betting Explained</h3>
+                <h3 className="mt-2 font-semibold">Match Winner Betting</h3>
                 <p>
-                  Set betting predicts the exact set outcome — 3-0, 3-1 or 3-2 in indoor volleyball,
-                  2-0 or 2-1 on the beach. It pays better than the moneyline on strong favourites
-                  and is the natural market when you expect a clean sweep.
+                  Match winner betting allows users to select which team will win a volleyball
+                  match. This is one of the most common betting markets available.
                 </p>
-                <h3 className="mt-3 font-semibold">Volleyball Handicap Betting</h3>
+                <h3 className="mt-3 font-semibold">Set Betting</h3>
                 <p>
-                  Handicaps apply a set or points advantage — a -1.5 set handicap requires a 3-0 or
-                  3-1 win, while points handicaps work like a spread on total points won across the
-                  match.
+                  Set betting focuses on predicting individual set outcomes or the final set score
+                  of a match. Volleyball matches can be highly competitive, making set markets
+                  popular among fans.
+                </p>
+                <h3 className="mt-3 font-semibold">Set Handicap Betting</h3>
+                <p>
+                  Set handicap betting gives one team an advantage or disadvantage in terms of sets.
+                  This creates additional betting options between teams with different strengths.
                 </p>
                 <h3 className="mt-3 font-semibold">Total Points Betting</h3>
                 <p>
-                  Totals are over/under markets on combined points — useful when you expect a long
-                  five-setter or a quick sweep without picking a winner.
+                  Total points betting focuses on whether the combined points scored during a match
+                  will be over or under a selected number.
                 </p>
-                <h3 className="mt-3 font-semibold">Match Winner</h3>
+                <h3 className="mt-3 font-semibold">Total Sets Betting</h3>
                 <p>
-                  The simplest market — pick the team to win the match. Two-way, no draws, so prices
-                  on heavy favourites are usually short.
+                  Users can predict whether a match will finish with a higher or lower number of
+                  sets.
                 </p>
-                <h3 className="mt-3 font-semibold">Outright Winner</h3>
+                <h3 className="mt-3 font-semibold">Correct Set Score Betting</h3>
                 <p>
-                  Tournament markets for the VNL, World Championship, Club Worlds and domestic
-                  league titles.
+                  Correct set score markets allow users to predict the exact final set result of a
+                  volleyball match.
+                </p>
+                <h3 className="mt-3 font-semibold">Tournament Winner Betting</h3>
+                <p>
+                  Tournament winner markets allow users to select teams expected to perform strongly
+                  throughout major competitions.
                 </p>
               </>
             ),
@@ -356,47 +387,67 @@ export const Route = createFileRoute("/volleyball")({
                   className="mb-3 w-full rounded-lg border"
                 />
                 <p>
-                  Live volleyball betting reprices after every set and during scoring runs — a
-                  service run of 4–5 points can flip set-winner prices mid-rally window. In-play
-                  markets include next-set winner, live handicaps, updated totals, race-to-X points
-                  and match winner.
+                  Live volleyball betting allows users to follow matches while they are happening
+                  and explore changing odds during different stages of play.
                 </p>
                 <p className="mt-2">
-                  The best live windows come between sets, when prices reset before the next set
-                  starts. Follow every match on the{" "}
+                  Volleyball matches can change quickly because of momentum shifts, technical
+                  timeouts, service runs, and tactical changes. Live betting markets may include set
+                  winners, point totals, match outcomes, and other in-play options — follow the
+                  action in the{" "}
                   <a href="/volleyball/live" className="text-brand underline">
                     live volleyball
                   </a>{" "}
-                  page.
+                  section.
                 </p>
               </>
             ),
           },
           {
-            heading: "How to Analyse Volleyball Matches",
+            heading: "How to Analyse Volleyball Matches Before Betting",
             body: (
               <>
-                <h3 className="mt-2 font-semibold">Recent form and set differentials</h3>
+                <h3 className="mt-2 font-semibold">Team Form</h3>
                 <p>
-                  Set win-loss ratios reveal more than match results — a team losing 2-3 repeatedly
-                  is playing better than its record suggests.
+                  Review recent results, winning streaks, and overall team performance before
+                  selecting markets.
                 </p>
-                <h3 className="mt-3 font-semibold">Key player availability</h3>
+                <h3 className="mt-3 font-semibold">Player Availability</h3>
                 <p>
-                  Volleyball squads lean heavily on their opposite hitter and setter — check
-                  lineups, injuries and rotation news before betting.
+                  Key players can influence volleyball matches significantly. Check injuries, squad
+                  changes, and player fitness.
                 </p>
-                <h3 className="mt-3 font-semibold">Head-to-head records</h3>
+                <h3 className="mt-3 font-semibold">Head-to-Head Records</h3>
+                <p>Previous meetings between teams can provide useful historical information.</p>
+                <h3 className="mt-3 font-semibold">Attack and Defence Performance</h3>
                 <p>
-                  Style matchups matter: strong serving teams trouble poor receivers regardless of
-                  ranking.
+                  Consider attacking efficiency, blocking ability, serving quality, and defensive
+                  organisation.
                 </p>
-                <h3 className="mt-3 font-semibold">Home court and travel</h3>
+                <h3 className="mt-3 font-semibold">Tournament Importance</h3>
                 <p>
-                  Home advantage is real in volleyball, and congested VNL or club schedules create
-                  fatigue spots worth targeting.
+                  Teams may have different motivations depending on whether they are competing in
+                  league matches, championships, or qualification events.
+                </p>
+                <h3 className="mt-3 font-semibold">Home Advantage</h3>
+                <p>
+                  Some teams perform differently depending on venue conditions and home support.
                 </p>
               </>
+            ),
+          },
+          {
+            heading: "Volleyball Betting Tips",
+            body: (
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                <li>Research team statistics before selecting betting markets.</li>
+                <li>
+                  Compare different betting options instead of focusing only on match winners.
+                </li>
+                <li>Follow player updates and tournament news.</li>
+                <li>Consider recent form and competition level.</li>
+                <li>Set personal limits and approach betting responsibly.</li>
+              </ul>
             ),
           },
           {
@@ -409,7 +460,7 @@ export const Route = createFileRoute("/volleyball")({
                 <a href="/responsible-gaming" className="text-brand underline">
                   Responsible Gaming
                 </a>{" "}
-                for deposit limits, self-exclusion tools and safer-gambling resources, or{" "}
+                for account controls and safer-gambling resources, or{" "}
                 <a href="/contact" className="text-brand underline">
                   contact support
                 </a>{" "}
@@ -421,15 +472,15 @@ export const Route = createFileRoute("/volleyball")({
             heading: "Explore Volleyball Betting Markets",
             body: (
               <p>
-                Follow the VNL, World Championships, club leagues and beach volleyball with a full
-                range of markets — set betting, handicaps, totals and outrights. Deposit and
-                withdraw in INR via{" "}
+                Follow VNL, World Championship, Olympic, club, and beach volleyball competitions
+                with a wide range of betting options. Explore volleyball{" "}
+                <a href="/volleyball/odds" className="text-brand underline">
+                  odds
+                </a>
+                , set markets, totals, handicaps, and live betting opportunities at 1xBET India —
+                deposit and withdraw in INR via{" "}
                 <a href="/payments" className="text-brand underline">
                   supported payment methods
-                </a>
-                , check fixtures on the{" "}
-                <a href="/volleyball/schedule" className="text-brand underline">
-                  volleyball schedule
                 </a>
                 , and review our{" "}
                 <a href="/terms" className="text-brand underline">
