@@ -21,7 +21,11 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ContactsRouteImport } from './routes/contacts'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as CricketRouteImport } from './routes/cricket'
+import { Route as Cs2BettingRouteImport } from './routes/cs2-betting'
+import { Route as Dota2BettingRouteImport } from './routes/dota2-betting'
 import { Route as EsportsRouteImport } from './routes/esports'
+import { Route as EsportsResultsRouteImport } from './routes/esports-results'
+import { Route as EsportsScheduleRouteImport } from './routes/esports-schedule'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FootballRouteImport } from './routes/football'
 import { Route as FullVersionRouteImport } from './routes/full-version'
@@ -30,6 +34,7 @@ import { Route as HelpRouteImport } from './routes/help'
 import { Route as IosRouteImport } from './routes/ios'
 import { Route as LiveRouteImport } from './routes/live'
 import { Route as LiveCasinoRouteImport } from './routes/live-casino'
+import { Route as LolBettingRouteImport } from './routes/lol-betting'
 import { Route as MobileRouteImport } from './routes/mobile'
 import { Route as MoreRouteImport } from './routes/more'
 import { Route as MultiLiveRouteImport } from './routes/multi-live'
@@ -47,6 +52,7 @@ import { Route as StatisticsRouteImport } from './routes/statistics'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TopEventsRouteImport } from './routes/top-events'
 import { Route as TotoRouteImport } from './routes/toto'
+import { Route as ValorantBettingRouteImport } from './routes/valorant-betting'
 import { Route as FootballOddsRouteImport } from './routes/football_.odds'
 import { Route as FootballScheduleRouteImport } from './routes/football_.schedule'
 import { Route as FootballTipsRouteImport } from './routes/football_.tips'
@@ -111,9 +117,29 @@ const CricketRoute = CricketRouteImport.update({
   path: '/cricket',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Cs2BettingRoute = Cs2BettingRouteImport.update({
+  id: '/cs2-betting',
+  path: '/cs2-betting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Dota2BettingRoute = Dota2BettingRouteImport.update({
+  id: '/dota2-betting',
+  path: '/dota2-betting',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EsportsRoute = EsportsRouteImport.update({
   id: '/esports',
   path: '/esports',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EsportsResultsRoute = EsportsResultsRouteImport.update({
+  id: '/esports-results',
+  path: '/esports-results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EsportsScheduleRoute = EsportsScheduleRouteImport.update({
+  id: '/esports-schedule',
+  path: '/esports-schedule',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaqRoute = FaqRouteImport.update({
@@ -154,6 +180,11 @@ const LiveRoute = LiveRouteImport.update({
 const LiveCasinoRoute = LiveCasinoRouteImport.update({
   id: '/live-casino',
   path: '/live-casino',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LolBettingRoute = LolBettingRouteImport.update({
+  id: '/lol-betting',
+  path: '/lol-betting',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MobileRoute = MobileRouteImport.update({
@@ -241,6 +272,11 @@ const TotoRoute = TotoRouteImport.update({
   path: '/toto',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ValorantBettingRoute = ValorantBettingRouteImport.update({
+  id: '/valorant-betting',
+  path: '/valorant-betting',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FootballOddsRoute = FootballOddsRouteImport.update({
   id: '/football_/odds',
   path: '/football/odds',
@@ -270,7 +306,11 @@ export interface FileRoutesByFullPath {
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
+  '/cs2-betting': typeof Cs2BettingRoute
+  '/dota2-betting': typeof Dota2BettingRoute
   '/esports': typeof EsportsRoute
+  '/esports-results': typeof EsportsResultsRoute
+  '/esports-schedule': typeof EsportsScheduleRoute
   '/faq': typeof FaqRoute
   '/football': typeof FootballRoute
   '/full-version': typeof FullVersionRoute
@@ -279,6 +319,7 @@ export interface FileRoutesByFullPath {
   '/ios': typeof IosRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
+  '/lol-betting': typeof LolBettingRoute
   '/mobile': typeof MobileRoute
   '/more': typeof MoreRoute
   '/multi-live': typeof MultiLiveRoute
@@ -296,6 +337,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/top-events': typeof TopEventsRoute
   '/toto': typeof TotoRoute
+  '/valorant-betting': typeof ValorantBettingRoute
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
@@ -313,7 +355,11 @@ export interface FileRoutesByTo {
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
+  '/cs2-betting': typeof Cs2BettingRoute
+  '/dota2-betting': typeof Dota2BettingRoute
   '/esports': typeof EsportsRoute
+  '/esports-results': typeof EsportsResultsRoute
+  '/esports-schedule': typeof EsportsScheduleRoute
   '/faq': typeof FaqRoute
   '/football': typeof FootballRoute
   '/full-version': typeof FullVersionRoute
@@ -322,6 +368,7 @@ export interface FileRoutesByTo {
   '/ios': typeof IosRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
+  '/lol-betting': typeof LolBettingRoute
   '/mobile': typeof MobileRoute
   '/more': typeof MoreRoute
   '/multi-live': typeof MultiLiveRoute
@@ -339,6 +386,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/top-events': typeof TopEventsRoute
   '/toto': typeof TotoRoute
+  '/valorant-betting': typeof ValorantBettingRoute
   '/football/odds': typeof FootballOddsRoute
   '/football/schedule': typeof FootballScheduleRoute
   '/football/tips': typeof FootballTipsRoute
@@ -357,7 +405,11 @@ export interface FileRoutesById {
   '/contacts': typeof ContactsRoute
   '/cookies': typeof CookiesRoute
   '/cricket': typeof CricketRoute
+  '/cs2-betting': typeof Cs2BettingRoute
+  '/dota2-betting': typeof Dota2BettingRoute
   '/esports': typeof EsportsRoute
+  '/esports-results': typeof EsportsResultsRoute
+  '/esports-schedule': typeof EsportsScheduleRoute
   '/faq': typeof FaqRoute
   '/football': typeof FootballRoute
   '/full-version': typeof FullVersionRoute
@@ -366,6 +418,7 @@ export interface FileRoutesById {
   '/ios': typeof IosRoute
   '/live': typeof LiveRoute
   '/live-casino': typeof LiveCasinoRoute
+  '/lol-betting': typeof LolBettingRoute
   '/mobile': typeof MobileRoute
   '/more': typeof MoreRoute
   '/multi-live': typeof MultiLiveRoute
@@ -383,6 +436,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/top-events': typeof TopEventsRoute
   '/toto': typeof TotoRoute
+  '/valorant-betting': typeof ValorantBettingRoute
   '/football_/odds': typeof FootballOddsRoute
   '/football_/schedule': typeof FootballScheduleRoute
   '/football_/tips': typeof FootballTipsRoute
@@ -402,7 +456,11 @@ export interface FileRouteTypes {
     | '/contacts'
     | '/cookies'
     | '/cricket'
+    | '/cs2-betting'
+    | '/dota2-betting'
     | '/esports'
+    | '/esports-results'
+    | '/esports-schedule'
     | '/faq'
     | '/football'
     | '/full-version'
@@ -411,6 +469,7 @@ export interface FileRouteTypes {
     | '/ios'
     | '/live'
     | '/live-casino'
+    | '/lol-betting'
     | '/mobile'
     | '/more'
     | '/multi-live'
@@ -428,6 +487,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/top-events'
     | '/toto'
+    | '/valorant-betting'
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
@@ -445,7 +505,11 @@ export interface FileRouteTypes {
     | '/contacts'
     | '/cookies'
     | '/cricket'
+    | '/cs2-betting'
+    | '/dota2-betting'
     | '/esports'
+    | '/esports-results'
+    | '/esports-schedule'
     | '/faq'
     | '/football'
     | '/full-version'
@@ -454,6 +518,7 @@ export interface FileRouteTypes {
     | '/ios'
     | '/live'
     | '/live-casino'
+    | '/lol-betting'
     | '/mobile'
     | '/more'
     | '/multi-live'
@@ -471,6 +536,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/top-events'
     | '/toto'
+    | '/valorant-betting'
     | '/football/odds'
     | '/football/schedule'
     | '/football/tips'
@@ -488,7 +554,11 @@ export interface FileRouteTypes {
     | '/contacts'
     | '/cookies'
     | '/cricket'
+    | '/cs2-betting'
+    | '/dota2-betting'
     | '/esports'
+    | '/esports-results'
+    | '/esports-schedule'
     | '/faq'
     | '/football'
     | '/full-version'
@@ -497,6 +567,7 @@ export interface FileRouteTypes {
     | '/ios'
     | '/live'
     | '/live-casino'
+    | '/lol-betting'
     | '/mobile'
     | '/more'
     | '/multi-live'
@@ -514,6 +585,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/top-events'
     | '/toto'
+    | '/valorant-betting'
     | '/football_/odds'
     | '/football_/schedule'
     | '/football_/tips'
@@ -532,7 +604,11 @@ export interface RootRouteChildren {
   ContactsRoute: typeof ContactsRoute
   CookiesRoute: typeof CookiesRoute
   CricketRoute: typeof CricketRoute
+  Cs2BettingRoute: typeof Cs2BettingRoute
+  Dota2BettingRoute: typeof Dota2BettingRoute
   EsportsRoute: typeof EsportsRoute
+  EsportsResultsRoute: typeof EsportsResultsRoute
+  EsportsScheduleRoute: typeof EsportsScheduleRoute
   FaqRoute: typeof FaqRoute
   FootballRoute: typeof FootballRoute
   FullVersionRoute: typeof FullVersionRoute
@@ -541,6 +617,7 @@ export interface RootRouteChildren {
   IosRoute: typeof IosRoute
   LiveRoute: typeof LiveRoute
   LiveCasinoRoute: typeof LiveCasinoRoute
+  LolBettingRoute: typeof LolBettingRoute
   MobileRoute: typeof MobileRoute
   MoreRoute: typeof MoreRoute
   MultiLiveRoute: typeof MultiLiveRoute
@@ -558,6 +635,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   TopEventsRoute: typeof TopEventsRoute
   TotoRoute: typeof TotoRoute
+  ValorantBettingRoute: typeof ValorantBettingRoute
   FootballOddsRoute: typeof FootballOddsRoute
   FootballScheduleRoute: typeof FootballScheduleRoute
   FootballTipsRoute: typeof FootballTipsRoute
@@ -649,11 +727,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CricketRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cs2-betting': {
+      id: '/cs2-betting'
+      path: '/cs2-betting'
+      fullPath: '/cs2-betting'
+      preLoaderRoute: typeof Cs2BettingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dota2-betting': {
+      id: '/dota2-betting'
+      path: '/dota2-betting'
+      fullPath: '/dota2-betting'
+      preLoaderRoute: typeof Dota2BettingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/esports': {
       id: '/esports'
       path: '/esports'
       fullPath: '/esports'
       preLoaderRoute: typeof EsportsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/esports-results': {
+      id: '/esports-results'
+      path: '/esports-results'
+      fullPath: '/esports-results'
+      preLoaderRoute: typeof EsportsResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/esports-schedule': {
+      id: '/esports-schedule'
+      path: '/esports-schedule'
+      fullPath: '/esports-schedule'
+      preLoaderRoute: typeof EsportsScheduleRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/faq': {
@@ -710,6 +816,13 @@ declare module '@tanstack/react-router' {
       path: '/live-casino'
       fullPath: '/live-casino'
       preLoaderRoute: typeof LiveCasinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lol-betting': {
+      id: '/lol-betting'
+      path: '/lol-betting'
+      fullPath: '/lol-betting'
+      preLoaderRoute: typeof LolBettingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mobile': {
@@ -831,6 +944,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TotoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/valorant-betting': {
+      id: '/valorant-betting'
+      path: '/valorant-betting'
+      fullPath: '/valorant-betting'
+      preLoaderRoute: typeof ValorantBettingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/football_/odds': {
       id: '/football_/odds'
       path: '/football/odds'
@@ -868,7 +988,11 @@ const rootRouteChildren: RootRouteChildren = {
   ContactsRoute: ContactsRoute,
   CookiesRoute: CookiesRoute,
   CricketRoute: CricketRoute,
+  Cs2BettingRoute: Cs2BettingRoute,
+  Dota2BettingRoute: Dota2BettingRoute,
   EsportsRoute: EsportsRoute,
+  EsportsResultsRoute: EsportsResultsRoute,
+  EsportsScheduleRoute: EsportsScheduleRoute,
   FaqRoute: FaqRoute,
   FootballRoute: FootballRoute,
   FullVersionRoute: FullVersionRoute,
@@ -877,6 +1001,7 @@ const rootRouteChildren: RootRouteChildren = {
   IosRoute: IosRoute,
   LiveRoute: LiveRoute,
   LiveCasinoRoute: LiveCasinoRoute,
+  LolBettingRoute: LolBettingRoute,
   MobileRoute: MobileRoute,
   MoreRoute: MoreRoute,
   MultiLiveRoute: MultiLiveRoute,
@@ -894,6 +1019,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   TopEventsRoute: TopEventsRoute,
   TotoRoute: TotoRoute,
+  ValorantBettingRoute: ValorantBettingRoute,
   FootballOddsRoute: FootballOddsRoute,
   FootballScheduleRoute: FootballScheduleRoute,
   FootballTipsRoute: FootballTipsRoute,
