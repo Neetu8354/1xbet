@@ -12,23 +12,23 @@ const breadcrumbItems = [
 const faqs = [
   {
     q: "What is cricket betting?",
-    a: "Cricket betting lets you predict outcomes of cricket matches — match winner, top batsman, total runs, wickets and more — across formats like IPL, T20, ODI and Test cricket, pre-match or live.",
+    a: "Cricket betting involves predicting possible outcomes of cricket matches or events through different available betting markets.",
   },
   {
-    q: "How can I bet on IPL matches?",
-    a: "Register an account, deposit in INR via UPI or another supported payment method, open the cricket section, choose an IPL match and market, and confirm your selection on the bet slip.",
+    q: "Can I bet on IPL matches online?",
+    a: "Yes, IPL matches are available through cricket betting markets during the tournament season.",
   },
   {
     q: "What cricket betting markets are available?",
-    a: "Common cricket markets include match winner, toss winner, top batsman, top bowler, total runs, total wickets, innings scores, over-by-over markets and outright tournament winner.",
+    a: "Cricket betting markets may include match winners, player performances, runs, wickets, toss outcomes, and live betting options.",
   },
   {
-    q: "Can I place live cricket bets?",
-    a: "Yes. Live cricket betting lets you bet ball-by-ball while a match is in progress, with odds updating on every run, wicket and over. Cash out is available on selected markets.",
+    q: "What is live cricket betting?",
+    a: "Live cricket betting allows users to place bets while a match is happening with updated odds based on current match conditions.",
   },
   {
-    q: "What payment methods are supported?",
-    a: "1xBET India supports INR deposits and withdrawals via UPI, Paytm, NetBanking, e-wallets and other methods. Visit the Payments page for the full list, limits and processing times.",
+    q: "How can I practice responsible betting?",
+    a: "Users should set limits, understand risks, and only participate within their personal budget.",
   },
 ];
 
@@ -192,92 +192,123 @@ export const Route = createFileRoute("/cricket")({
         }
         sections={[
           {
-            heading: "Online Cricket Betting in India",
+            heading: "Cricket Betting at 1xBET India",
             body: (
               <>
                 <p>
-                  Cricket is India's favourite sport and the centrepiece of online cricket betting
-                  at 1xBET India. We cover every major competition — the{" "}
+                  Cricket is one of the most popular sports in India, followed by millions of fans
+                  across the country. From international tournaments to domestic leagues, cricket
+                  offers exciting opportunities throughout the year. 1xBET India provides cricket
+                  betting markets covering major competitions, including{" "}
                   <a href="/ipl-betting" className="text-brand underline">
-                    Indian Premier League (IPL)
+                    IPL
                   </a>
-                  , ICC T20 and ODI World Cups, Test series, The Ashes, Big Bash League, SA20,
-                  Caribbean Premier League and India's domestic Ranji Trophy and Syed Mushtaq Ali
-                  Trophy.
+                  , ICC tournaments, international series, and domestic cricket events.
                 </p>
                 <p className="mt-2">
-                  Whether you follow T20 franchise leagues or five-day Test cricket, the cricket
-                  section brings pre-match and{" "}
-                  <a href="/cricket-live" className="text-brand underline">
-                    live cricket betting
-                  </a>{" "}
-                  markets together in one place — priced in INR and accessible on desktop or the{" "}
-                  <a href="/app" className="text-brand underline">
-                    mobile app
+                  Users can explore different cricket betting options with updated{" "}
+                  <a href="/cricket-odds" className="text-brand underline">
+                    odds
                   </a>
-                  . Check upcoming fixtures on the{" "}
+                  , match markets, and{" "}
+                  <a href="/cricket-live" className="text-brand underline">
+                    live betting
+                  </a>{" "}
+                  opportunities across various competitions.
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Cricket Coverage at 1xBET India",
+            body: (
+              <>
+                <p>1xBET India covers a wide range of cricket tournaments and events, including:</p>
+                <ul className="mt-2 list-disc space-y-1 pl-5">
+                  <li>
+                    <a href="/ipl-betting" className="text-brand underline">
+                      Indian Premier League (IPL)
+                    </a>
+                  </li>
+                  <li>ICC Cricket World Cup</li>
+                  <li>ICC T20 World Cup</li>
+                  <li>ODI Series</li>
+                  <li>Test Matches</li>
+                  <li>The Ashes</li>
+                  <li>Big Bash League (BBL)</li>
+                  <li>Caribbean Premier League (CPL)</li>
+                  <li>SA20 League</li>
+                  <li>Ranji Trophy</li>
+                  <li>Syed Mushtaq Ali Trophy</li>
+                </ul>
+                <p className="mt-2">
+                  With coverage of major cricket competitions, users can follow their favourite
+                  teams, players, and matches on the{" "}
                   <a href="/cricket-schedule" className="text-brand underline">
                     cricket schedule
                   </a>{" "}
-                  and recent form on the{" "}
-                  <a href="/cricket-results" className="text-brand underline">
-                    cricket results
-                  </a>{" "}
-                  page.
+                  throughout the season.
                 </p>
               </>
             ),
           },
           {
-            heading: "Best Cricket Betting Markets",
+            heading: "Cricket Betting Markets",
             body: (
               <>
                 <p>
-                  Cricket's format produces deeper markets than almost any other sport. Every match
-                  offers options across innings, overs and individual players:
+                  Cricket offers multiple betting markets based on different match outcomes and
+                  player performances. Popular cricket betting markets include:
                 </p>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
-                  <li>
-                    <strong>Match winner</strong> — which team wins the match or series
-                  </li>
-                  <li>
-                    <strong>Toss winner</strong> — who wins the pre-match coin toss
-                  </li>
-                  <li>
-                    <strong>Top batsman / top bowler</strong> — the leading run-scorer or
-                    wicket-taker for a team or the match
-                  </li>
-                  <li>
-                    <strong>Total runs / total wickets</strong> — over/under on innings and match
-                    totals
-                  </li>
-                  <li>
-                    <strong>Innings and over-by-over markets</strong> — runs in an over, next
-                    wicket, session results
-                  </li>
-                  <li>
-                    <strong>Player performance</strong> — combined runs, wickets and catches markets
-                  </li>
-                  <li>
-                    <strong>Method of dismissal</strong> — how the next wicket falls
-                  </li>
-                  <li>
-                    <strong>Outright winner</strong> — tournament and league champions, series
-                    winners
-                  </li>
-                </ul>
-                <p className="mt-2">
-                  Market availability varies by format and match coverage — compare prices on the{" "}
-                  <a href="/cricket-odds" className="text-brand underline">
-                    cricket odds
-                  </a>{" "}
-                  page before confirming a bet.
+                <h3 className="mt-3 font-semibold">Match Winner</h3>
+                <p>
+                  Predict which team will win the cricket match based on team strength, current
+                  form, player availability, and match conditions.
+                </p>
+                <h3 className="mt-3 font-semibold">Toss Winner</h3>
+                <p>
+                  The toss can influence match strategies, especially in limited-overs cricket.
+                  Users can predict which team will win the toss before the match begins.
+                </p>
+                <h3 className="mt-3 font-semibold">Top Run Scorer</h3>
+                <p>
+                  Select the player who is expected to score the highest number of runs in a match
+                  or tournament.
+                </p>
+                <h3 className="mt-3 font-semibold">Top Wicket Taker</h3>
+                <p>
+                  Choose bowlers who may have the biggest impact by taking important wickets during
+                  the game.
+                </p>
+                <h3 className="mt-3 font-semibold">Total Runs and Wickets</h3>
+                <p>
+                  Predict possible match statistics, including total runs scored or wickets taken
+                  during an innings or match.
+                </p>
+                <h3 className="mt-3 font-semibold">Player Performance Markets</h3>
+                <p>
+                  Follow individual player statistics, including batting, bowling, and overall match
+                  performances.
                 </p>
               </>
             ),
           },
           {
-            heading: "IPL Betting Guide",
+            heading: "Live Cricket Betting",
+            body: (
+              <p>
+                Live cricket betting allows users to follow matches while they are being played.
+                Odds can change based on match situations, including runs scored, wickets lost,
+                required run rate, and player performances. Bet in play via the{" "}
+                <a href="/cricket-live" className="text-brand underline">
+                  live cricket betting
+                </a>{" "}
+                section.
+              </p>
+            ),
+          },
+          {
+            heading: "IPL Betting Online",
             body: (
               <>
                 <img
@@ -290,51 +321,59 @@ export const Route = createFileRoute("/cricket")({
                   className="mb-3 w-full rounded-lg border"
                 />
                 <p>
-                  The IPL is the biggest cricket betting event of the year — ten franchises, 70+
-                  matches and nightly double-headers through the season. We price every IPL match
-                  weeks in advance with outright winner, top run-scorer (Orange Cap) and top
-                  wicket-taker (Purple Cap) markets alongside ball-by-ball in-play betting.
+                  The Indian Premier League is one of the biggest cricket tournaments in the world.
+                  Featuring international stars and top domestic players, IPL creates interest among
+                  cricket fans globally.
                 </p>
+                <p className="mt-2">IPL betting markets may include:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
+                  <li>Match winner</li>
+                  <li>Tournament winner</li>
+                  <li>Top run scorer</li>
+                  <li>Top wicket taker</li>
+                  <li>Team performance markets</li>
+                  <li>Live betting options</li>
+                </ul>
                 <p className="mt-2">
-                  IPL betting online rewards context: pitch reports, dew factors, toss decisions and
-                  head-to-head records all shape prices. Chasing teams with strong finishers often
-                  offer live value, and odds boosts plus IPL-specific offers appear on the{" "}
-                  <a href="/promotions" className="text-brand underline">
-                    promotions
-                  </a>{" "}
-                  page during the season. See the full{" "}
+                  Before selecting any market, users should consider team combinations, player form,
+                  pitch conditions, and recent performances. See the full{" "}
                   <a href="/ipl-betting" className="text-brand underline">
                     IPL betting guide
-                  </a>{" "}
-                  for market-by-market detail.
+                  </a>
+                  .
                 </p>
               </>
             ),
           },
           {
-            heading: "How Cricket Odds Work",
+            heading: "Understanding Cricket Odds",
             body: (
               <>
                 <p>
-                  Cricket odds show the potential return on a selection — your stake multiplied by
-                  the decimal price. A ₹1,000 bet at odds of 1.80 returns ₹1,800 (₹800 profit).
-                  Prices reflect each team's assessed chance of winning and move with team news,
-                  pitch conditions, the toss and in-play events.
+                  Cricket odds represent the possible outcomes of different betting markets. Odds
+                  can change depending on factors such as:
                 </p>
+                <ul className="mt-2 list-disc space-y-1 pl-5">
+                  <li>Team performance</li>
+                  <li>Player availability</li>
+                  <li>Match conditions</li>
+                  <li>Pitch report</li>
+                  <li>Weather conditions</li>
+                  <li>Live match situations</li>
+                </ul>
                 <p className="mt-2">
-                  Formats matter when reading cricket odds in India: T20 matches compress into a few
-                  hours of high variance, while Test match odds drift across five days and can
-                  include the draw as a third outcome. Our{" "}
+                  Understanding these factors helps users make informed decisions when exploring
+                  cricket betting markets — compare current prices on the{" "}
                   <a href="/cricket-odds" className="text-brand underline">
-                    cricket odds guide
+                    cricket odds
                   </a>{" "}
-                  explains formats, implied probability and how to compare markets.
+                  page.
                 </p>
               </>
             ),
           },
           {
-            heading: "Live Cricket Betting Explained",
+            heading: "Live Cricket Betting Experience",
             body: (
               <>
                 <img
@@ -347,87 +386,108 @@ export const Route = createFileRoute("/cricket")({
                   className="mb-3 w-full rounded-lg border"
                 />
                 <p>
-                  Live cricket betting lets you bet while a match is in progress, with odds updating
-                  ball-by-ball. Every boundary, wicket and bowling change reprices the match winner
-                  market — and in-play options extend to next over runs, next wicket method, session
-                  totals and revised innings scores.
+                  Live cricket betting allows users to participate while matches are in progress.
+                  Cricket is a changing sport where every over, boundary, and wicket can influence
+                  the direction of a game.
                 </p>
+                <p className="mt-2">Live markets may include:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
+                  <li>Next over predictions</li>
+                  <li>Match winner updates</li>
+                  <li>Total runs</li>
+                  <li>Player performance</li>
+                  <li>Wicket predictions</li>
+                </ul>
                 <p className="mt-2">
-                  Momentum swings fast in T20 cricket: a team needing 60 off 30 balls can become
-                  favourite after one big over. Follow the action in the{" "}
-                  <a href="/cricket-live" className="text-brand underline">
-                    live cricket betting
-                  </a>{" "}
-                  section or the{" "}
+                  Users should always review updated information and current odds before placing any
+                  bet — follow the action in the{" "}
                   <a href="/live" className="text-brand underline">
-                    live lobby
-                  </a>
-                  , where cash out is available on selected markets to settle bets before the result
-                  is decided.
+                    live betting
+                  </a>{" "}
+                  lobby.
                 </p>
               </>
             ),
           },
           {
-            heading: "Cricket Betting Tips",
+            heading: "How to Start Cricket Betting",
+            body: (
+              <>
+                <p>Starting cricket betting involves a simple process:</p>
+                <ol className="mt-2 list-decimal space-y-1 pl-5">
+                  <li>Create an account.</li>
+                  <li>
+                    Select your preferred{" "}
+                    <a href="/payments" className="text-brand underline">
+                      payment method
+                    </a>
+                    .
+                  </li>
+                  <li>Open the cricket betting section.</li>
+                  <li>Choose a match and available market.</li>
+                  <li>Review the odds and betting details.</li>
+                  <li>Confirm your selection.</li>
+                </ol>
+                <p className="mt-2">
+                  Always check match information and available markets before confirming a bet.
+                </p>
+              </>
+            ),
+          },
+          {
+            heading: "Responsible Cricket Betting",
             body: (
               <>
                 <p>
-                  Cricket rewards preparation. Before placing a bet, experienced cricket bettors
-                  check:
+                  Cricket betting should always be approached responsibly. Users should be 18 years
+                  or older and follow responsible gaming practices.
                 </p>
-                <ul className="mt-2 list-disc space-y-1 pl-5">
-                  <li>
-                    Pitch and weather conditions — dry pitches favour spin, overcast conditions help
-                    swing bowlers
-                  </li>
-                  <li>The toss — chasing sides hold a strong record in dew-affected T20 games</li>
-                  <li>
-                    Recent form and head-to-head records on the{" "}
-                    <a href="/cricket-results" className="text-brand underline">
-                      cricket results
-                    </a>{" "}
-                    page
-                  </li>
-                  <li>Team news — injuries, rested players and squad rotation in long series</li>
-                  <li>
-                    Venue history — some grounds consistently produce high or low first-innings
-                    scores
-                  </li>
-                  <li>Format-specific stats — a strong Test side may be vulnerable in T20s</li>
+                <p className="mt-2">Responsible betting includes:</p>
+                <ul className="mt-1 list-disc space-y-1 pl-5">
+                  <li>Setting personal limits</li>
+                  <li>Managing your betting budget</li>
+                  <li>Avoiding chasing losses</li>
+                  <li>Taking regular breaks</li>
+                  <li>Understanding betting risks</li>
                 </ul>
                 <p className="mt-2">
-                  Set a budget per series and compare odds across markets — handicaps and top-player
-                  markets often price differently to the match winner for the same game.
+                  Responsible gaming helps maintain a balanced and controlled betting experience —
+                  visit{" "}
+                  <a href="/responsible-gaming" className="text-brand underline">
+                    Responsible Gaming
+                  </a>{" "}
+                  for account controls and resources.
                 </p>
               </>
             ),
           },
           {
-            heading: "Safe & Responsible Cricket Betting",
+            heading: "Why Choose 1xBET India for Cricket Betting",
             body: (
-              <p>
-                Cricket betting should be entertainment, not a source of income. Only bet if you are
-                18+ and eligible, set deposit and loss limits, and never chase losses. Manage your
-                account with the tools on{" "}
-                <a href="/responsible-gaming" className="text-brand underline">
-                  Responsible Gaming
-                </a>
-                , review INR deposit and withdrawal options on{" "}
-                <a href="/payments" className="text-brand underline">
-                  Payments
-                </a>
-                , and read the full rules on{" "}
-                <a href="/terms" className="text-brand underline">
-                  Terms & Conditions
-                </a>
-                . Our platform uses SSL encryption and verified payment processing — support is
-                available 24/7 via{" "}
-                <a href="/contact" className="text-brand underline">
-                  Contact
-                </a>
-                .
-              </p>
+              <>
+                <p>
+                  1xBET India provides access to a variety of cricket competitions, betting markets,
+                  and live match options. Key features include:
+                </p>
+                <ul className="mt-2 list-disc space-y-1 pl-5">
+                  <li>Cricket coverage from international and domestic competitions</li>
+                  <li>IPL and T20 betting markets</li>
+                  <li>Live cricket betting options</li>
+                  <li>Updated match odds</li>
+                  <li>
+                    Multiple{" "}
+                    <a href="/payments" className="text-brand underline">
+                      payment options
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/help" className="text-brand underline">
+                      Customer support
+                    </a>{" "}
+                    assistance
+                  </li>
+                </ul>
+              </>
             ),
           },
         ]}
