@@ -205,7 +205,7 @@ function WhatsAppModal({ open, onClose }: { open: boolean; onClose: () => void }
           Please login with a real ID to continue.
         </p>
         <a
-          href="https://wa.me/919702308448?text=Hi%2C%20I%20want%20to%20get%20a%20real%20ID"
+          href="https://wa.link/ultra"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-5 inline-flex items-center justify-center rounded-md bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90"

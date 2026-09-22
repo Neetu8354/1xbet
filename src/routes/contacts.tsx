@@ -23,8 +23,7 @@ Need help? Our 24/7 customer support team is here to assist you.
 Contact options:
 - Live chat on our website
 - Email support
-- Phone support: +91 97023 08448
-- WhatsApp support
+- WhatsApp support: https://wa.link/ultra
 
 We typically respond to all queries within 24 hours.
       `}

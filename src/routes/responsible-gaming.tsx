@@ -78,8 +78,17 @@ export const Route = createFileRoute("/responsible-gaming")({
                 <a href="/help" className="text-brand underline">
                   Help Centre
                 </a>{" "}
-                or WhatsApp +91 97023 08448. Independent organisations such as Gamblers Anonymous
-                and regional counselling services also provide free, confidential support.
+                or{" "}
+                <a
+                  href="https://wa.link/ultra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand underline"
+                >
+                  WhatsApp
+                </a>
+                . Independent organisations such as Gamblers Anonymous and regional counselling
+                services also provide free, confidential support.
               </p>
             ),
           },

@@ -36,9 +36,17 @@ export const Route = createFileRoute("/help")({
             heading: "How to get support",
             body: (
               <p>
-                Our team is available 24/7. Live chat runs directly on the website, WhatsApp on{" "}
-                <b>+91 97023 08448</b> is the fastest way to reach us, email queries are answered
-                within 24 hours, and phone support is available on the same number. See the{" "}
+                Our team is available 24/7. Live chat runs directly on the website,{" "}
+                <a
+                  href="https://wa.link/ultra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand underline"
+                >
+                  WhatsApp
+                </a>{" "}
+                is the fastest way to reach us, and email queries are answered within 24 hours. See
+                the{" "}
                 <a href="/contact" className="text-brand underline">
                   Contact
                 </a>{" "}

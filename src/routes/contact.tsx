@@ -8,7 +8,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact 1xBET India support. 24/7 live chat, WhatsApp +91 97023 08448 and phone support for account, deposit, withdrawal and betting queries.",
+          "Contact 1xBET India support. 24/7 live chat and WhatsApp support for account, deposit, withdrawal and betting queries.",
       },
       { property: "og:title", content: "Contact Us — 1xBET India" },
       {
@@ -36,9 +36,17 @@ export const Route = createFileRoute("/contact")({
             heading: "Support channels",
             body: (
               <p>
-                Our support team is available 24 hours a day, 7 days a week. The fastest option is
-                WhatsApp on <b>+91 97023 08448</b> — or use live chat on the website, phone support
-                on the same number, or email for non-urgent queries (replies within 24 hours).
+                Our support team is available 24 hours a day, 7 days a week. The fastest option is{" "}
+                <a
+                  href="https://wa.link/ultra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand underline"
+                >
+                  WhatsApp
+                </a>{" "}
+                — or use live chat on the website, or email for non-urgent queries (replies within
+                24 hours).
               </p>
             ),
           },
